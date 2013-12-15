@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Media Tech Skill 2 - MTEC 1002 - Spring 2013
+title: Media Tech Skill 2 - MTEC 1002 - Spring 2014
 nav-state: index
 ---
 <a name="contact-info"></a>
