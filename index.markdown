@@ -33,6 +33,7 @@ Each __lab__ is worth 6 points:
 	* 3 points - 3/4 work
 	* 4 points - all work
 	* 5 points
+<!--
 * 1 point for lab quiz
 	* 
 	* 
@@ -69,6 +70,7 @@ Structure
 	* how does processing work?
 * vms
 	* what's a vm?
+-->
 
 <a name="resources"></a>
 
