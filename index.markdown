@@ -26,7 +26,49 @@ Contact Information
 
 Grading
 ====
-Each __lab__ is worth __1/15th__ of your grade (about __7%__)
+Each __lab__ is worth 6 points:
+* 4 points for lab work
+	* 1 point - submitting anything / compiles (where applicable)
+	* 2 points - less than half work
+	* 3 points - 3/4 work
+	* 4 points - all work
+	* 5 points
+* 1 point for lab quiz
+	* 
+	* 
+	* 
+
+Structure
+====
+* follow along 
+* do on your own
+* review
+* follow along 
+* do on your own
+* review
+* quiz  - (10 questions?)
+
+* onboarding
+	* create git account
+	* give thumb drive
+	* add key to test server
+* thumb drives 
+	* contain ssh key
+	* maybe vm
+	* given out on ???
+	* check generated key by sshing to known server
+* ssh and keys?
+* use encrypted keys?
+* you can use your own key
+* http://macnugget.org/projects/publickeys/
+* what's a text file?
+* folders / tree structure on fs
+* javscript
+	* interpreted vs compiled
+	* how programming languages "work"
+	* how does processing work?
+* vms
+	* what's a vm?
 
 <a name="resources"></a>
 
@@ -60,7 +102,7 @@ Topics
 
 <h4 class='module-title'>Module 2 - Source Code Management, Collaboration, A Little Bit of JavaScript</h4>
 
-* __Week 4 - February 26th__ - Quick Tour of JavaScript, Version Control Basics
+* __Week 4 - February 26th__ - Assume that you already know processing, Version Control Basics
 * __Week 5 - March 5th__ - Processing: Brief Tour of Control Structures and Variables, Basic git Commands for _Versioning_ Work: init, add, commit, status, diff
 * __Week 6 - March 12th__ - Review of Basic git Commands, Remote Repositories
 
