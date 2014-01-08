@@ -84,11 +84,11 @@ Topics
 * __Week 2 - February 5th__ - Output, Download, Compress/Archive, Uncompress/Unarchive
 * __Week 3 - February 19th__ - Working with Files
 
-<h4 class='module-title'>Module 2 - Source Code Management, Collaboration, A Little Bit of JavaScript</h4>
+<h4 class='module-title'>Module 2 - Source Code Management, Collaboration</h4>
 
-* __Week 4 - February 26th__ - Assume that you already know processing, Version Control Basics
-* __Week 5 - March 5th__ - Processing: Brief Tour of Control Structures and Variables, Basic git Commands for _Versioning_ Work: init, add, commit, status, diff
-* __Week 6 - March 12th__ - Review of Basic git Commands, Remote Repositories
+* __Week 4 - February 26th__ -  Version Control Basics: init, add, commit, status, diff (assumes some knowledge of Processing)
+* __Week 5 - March 5th__ - Review of Basic git Commands, Remote Repositories
+* __Week 6 - March 12th__ - Branching and Merging
 
 <h4 class='module-title'>Module 3 - JavaScript</h4>
 
@@ -104,7 +104,7 @@ Topics
 
 <h4 class='module-title'>Module 5 - Publishing on the Web</h4>
 
-* __Week 13 - May 8th__ - Communicating with a remote server / publishing to the web
+* __Week 13 - May 8th__ - Communicating with a remote server / publishing to the web (assumes some knowledge of HTML/CSS)
 * __week 14 - May 14th__ - Github Pages
 * __week 15 - May 7th__ - Administering a Server 
 
@@ -114,6 +114,8 @@ Resources
 ====
 * [Command Line Crash Course](http://cli.learncodethehardway.org/book/)
 * [LinuxCommand.org](http://linuxcommand.org/lc3_resources.php)
+* [Pro Git](http://git-scm.com/book)
+* [Eloquent JavaScript](http://eloquentjavascript.net/)
 
 <a name="lab"></a>
 
