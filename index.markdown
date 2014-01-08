@@ -9,7 +9,7 @@ Course Information
 ====
 * __Course Number:__ {{site.course_number}}
 * __Semester:__ {{site.course_semester}}
-* __Section:__ 931
+* __Section:__ TBD
 
 <a name="contact-info"></a>
 
