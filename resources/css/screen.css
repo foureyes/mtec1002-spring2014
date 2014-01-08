@@ -1,0 +1,27 @@
+#hd {
+	text-align: center;
+	border-bottom: 1px #000 solid;
+}
+
+#ft {
+	text-align: center;
+	border-top: 1px #000 solid;
+}
+
+body {
+	margin: 2em 4em 2em 4em;
+	font-family: 'Computer Modern Bright';
+	font-size: 1.25em;
+}
+
+
+/*
+#setup h3 {
+	text-decoration:underline;
+}
+*/
+
+h2 {
+	color: #226633;
+	text-decoration:underline;
+}
