@@ -130,19 +130,16 @@ __CyberDuck__:
 
 ## Virtualization
 
-__VirtualBox__:
+__VirtualBox and VirtualBox Extensions__:
 
-* installation: [Virtualbox Downloads Page](https://www.virtualbox.org/wiki/Downloads)
+* installation: 
+	1. Go to the [VirtualBox Downloads Page](https://www.virtualbox.org/wiki/Downloads)
+	2. Download and install VirtualBox
+	3. Download and install the extensions
 * verification: 
 	* virtualbox can be launched from Applications folder
 	* ubuntu vm works and can hit outside network (NAT or bridged)
 	* ssh into vm works
-
-
-__VirtualBox Extensions__:
-
-* installation: [Cyberduck site](http://cyberduck.io/)
-* verification: Cyberduck can be launched from Applications folder
 
 ## Questions
 

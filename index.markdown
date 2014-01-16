@@ -20,9 +20,7 @@ Contact Information
 * __Course Schedule:__ Wednesdays 6:00 to 8:30
 * __Room:__ Voorhees 321
 
-
 <!--
-
 <a name="grading"></a>
 
 Grading
@@ -128,10 +126,6 @@ Lab Policy
 5. You are responsible for keeping all of your files on portable storage media. We cannot promise your files will remain from one class to the next.
 6. Lab is reserved for students enrolled in MTEC or ENT courses.
 7. Open lab hours are posted and subject to change.
-
-
-
-
 <script>
 $(document).ready(function() {
 	var m = $('.module-title')
