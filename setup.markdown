@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Media Tech Skill 2 - MTEC 1002 - Spring 2014
-nav-state: index
+nav-state: install
 ---
 
 <div id="setup" markdown="block">

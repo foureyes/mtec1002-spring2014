@@ -1,0 +1,113 @@
+Lab - Review
+==========
+Follow the instructions line-by-line.  
+
+* Type in the commands as is, but ignore the beginning prompt.  
+* Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.  
+* "No output" or "nothing happens" are valid answers to any of the questions.
+==========
+
+==========
+This lab will review downloading and uncompressing files, and it will get us set up for the remainder of the labs.
+==========
+==========
+1. Go to your home directory.
+
+Write the command that you used to do this below:
+----------
+
+
+
+==========
+2. Prove that you're in your home directory.
+
+Write the command that you used to do this - as well as its output - below :
+----------
+
+
+
+==========
+3. Are there any directories or files in your directory that have the word mtec1002 in it?
+
+Write the command(s) that you used to determine this - as well as its output - below:
+----------
+
+
+
+==========
+4. If there are directories or files in your home directory that have the word mtec1002 in them, list them below (otherwise skip this step):
+----------
+
+
+
+==========
+5. Delete these directories from your home folder by using this command:
+
+$ rm -rf [name of directory/folder]
+
+for example:
+
+$ rm -rf mtec1002-labs-02
+
+(skip if these directories don't exist)
+----------
+
+
+
+==========
+6.  A compressed archive (.tar.gz) of the lab files can be found at this url: 
+
+http://foureyes.github.com/mtec1002/labs/03/mtec1002-lab-03.tar.gz
+
+Download this file to your home directory into a file called mtec1002-lab-03.tar.gz.   Use a command that we learned to do this.
+
+Write the command(s) that you used to download this file - as well as its output - below:
+----------
+
+
+
+==========
+7.  Uncompress the file that you just downloaded.
+
+Write the command(s) that you used to do this - as well as its output - below:
+----------
+
+
+
+==========
+8.  You should now have a a directory called mtec1002-lab-03 in your home directory.  Verify that this directory exists.
+
+Write the command(s) that you used to do this - as well as its output - below:
+----------
+
+
+
+==========
+9.  What directories are in the mtec1002-lab-03 folder?
+
+Write the command(s) that you used to determine this - as well as its output - below:
+----------
+
+
+
+==========
+10.  Now... go back home.  Then change to the science-fiction directory using a relative path.  The directory is located in books... which is located in the mtec1002-lab-03 directory.  Verify you're in the right directory using pwd.
+
+Write the command(s) (including going home) that you used to do this below:
+----------
+
+
+
+==========
+11.  Write the files that are in the science fiction directory below.
+
+Write the command(s) that you used to do this - as well as its output - below:
+----------
+
+
+
+==========
+12.  Again, go back to your home directory.  Now... go to the science-fiction directory using an absolute path!  Verify that you're in the right directory using pwd.
+
+Write the command(s) that you used to do this below:
+----------

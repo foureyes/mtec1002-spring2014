@@ -1,0 +1,290 @@
+
+Lab - Navigating the File System
+==========
+Follow the instructions line-by-line.  
+
+* Type in the commands as is, but ignore the beginning prompt.  
+* Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.  
+* "No output" or "nothing happens" are valid answers to any of the questions.
+==========
+
+==========
+1. Open a new terminal window.
+----------
+
+==========
+2. Create a directory called mtec1002.
+----------
+
+==========
+3. Change your directory so that you're in mtec1002.
+----------
+
+==========
+4. Type:
+
+$ pwd
+
+Check that the output ends with mtec1002 (something like this: /Users/joe/mtec1002).
+
+If it doesn't start at #1 again, or ask for help before moving on!
+
+Copy and paste the output of pwd below.
+----------
+
+
+
+==========
+5. Type:
+
+$ mkdir animals
+$ ls
+
+Copy and paste the output below.
+----------
+
+
+
+==========
+6. Type:
+
+$ mkdir food
+$ ls
+
+Copy and paste the output below.
+----------
+
+
+
+==========
+7. Type:
+
+$ mkdir -p foo/bar/baz/qux
+$ ls
+
+Copy and paste the output below.
+----------
+
+
+
+==========
+8. Type:
+
+$ cd foo/bar/baz/qux
+$ pwd
+
+Copy and paste the output below.
+----------
+
+
+
+==========
+9. Type:
+
+$ cd ../..
+$ pwd
+
+Copy and paste the output below.
+----------
+
+
+
+==========
+10. Type:
+
+$ cd -
+$ pwd
+
+Copy and paste the output below.
+----------
+
+
+ 
+==========
+11. Type:
+
+$ cd ../../../..
+$ pwd
+
+Copy and paste the output below.
+----------
+
+
+
+==========
+12. Type:
+
+$ ls -l
+$ rmdir animals
+$ ls -l
+
+Copy and paste the first two lines from the output into the space below.
+----------
+
+
+
+==========
+13. Type:
+
+$ cd ~
+$ pwd
+
+Copy and paste the output into the space below.
+----------
+
+
+
+==========
+14. Type:
+
+$ cd /Volumes
+$ pwd
+
+Copy and paste the output into the space below.
+----------
+
+
+
+==========
+15. Type:
+
+$ cd /unknown_folder
+$ pwd
+
+Copy and paste the output into the space below.
+----------
+
+
+
+==========
+15. Type:
+
+$ cd ~/mtec1002
+$ pwd
+
+Copy and paste the output into the space below.
+----------
+
+
+
+==========
+16. Type:
+
+$ hostname
+
+Copy and paste the output into the space below.
+----------
+
+
+
+==========
+17a. Make sure you're back in your mtec1002, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
+----------
+
+
+
+==========
+17b. If you're not in the right directory, type the following command:
+
+cd ~/mtec1002
+
+Otherwise skip this question/step!
+----------
+
+
+
+==========
+18. Create the following directories, with each one inside each other.  The first one, pinapple, is the inner most:
+
+pineapple
+orange
+strawbery
+lemon
+
+Use only one command to make all of these new directories.  Write what command you used below:
+----------
+
+
+
+==========
+19. Make another directory called aardvark.  
+
+Write the command you used to create the directory below:
+----------
+
+
+
+==========
+20. List the files and directories in the current directory using the long format.  
+
+What is the modified date of the aardvark directory?
+----------
+
+
+
+==========
+21. Make 3 directories nested within each other:
+
+* foo should be the outermost directory
+* bar should be the inside foo
+* baz should be inside bar
+
+What command did you use?
+----------
+
+
+
+==========
+22. Change your directory so that you're in the inner most directory (baz)
+
+What command did you use?
+----------
+
+
+
+==========
+23. Change your directory so that you're two directories up (foo)
+
+What command did you use?
+----------
+
+
+==========
+24. What command is used to delete empty directories?
+----------
+
+
+
+==========
+25. What command is used to print out your current working directory?
+----------
+
+
+
+==========
+26. What flag do I pass to ls to print out all files?
+----------
+
+
+
+==========
+27. What's the shortcut for home directory?
+----------
+
+
+
+==========
+28. What's a pathname?
+----------
+
+
+
+==========
+29. What's a directory?
+----------
+
+
+
+==========
+30. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
+----------

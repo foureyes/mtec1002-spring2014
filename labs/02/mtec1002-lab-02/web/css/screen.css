@@ -1,0 +1,11 @@
+body {
+	font-family: sans-serif;
+	font-size: 1.5em;
+	color: #042;
+	background: #eee;
+}
+
+#bd {
+	padding-left:5em;
+	padding-right:5em;
+}

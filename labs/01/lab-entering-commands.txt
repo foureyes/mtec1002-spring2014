@@ -1,0 +1,161 @@
+
+Lab - Entering Commands
+==========
+Follow the instructions line-by-line.  
+
+* Type in the commands as is, but ignore the beginning prompt.  
+* Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.  
+* "No output" or "nothing happens" are valid answers to any of the questions.
+==========
+
+
+
+==========
+1. Open Terminal.  Type:
+
+$ ls<ENTER>
+
+Copy and paste the output of ls below.
+----------
+
+
+
+==========
+2a. Type: 
+
+$ ls D<TAB>
+
+What happens?  Describe it below.
+----------
+
+
+
+==========
+2b. Press <TAB> one more time.  Copy and paste the output below.
+----------
+
+
+
+==========
+2c. Now press <ENTER>. Copy and paste the output below.
+----------
+
+
+
+==========
+3.  Type:
+
+$ ls -l Documents<ENTER>
+
+Copy and paste the first *two lines* of output below.
+----------
+
+
+
+==========
+4.  Type:
+
+$ ls -a Documents
+
+Copy and paste the first *two lines* of output below.
+----------
+
+
+
+==========
+5.  Type:
+
+<UP><ENTER>
+
+What command was repeated?
+----------
+
+
+
+==========
+6.  Type:
+
+<UP><UP><UP><DOWN><ENTER>
+
+What command was repeated?
+----------
+
+
+
+==========
+7.  Type:
+
+$ ls /Vol<TAB><ENTER>
+
+What is the result of pressing tab?
+----------
+
+
+
+==========
+8.  Type:
+
+$ ls doesnotexist
+
+Copy and paste the output below.
+----------
+
+
+
+==========
+9.  What key do I press to go to the previous command?
+----------
+
+
+
+==========
+10.  Name two flags that we used in this exercise.
+----------
+
+
+
+==========
+11.  What key do I use to attempt to autocomplete a command or a file name?
+----------
+
+
+
+==========
+12.  What was the main command that we used throughout this exercise?
+----------
+
+
+
+==========
+13.  Name one argument that we passed to the command.
+----------
+
+
+
+==========
+14.  Type:
+
+$ foo<ENTER>
+
+Copy and paste the output below.
+----------
+
+
+
+==========
+15.  Type:
+
+<UP><ENTER>
+
+Copy and paste the output below.
+----------
+
+
+
+==========
+16.  In the following line....
+
+$ ls -a Desktop
+
+What is the command, flag, argument, and prompt?
+----------
