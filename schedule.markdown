@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Media Tech Skill 2 - MTEC 1002 - Spring 2013
+title: Media Tech Skill 2 - MTEC 1002 - Spring 2014
 nav-state: schedule
 ---
 
@@ -31,6 +31,8 @@ Commandline #1
 * [Entering Commands](labs/01/entering-commands.html)
 	* [__Lab__ - Entering Commands](labs/01/lab-entering-commands.txt)
 * [Navigating the File System](labs/01/file-system.html)
+	* [__Lab__ - Navigating the File System](labs/01/lab-file-system.txt)
+* [Submitting Assignments](module-1-submission.html)
 	* [__Lab__ - Navigating the File System](labs/01/lab-file-system.txt)
 </td>
 </tr>
