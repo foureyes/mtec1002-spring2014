@@ -6,7 +6,7 @@ title: Media Tech Skill 2 - MTEC 1002 - Spring 2014
 
 Submitting Assignments for Module 1
 ====
-* Create an account on [github.com](github.com)
+* Create an account on [github.com](http://github.com)
 * Use your __first initial and last name as your username__ 
 	* I __will not accept assignments from usernames not on my class roster__
 	* If there is a duplicate name, append a number to the end of your user name
