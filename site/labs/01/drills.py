@@ -11,11 +11,11 @@ commands.append({
 })
 
 commands.append({
-	'specifies the location of a file':'pathname',
-	'the character that\'s the path separator on OSX':'/ (forward slash)',
-	'absolute path to your Desktop':'/Users/username/Desktop',
-	'absolute path to your home directory':'/Users/username',
-	'the directory where all disks attached to your computer is stored':'/Volumes',
+	'pathname':'definition is: "specifies the location of a file"',
+	'/ (forward slash)':'the character that\'s the path separator on OSX',
+	'/Users/student/Desktop':'the absolute path to the student user\'s Desktop',
+	'/Users/students':'absolute path to the student user\'s home directory',
+	'/Volumes':'the directory where all disks attached to your computer is stored',
 	'pwd':'print working directory',
 	'hostname':'display name of computer',
 	'mkdir':'make a directory', 
