@@ -8,6 +8,11 @@ commands.append({
 	'<TAB><TAB>': 'auto complete *all* potential commands and directory / files',
 	'<UP>': 'show previous command',
 	'<DOWN>': 'show next command'
+	'pathname':'definition is: "specifies the location of a file"',
+	'/ (forward slash)':'the character that\'s the path separator on OSX',
+	'/Users/student/Desktop':'the absolute path to the student user\'s Desktop',
+	'/Users/students':'absolute path to the student user\'s home directory',
+	'/Volumes':'the directory where all disks attached to your computer is stored',
 	'pwd':'print working directory',
 	'hostname':'display name of computer',
 	'mkdir':'make a directory', 
@@ -26,6 +31,7 @@ commands.append({
 
 commands.append({
 	'echo':'print to display',
+	'control-c':'interrupt or cancel a running command',
 	'clear':'clear screen',
 	'curl':'download file from url, output to display',
 	'curl -o':'download file from url, output to file',

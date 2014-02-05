@@ -9,14 +9,6 @@ title: MTEC1002 - About Lab #2
 </section>
 
 <section markdown="block">
-### Lab Submission
-
-* working out blackboard
-* should have grades for lab #1 this weekend
-* email again, for now!
-</section>
-
-<section markdown="block">
 ### Topics
 
 * review
@@ -24,3 +16,11 @@ title: MTEC1002 - About Lab #2
 * output, download, uncompress
 * working with files
 </section>
+
+<section markdown="block">
+### Lab Submission
+
+* submit labs through github
+* grades will be posted on elackboard
+</section>
+

@@ -1,4 +1,4 @@
-Lab - Navigating the File System
+Lab - Output, Download and Uncompress
 ==========
 Follow the instructions line-by-line.  
 
@@ -34,7 +34,7 @@ Copy and paste the output below.
 ==========
 3. Type:
 
-$ echo hello there!
+$ echo good mornin'
 
 Copy and paste the output below.
 ----------
@@ -42,9 +42,17 @@ Copy and paste the output below.
 
 
 ==========
-4. Uh-oh... there was an error.  Turns out you have to put that in single quotes because of the special character, !.
+4. Uh-oh... we're stuck!
 
-$ echo 'hello there!'
+Type [CTRL + C] to get your prompt back.
+----------
+
+
+
+==========
+5. Say good mornin' again with quotes!
+
+$ echo "good mornin'"
 
 Copy and paste the output below.
 ----------
@@ -52,22 +60,11 @@ Copy and paste the output below.
 
 
 ==========
-5. Do it again!
-
-$ echo 'hello there!!!!!!!!!'
-
-Copy and paste the output below.
-----------
-
-
-
-==========
-6. There are some other symbols that have special meanings if you don't quote them.  Try a few different ones... some cause errors, some do something entirely different.  Try * and > .
+6. There are some other symbols that have special meanings if you don't quote them.  For example, > brings up a different prompt.  Try *.
 
 $ echo *
-$ echo >
 
-What happens for each?
+What happens?
 ----------
 
 
@@ -81,10 +78,10 @@ Write the command that you used below:
 
 
 ==========
-We're going to practice downloading files from a web site... and use that to get the lab materials.
+We're going to practice downloading files from a web site.  We'll use this practice to download more lab materials!
 ==========
 ==========
-8. Now let's try downloading a file from a web site.
+8. Now let's try downloading a file from a web site.  Type in the URL *exactly* as is: google.com.
 
 $ curl google.com
 
@@ -94,7 +91,7 @@ Copy and paste the output below.
 
 
 ==========
-9. And again (this time using the url that's specified above)
+9. And again.  This time, add www to the URL.
 
 $ curl www.google.com
 
@@ -104,8 +101,7 @@ Copy and paste the output below, but not the whole thing!  Just copy up to the p
 
 
 ==========
-10. That's great, but what if I want to save the file?  What flag/option and option argument would I use to download the page to a file called google.html?  Run it...
-
+10. That's great, but what if I want to save the file?  What flag/option and option argument would I use to download the page to a file called google.html?  Run it to download the URL www.google.com.
 
 Write the command you used below.  Also copy and paste the output below.
 ----------
@@ -131,9 +127,13 @@ Write the command that you used to change to your home directory.  If you were a
 ==========
 13. So... the lab materials are located at this url:
 
-http://foureyes.github.com/mtec1002/labs/02/mtec1002-lab-02.zip
+http://foureyes.github.io/mtec1002-spring2014/labs/02/mtec1002-lab-02.zip
 
-Download the file to a file called mtec1002-lab-02.zip using the commandline.  Use ls to verify that it downloaded.
+Download the file using curl... to a file called mtec1002-lab-02.zip using the commandline.  
+
+REMEMBER to use the -o flag, and follow it with a .zip extension! 
+
+Use ls to verify that it downloaded.
 
 Write down the command that you used to download the file below.  Additionally, write the output of the command below.
 ----------
@@ -246,10 +246,15 @@ List the files.  Copy and paste the output below (the folder, stuff, should be t
 24. Go back to your home directory
 [No output]
 ----------
+
+
+
 ==========
 25. Download and uncompress this file using curl and tar -xvf in your home directory:
 
-http://foureyes.github.com/mtec1002/labs/02/secret.tar.gz
+http://foureyes.github.io/mtec1002/labs/02/secret.tar.gz
+
+REMEMBER to use the -o flag and specifiy a filenmae that ends in .tar.gz
 
 Write out the commands that you used to do this.
 ----------
@@ -257,5 +262,5 @@ Write out the commands that you used to do this.
 
 
 ==========
-26. How many files were in the archive.  What were their names.  Write out your answers below.
+26. How many files were in the archive.  What were their names?  Write out your answers below.
 ----------

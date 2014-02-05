@@ -10,8 +10,8 @@ Schedule
 <thead>
 <th>Class #</th>
 <th>Date</th>
-<th>Topics</th>
-<th>Materials</th>
+<th style="width:25%">Topics</th>
+<th style="width:50%">Materials</th>
 </thead>
 <tbody>
 
@@ -26,14 +26,19 @@ Commandline #1
 * navigating the file system
 </td>
 <td markdown="block">
-* [Intro](labs/01/intro.html)
-* [About the Command Line Module](labs/01/command-line.html)
-* [Entering Commands](labs/01/entering-commands.html)
-	* [__Lab__ - Entering Commands](labs/01/lab-entering-commands.txt)
-* [Navigating the File System](labs/01/file-system.html)
-	* [__Lab__ - Navigating the File System](labs/01/lab-file-system.txt)
-* [Submitting Assignments](module-1-submission.html)
-	* [__Lab__ - Navigating the File System](labs/01/lab-file-system.txt)
+
+[Intro](labs/01/intro.html)
+
+[About the Command Line Module](labs/01/command-line.html)
+
+1. __Entering Commands__
+	* [Slides](labs/01/entering-commands.html)
+	* [Lab #1, __Part 1__](labs/01/lab-01-part-01-entering-commands.txt)
+2. __Navigating the File System__
+	* [Slides](labs/01/file-system.html)
+	* [Lab #1, __Part 2__](labs/01/lab-01-part-02-file-system.txt)
+3. __Submitting Assignments__
+	* [Instructions](module-1-submission.html)
 </td>
 </tr>
 
@@ -50,11 +55,18 @@ Commandline #2
 </td>
 
 <td markdown="block">
-* [About Lab #2](labs/02/meta.html)
-* [Review and Paths](labs/02/paths-review.html)
-	* [__Lab__ - Paths and Review](labs/02/paths-review.txt)
-* [Output, Download, Uncompress](labs/02/output-download-uncompress.html)
-	* [__Lab__ - Output, Download, Uncompress](labs/02/output-download-uncompress.txt)
+
+[About Lab #2](labs/02/meta.html)
+
+1. __Review and Paths__: 
+	* [Slides](labs/02/paths-review.html)
+	* [Lab #2, __Part 1__](labs/02/lab-02-part-01-paths-review.txt)
+2. __Output, Download, and Uncompress__: 
+	* [Slides](labs/02/output-download-uncompress.html)
+	* [Lab #2, __Part 2__](labs/02/lab-02-part-02-output-download-uncompress.txt)
+3. __Working With Files__: 
+	* [Slides](labs/02/working-with-files.html)
+	* [Lab #2, __Part 3__](labs/02/lab-02-part-03-working-with-files.txt)
 </td>
 </tr>
 
@@ -72,8 +84,6 @@ Commandline #3
 {% comment %}
 * [Review and Downloading Files](labs/03/review.html)
 	* [__Lab__ - Review and Downloading Files](labs/03/review.txt)
-* [Working With Files](labs/03/working-with-files.html)
-	* [__Lab__ - Working With Files](labs/03/working-with-files.txt)
 * [File Permissions, File Editing, Date and Time](labs/03/permissions-editing-date-time.html)
 	* [__Lab__ - File Permissions, File Editing, Date and Time](labs/03/permissions-editing-date-time.txt)
 {% endcomment %}

@@ -99,7 +99,7 @@ table {
 }
 
 td {
-	padding:0.5em 2em 0.5em 2em;
+	padding:0.5em 0.5em 0.5em 0.5em;
 	border: 1px solid #000;
 	vertical-align:top;
 }
@@ -125,4 +125,8 @@ td {
 #bd .bumped {
 	/* width of nav (38) + 30 + content's margin (50) */
 	margin-top: 128px;
+}
+
+ul {
+	padding-left:1em;
 }

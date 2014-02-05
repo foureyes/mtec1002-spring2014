@@ -13,7 +13,9 @@ title: MTEC1002 - Working With Files
 
 __Create a new file or change the modified date &rarr;.__
 
+{% highlight bash %}
 touch filename.txt
+{% endhighlight %}
 </section>
 
 <section markdown="block">
@@ -25,7 +27,13 @@ __Copy file to a path&rarr;__
 
 Think: _copy_.
 
+{% highlight bash %}
 cp filename1.txt filename2.txt
+
+# use -r to copy recursively (for example, directories)
+
+cp -r dir1 dir2
+{% endhighlight %}
 </section>
 
 <section markdown="block">
@@ -34,7 +42,13 @@ __Move file to a different location. &rarr;__
 
 Think: _move_.
 
+{% highlight bash %}
+# renaming 
 mv filename1.txt filename2.txt
+
+# moving
+mv filename.txt dir
+{% endhighlight %}
 </section>
 
 <section markdown="block">
@@ -42,7 +56,15 @@ mv filename1.txt filename2.txt
 
 __Show the contents of a file with pagination. &rarr;__
 
+{% highlight bash %}
+
 less filename1.txt
+
+# use <SPACE> to page down
+# use <B> to page up
+# use <UP>,<DOWN> to navigate by line
+# use <Q> to quit
+{% endhighlight %}
 </section>
 
 <section markdown="block">
@@ -50,7 +72,9 @@ less filename1.txt
 
 __Show the contents of a file with pagination. &rarr;__
 
+{% highlight bash %}
 more filename1.txt
+{% endhighlight %}
 </section>
 
 <section markdown="block">
@@ -58,7 +82,9 @@ more filename1.txt
 
 __Show all of the contents of a file &rarr;__
 
+{% highlight bash %}
 cat filename1.txt
+{% endhighlight %}
 </section>
 
 <section markdown="block">
@@ -67,7 +93,9 @@ cat filename1.txt
 __Show the contents of the start of a file. &rarr;__
 
 
+{% highlight bash %}
 head filename1.txt
+{% endhighlight %}
 </section>
 
 <section markdown="block">
@@ -76,7 +104,13 @@ head filename1.txt
 __Show the contents of the end of a file. &rarr;__
 
 
+{% highlight bash %}
 tail filename1.txt
+
+# show changes realtime!
+
+tail -f filename.txt
+{% endhighlight %}
 </section>
 
 <section markdown="block">
@@ -86,11 +120,31 @@ __Remove a file. &rarr;__
 
 Think: _remove_
 
+{% highlight bash %}
 rm filename1.txt
 
-also...
+# also... to remove everything recursively (and ignore
+# confirmation)... use this (be careful with it!)
 
 rm -rf filename1.txt
+{% endhighlight %}
+</section>
+
+<section markdown="block">
+### wc
+
+__Count the number of words or files in a file. &rarr;__
+
+Think: _word count_
+
+{% highlight bash %}
+# count the number of words in a file
+wc filename.txt
+
+# count the number of lines in a file
+wc -l filename.txt
+{% endhighlight %}
+
 </section>
 
 
