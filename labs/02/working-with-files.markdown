@@ -164,7 +164,7 @@ We'll do this together, then try downloading it yourself:
 <section markdown="block">
 ### __Lab__
 
-[Working With Files](working-with-files.txt)
+[Working With Files](lab-02-part-03-working-with-files.txt)
 
 * Type each command (with arguments and flags) exactly
 * Only press &lt;ENTER&gt; when instructed...

@@ -39,6 +39,7 @@ Commandline #1
 	* [Lab #1, __Part 2__](labs/01/lab-01-part-02-file-system.txt)
 3. __Submitting Assignments__
 	* [Instructions](module-1-submission.html)
+
 </td>
 </tr>
 
@@ -67,6 +68,13 @@ Commandline #2
 3. __Working With Files__: 
 	* [Slides](labs/02/working-with-files.html)
 	* [Lab #2, __Part 3__](labs/02/lab-02-part-03-working-with-files.txt)
+4. __Submitting Your Assignment__:
+	1. login to [github.com](http://github.com)
+	2. go to the lab 2 on github: [https://github.com/jversoza/lab_02_commandline_02](https://github.com/jversoza/lab_02_commandline_02)
+	3. click on the fork button
+	4. edit each text file by clicking on the appropriate file and clicking edit
+	5. commit each text file when you're done editing
+	6. you should have exactly 3 files in your version of the lab 2 repository
 </td>
 </tr>
 
