@@ -184,25 +184,13 @@ Copy and paste the output below.
 
 $ tar -cvf stuff.tar stuff
 
-List the files in the directory you're currently in (which should be home).  
-
 Copy and paste the output below.
 ----------
 
 
 
 ==========
-19. Go up one directory back into your home directory.  Run the following commands exactly to create a compressed archive of the stuff folder.
-
-$ tar -cvf stuff.tar stuff
-
-Copy and paste the output below.
-----------
-
-
-
-==========
-20. List the files in the directory you're currently in (which should be home).  
+19. List the files in the directory you're currently in (which should be home).  
 
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
@@ -210,7 +198,7 @@ Copy and paste the output below. (It should contain stuff.tar)
 
 
 ==========
-21. Now compress it!  Type:
+20. Now compress it!  Type:
 
 gzip stuff.tar
 
@@ -220,7 +208,7 @@ List your files again.... you should have a new file with a .gz extension.  Copy
 
 
 ==========
-22. Move stuff.tar.gz into the lab directory that we downloaded.  We didn't learn this command yet, so just type in exactly as is:
+21. Move stuff.tar.gz into the lab directory that we downloaded.  We didn't learn this command yet, so just type in exactly as is:
 
 $ mv stuff.tar.gz mtec1002-lab-02 
 
@@ -233,7 +221,7 @@ List the files.  Copy and paste the output below (stuff.tar.gz should be there).
 
 
 ==========
-23. You should be in the lab directory.  Let's uncompress the file.
+22. You should be in the lab directory.  Let's uncompress the file.
 
 $ tar -xvf stuff.tar.gz
 
@@ -243,14 +231,14 @@ List the files.  Copy and paste the output below (the folder, stuff, should be t
 
 
 ==========
-24. Go back to your home directory
+23. Go back to your home directory
 [No output]
 ----------
 
 
 
 ==========
-25. Download and uncompress this file using curl and tar -xvf in your home directory:
+24. Download and uncompress this file using curl and tar -xvf in your home directory:
 
 http://foureyes.github.io/mtec1002/labs/02/secret.tar.gz
 
@@ -262,5 +250,5 @@ Write out the commands that you used to do this.
 
 
 ==========
-26. How many files were in the archive.  What were their names?  Write out your answers below.
+25. How many files were in the archive.  What were their names?  Write out your answers below.
 ----------

@@ -7,7 +7,7 @@ commands.append({
 	'<TAB>': 'auto complete command and directory / files',
 	'<TAB><TAB>': 'auto complete *all* potential commands and directory / files',
 	'<UP>': 'show previous command',
-	'<DOWN>': 'show next command'
+	'<DOWN>': 'show next command',
 	'pathname':'definition is: "specifies the location of a file"',
 	'/ (forward slash)':'the character that\'s the path separator on OSX',
 	'/Users/student/Desktop':'the absolute path to the student user\'s Desktop',
@@ -36,9 +36,9 @@ commands.append({
 	'curl':'download file from url, output to display',
 	'curl -o':'download file from url, output to file',
 	'unzip':'uncompress a file (.zip)',
-	'tar -xvf', 'extract and uncompress an archived and compressed file (.tar.gz)',
-	'tar -cvf', 'archive directories and files',
-	'gzip', 'compress a file',
+	'tar -xvf': 'extract and uncompress an archived and compressed file (.tar.gz)',
+	'tar -cvf': 'archive directories and files',
+	'gzip': 'compress a file',
 })
 
 commands.append({
