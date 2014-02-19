@@ -51,8 +51,8 @@ commands.append({
 	'rm':'remove file or directory',
 	'tail':'show the contents of the end of a file',
 	'head':'show the contents of the start of a file',
-	'wc':'word count'
-	'*':'match anything'
+	'wc':'word count',
+	'*':'match anything',
 	'*.gif':'match all gifs'
 })
 
