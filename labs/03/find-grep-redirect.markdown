@@ -11,12 +11,16 @@ title: MTEC1002 - Review
 <section markdown="block">
 ### Find, Grep, Redirect, etc.
 
-Using the online book, Learn Shell the Hard Way, __read the following chapters and try the osx/linux examples (they start with $, not &gt;)__ &rarr;
-
-* create 3 files, ex12.txt, ex13.txt, ex14.txt ... 
+* using the online book, Learn Shell the Hard Way, __read the chapters on find, grep and redirection and try the osx/linux examples (they start with $, not &gt;)__ &rarr;
+* before reading the chapters, create 3 files, ex12.txt, ex13.txt, ex14.txt in your home folder: 
 	* ex12.txt should contain the number 1 through 5 each on a new line
 	* ex13.txt should contain "foo", "bar", "baz" each on a new line
 	* ex14.txt should contain "hello"
+</section>
+
+<section markdown="block">
+### Readings - Find, Grep, Redirect, etc.
+
 * [pipes and redirection](http://cli.learncodethehardway.org/book/ex15.html)
 * [wildcard matching](http://cli.learncodethehardway.org/book/ex16.html)
 * [finding files](http://cli.learncodethehardway.org/book/ex17.html)
