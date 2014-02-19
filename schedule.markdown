@@ -98,7 +98,7 @@ Commandline #3
 
 __Advanced Topics: Finding Files, Finding Text, Redirection__
 
-[Slides](labs/03/lab-03-advanced-find-grep-redirect.markdown)
+[Slides](labs/03/find-grep-redirect.html)
 [Lab](labs/03/lab-03-advanced-find-grep-redirect.txt)
 
 __Submitting Your Assignment__
