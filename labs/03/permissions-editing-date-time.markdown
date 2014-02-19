@@ -25,7 +25,7 @@ drwxr-xr-x   5 joe  staff    170 Aug 10  2012 VirtualBox VMs
 <section markdown="block">
 ### permissions continued
 
-I can get perms for a single file by using ls -l on a single file...
+I can get permissions for a single file by using ls -l on a single file...
 
 {% highlight bash %}
 $ ls -l filename.txt 

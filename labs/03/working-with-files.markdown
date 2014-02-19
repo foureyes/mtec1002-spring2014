@@ -154,6 +154,25 @@ rm filename1.txt
 rm -rf filename1.txt
 {% endhighlight %}
 </section>
+<section markdown="block">
+### Wildcard Matching
+
+* you can work on a set of files by using wildcard matching
+* the \* (asterisk) represents _anything_
+* so, \*.gif represents all files with a .gif extension
+* you can use wildcard matching with some of the commands that we've seen
+
+{% highlight bash %}
+# copy all gifs into the archive folder
+cp *.gif archive
+
+# move all gifs into the archive folder
+mv *.gif archive
+
+{% endhighlight %}
+
+
+</section>
 
 <section markdown="block">
 ### wc

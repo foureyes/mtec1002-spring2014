@@ -79,9 +79,9 @@ What command did you use to do this?
 
 
 ==========
-9. In your file, write the following commands:
+9. In your file, write the commands to do the falling
 
-a. create a directory called backup in your home directory... use the -p flag!
+a. create a directory called backup 
 b. copy all of the files txt files in the current directory to the backup directory (use *.txt)
 c. print out "I'm done backing up"
 
@@ -93,6 +93,9 @@ Write out the code in your file below...
 ==========
 10. Create a directory in your home called test
 ----------
+
+
+
 ==========
 11. Go into that directory and create two empty files... 1.txt and 2.txt
 
