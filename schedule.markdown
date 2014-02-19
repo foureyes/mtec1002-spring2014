@@ -65,10 +65,7 @@ Commandline #2
 2. __Output, Download, and Uncompress__: 
 	* [Slides](labs/02/output-download-uncompress.html)
 	* [Lab #2, __Part 2__](labs/02/lab-02-part-02-output-download-uncompress.txt)
-3. __Working With Files__: 
-	* [Slides](labs/02/working-with-files.html)
-	* [Lab #2, __Part 3__](labs/02/lab-02-part-03-working-with-files.txt)
-4. __Submitting Your Assignment__:
+3. __Submitting Your Assignment__:
 	1. login to [github.com](http://github.com)
 	2. go to the lab 2 on github: [https://github.com/jversoza/lab_02_commandline_02](https://github.com/jversoza/lab_02_commandline_02)
 	3. click on the fork button
@@ -89,12 +86,29 @@ Commandline #3
 * file permissions, date and time, editing files
 </td>
 <td markdown="block">
-{% comment %}
-* [Review and Downloading Files](labs/03/review.html)
-	* [__Lab__ - Review and Downloading Files](labs/03/review.txt)
-* [File Permissions, File Editing, Date and Time](labs/03/permissions-editing-date-time.html)
-	* [__Lab__ - File Permissions, File Editing, Date and Time](labs/03/permissions-editing-date-time.txt)
-{% endcomment %}
+1. __Review and Downloading File__
+	* [Slides](labs/03/review.html)
+	* [Lab #3 __Part 1__](labs/03/lab-03-part-01-review.txt)
+2. __Working With Files__: 
+	* [Slides](labs/03/working-with-files.html)
+	* [Lab #3, __Part 2__](labs/03/lab-03-part-02-working-with-files.txt)
+3. __File Permissions, File Editing, Date and Time__ 
+	* [Slides](labs/03/permissions-editing-date-time.html)
+	* [Lab #3 __Part 3__](labs/03/lab-03-part-03-permissions-editing-date-time.txt)
+
+__Advanced Topics: Finding Files, Finding Text, Redirection__
+
+[Slides](labs/03/lab-03-advanced-find-grep-redirect.markdown)
+[Lab](labs/03/lab-03-advanced-find-grep-redirect.txt)
+
+__Submitting Your Assignment__
+
+1. login to [github.com](http://github.com)
+2. go to the __lab 3__ on github: [https://github.com/jversoza/lab_03_commandline_03](https://github.com/jversoza/lab_03_commandline_03)
+3. click on the fork button
+4. edit each text file by clicking on the appropriate file and clicking edit
+5. commit each text file when you're done editing
+6. you should have exactly 3 files in your version of the lab 2 repository
 </td>
 </tr>
 

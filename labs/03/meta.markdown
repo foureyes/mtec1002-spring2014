@@ -11,7 +11,7 @@ title: MTEC1002 - About Lab #3
 <section markdown="block">
 ### Last Week
 
-__What did we go over last week?__
+__What did we go over in our last class?__
 
 <div class="incremental" markdown="block">
 * absolute and relative paths
@@ -24,16 +24,17 @@ __What did we go over last week?__
 <section markdown="block">
 ### This Week
 
+* Review
 * Working with files
 * Permissions
-* Shell scripts
+* (Advanced/Optional) - Finding Text, Finding Files, Redirection
 </section>
 
 
 <section markdown="block">
 ### __Activity__: Everything We've Learned So Far
 
-Entering commands _flash cards_ x 10 (use sets 1 and 2)
+Entering commands _flash cards_ x 3 (use sets 1 and 2)
 
 We'll do this together, then try downloading it yourself:
 

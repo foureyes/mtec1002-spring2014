@@ -11,12 +11,11 @@ title: MTEC1002 - Review
 <section markdown="block">
 ### Last Week
 
-__What did we go over last week?__
+__What did we go in our last class?__
 
 <div class="incremental" markdown="block">
 * paths - absolute and relative
 * input and output, downloading files, archiving/compressing and extracting/uncompressing
-* briefly... working with files
 </div>
 </section>
 
@@ -68,7 +67,8 @@ We didn't explicitly mention this in the last class (though some of you encounte
 
 * the __root directory__ is not writable by the lab computer default user account
 * consequently, if you're in root, commands like mkdir, touch, etc... should fail
-* let's try this out &rarr;
+* __let's try this out__ &rarr;
+* __(how do I get to root again?)__ &rarr;
 </section>
 
 <section markdown="block">
@@ -100,37 +100,51 @@ __What's a relative path?__
 <section markdown="block">
 ### Relative and Absolute
 
-__Create the following set of directories in your home folder__
+__Tell me how to create these directories in my home folder__ &rarr;
 
-* a director called foo
-* within that, two directories called bar and baz
-* and finally, in baz, create a directory called qux
+* a directory called myprojects
+* within that, two directories called lab1 and lab2
+* and finally, in lab1, create a directory called output
 
 This should result in:
 
-* foo
-* foo/bar
-* foo/baz
-* foo/baz/qux
+* myprojects
+* myprojects/lab1
+* myprojects/lab2
+* myprojects/lab1/output
 </section>
 
 <section markdown="block">
 
 ### Relative and Absolute Path Questions
 
-1. From /Volumes, change to the bar directory that you just made in one command
-2. From your home directory, what's the relative path to qux?
-3. From your home directory, what's the absolute path to qux?
-4. From qux, what's the relative path to bar?
-5. From qux, what's the absolute path to bar?
-6. From bar, what's the relative path to qux?
-7. From bar, what's the absolute path to qux?
+1. From /Volumes, change to the lab1 directory that was just created
+2. From home directory, what's the __relative__ path to output?
+3. From home directory, what's the __absolute__ path to output?
+4. From output, what's the __relative__ path to lab2?
+5. From output, what's the __absolute__ path to lab2?
+6. From lab2, what's the relative path to output?
+7. From lab2, what's the absolute path to output?
+</section>
+
+<section markdown="block">
+
+### Relative and Absolute Path Questions
+
+1. In /Volumes: __cd ~/myprojects/lab1__
+2. In home: __myprojects/lab1/output__
+3. In home: __/Users/professor/myprojects/lab1/output__
+4. In myprojects/lab1/output: __../../lab2__
+5. In myprojects/lab1/output: __/Users/professor/myprojects/lab2__
+6. In lab2: __../lab1/output__
+7. In lab2: __/Users/professor/myprojects/lab1/output__
+
 </section>
 
 <section markdown="block">
 ### Reviewing input/output Commands
 
-* __How do I print/output stuff to the display? &rarr;__
+* __How do I print/output text to the screen? &rarr;__
 * __How do I clean up / remove the text from the screen? &rarr;__
 
 <div class="incremental" markdown="block">
@@ -193,7 +207,7 @@ This should result in:
 <section markdown="block">
 ### __Activity__: Drills!
 
-Entering commands _flash cards_ x 10 (use set 2)
+Entering commands _flash cards_ x 3 (use set 2)
 
 We'll do this together, then try downloading it yourself:
 
@@ -221,7 +235,7 @@ We'll do this together, then try downloading it yourself:
 <section markdown="block">
 ### __Lab__
 
-[Review](review.txt)
+[Review](lab-03-part-01-review.txt)
 
 * Type each command (with arguments and flags) exactly
 * Only press &lt;ENTER&gt; when instructed...
@@ -233,7 +247,7 @@ We'll do this together, then try downloading it yourself:
 <section markdown="block">
 ### __Activity__: Everything We've Learned So Far
 
-Entering commands _flash cards_ x 10 (use sets 1 and 2)
+Entering commands _flash cards_ x 3 (use sets 1 and 2)
 
 We'll do this together, then try downloading it yourself:
 

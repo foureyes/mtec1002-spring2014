@@ -137,7 +137,7 @@ cal 2013
 <section markdown="block">
 ### __Activity__: Drills!
 
-Entering commands _flash cards_ x 10 (use set 4)
+Entering commands _flash cards_ x 3 (use set 4)
 
 We'll do this together, then try downloading it yourself:
 
@@ -150,7 +150,7 @@ We'll do this together, then try downloading it yourself:
 <section markdown="block">
 ### __Lab__
 
-[Permissions, Editing, Date, Time](permissions-editing-date-time.txt)
+[Permissions, Editing, Date, Time](lab-03-part-03-permissions-editing-date-time.txt)
 
 * Type each command (with arguments and flags) exactly
 * Only press &lt;ENTER&gt; when instructed...
@@ -162,7 +162,7 @@ We'll do this together, then try downloading it yourself:
 <section markdown="block">
 ### __Activity__: Drills!
 
-Entering commands _flash cards_ x 10 (use set 1234)
+Entering commands _flash cards_ x 3 (use set 1234)
 
 We'll do this together, then try downloading it yourself:
 

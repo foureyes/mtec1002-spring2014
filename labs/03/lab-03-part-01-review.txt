@@ -57,9 +57,11 @@ $ rm -rf mtec1002-labs-02
 ==========
 6.  A compressed archive (.tar.gz) of the lab files can be found at this url: 
 
-http://foureyes.github.com/mtec1002/labs/03/mtec1002-lab-03.tar.gz
+http://foureyes.github.io/mtec1002-spring2014/labs/03/mtec1002-lab-03.tar.gz
 
 Download this file to your home directory into a file called mtec1002-lab-03.tar.gz.   Use a command that we learned to do this.
+
+This command should have a *flag* to specify the output file.  MAKE SURE TO NAME YOUR OUTPUT FILE: mtec1002-lab-03.tar.gz
 
 Write the command(s) that you used to download this file - as well as its output - below:
 ----------
@@ -75,7 +77,14 @@ Write the command(s) that you used to do this - as well as its output - below:
 
 
 ==========
-8.  You should now have a a directory called mtec1002-lab-03 in your home directory.  Verify that this directory exists.
+8.  You should now have a directory called mtec1002-lab-03 in your home directory.  Verify that this directory exists.
+
+If the directory does not exist:
+
+a. go to your home folder
+b. go back to step 6
+
+Otherwise...
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
@@ -108,6 +117,27 @@ Write the command(s) that you used to do this - as well as its output - below:
 
 ==========
 12.  Again, go back to your home directory.  Now... go to the science-fiction directory using an absolute path!  Verify that you're in the right directory using pwd.
+
+Write the command(s) that you used to do this below:
+----------
+
+==========
+OPTIONAL
+13. Immediately change back to the mtec1002-lab-03 folder with a single command using a *relative* path.
+
+Write the command(s) that you used to do this below:
+----------
+
+==========
+OPTIONAL
+14. Find out what the most recently modified directory is in mtec1002 (there are only 3 to choose from)?  How would you find this out?  Hint: perhaps using something to show the modified date... and sort it by time.
+
+Write the command(s) that you used to do this below:
+----------
+
+==========
+OPTIONAL
+15. Create a compressed archive of the logs folder - that is... take the contents of logs and create a single archive (.tar), and compress (.gz)
 
 Write the command(s) that you used to do this below:
 ----------

@@ -7,6 +7,8 @@ nav-state: index
 
 Course Information
 ====
+This class will cover topics related to tools, skills, and best practices that support programming.  Topics include source code management, basic front-end technologies (HTML/CSS, JavaScript), Unix command line tools, and light server administration.
+
 * __Course Number:__ {{site.course_number}}
 * __Semester:__ {{site.course_semester}}
 * __Section:__ 1931
