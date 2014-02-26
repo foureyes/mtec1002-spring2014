@@ -1,0 +1,112 @@
+Lab - Odds and Ends
+==========
+Follow the instructions line-by-line.  
+
+* Type in the commands as is, but ignore the beginning prompt.  
+* Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.  
+* "No output" or "nothing happens" are valid answers to any of the questions.
+==========
+
+==========
+1. Open a new terminal window.
+[NO OUTPUT]
+----------
+==========
+2. In your home directory, start editing a text file called temp.txt using nano.
+
+Write the command you used to do this below.
+----------
+
+
+
+==========
+3. Open another terminal
+
+[NO OUTPUT]
+----------
+==========
+3. In this terminal, show (list) all running processes / programs.
+
+Write the command that you used to do this, and the last two lines of output.
+----------
+
+
+==========
+4. Run the same command, but look for a specific process.  (It's the version of the command that has | grep ...).  Look for the program that you started to edit a file, nano.
+
+Write the command that you used to do this, and all of the output.
+----------
+
+
+==========
+5. Go to your other terminal window.  What happened to nano?  What was the message on the screen?
+
+----------
+
+
+==========
+6. Close the terminal window that nano was in, and go back to the terminal where you ran ps.
+
+[NO OUTPUT]
+----------
+
+
+==========
+7. Now... using nano, create a shell script in your directory called hello.sh.  It should contain the following text exactly:
+
+#!/bin/bash
+echo "hi there!"
+
+Quit and save when you're done.
+
+What command did you use to do this?
+----------
+
+
+==========
+8. Change the permissions (modify) on hello.sh so that the *user* (u) can *execute* (x) it: 
+
+Write the commands that you used to do this below.
+----------
+
+
+==========
+9. Run your script.
+
+How did you do this?  What was the output?
+----------
+
+
+==========
+10. Change to the root directory.  Try running your script again.  What was the output (if there's an error, write it out)?
+----------
+
+
+==========
+11. Now trying using the full, absolute path to your script (that is, starting with /...).  What did you write in?  What did it do?
+----------
+
+
+==========
+12.  Go back to the directory that your hello.sh script was in.  What command did you use to change to this directory? 
+----------
+
+
+==========
+13. Type in the following command:
+
+echo $PATH
+
+Write down the output of this command
+----------
+
+
+==========
+14. Type in the following command to show all environment variables:
+
+env
+
+Write down the last two lines of output for this command
+----------
+
+

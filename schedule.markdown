@@ -130,7 +130,7 @@ Version Control #1
 * [Changing and Saving Files](labs/04/changing-files.html)
 	* [__Lab #4, Part 2__ -  Changing Files](labs/04/lab-04-git-part-02.html)
 * [Odds and Ends, Shell Scripting Revisited](labs/05/shell-scripting.html) 
-	* [__Lab #4, Part 3__ - Shell Scripting](labs/05/lab-04-git-part-03.html)
+	* [__Lab #4, Part 3__ - Shell Scripting](labs/05/lab-04-git-part-03.html) (right-click and save-as)
 
 
 <!--
