@@ -123,14 +123,119 @@ Version Control #1
 </td>
 <td markdown="block">
 
-{% comment %}
 * [About Lab #4](labs/04/meta.html)
-* [About Processing](labs/04/processing.html)
-	* [__Lab__ Download Processing](labs/04/download_processing.html)
-* [Drawing](labs/04/drawing.html)
-	* [__Lab__ Draw a Scene](labs/04/draw_stuff.html)
-* [Version Control](labs/04/git.html)
-{% endcomment %}
+* [Version Control](labs/04/version-control.html)
+* [Creating Repositories](labs/04/creating-repositories.html)
+	* [__Lab #4, Part 1__ - Creating Repositories](labs/04/lab-04-git-part-01.html)
+* [Changing and Saving Files](labs/04/changing-files.html)
+	* [__Lab #4, Part 2__ -  Changing Files](labs/04/lab-04-git-part-02.html)
+
+<!--
+LECTURE - brief intro to version control
+=====
+* intro to version control
+* submitting assignments
+* how do you save files
+* what's a repository?
+* multiple repositories
+* git is the version control system
+* local repository
+* github offers hosting
+* three trees
+	* committed
+	* staging
+		* everything you want to save
+	* working copy
+		* changes go here
+* commands
+	* create a remote repo on github
+	* git config
+	* create a local repo
+	* hooking the two up to sync
+	* status
+	* stage by using add
+	* save by using commit
+	* send to other repository push
+	* history by using log 
+	* status to tell if something is staged oir not
+
+DEMO - creating and hooking up
+=====
+* creating repository on github
+* creating a local respository
+* hooking the two up
+* show that it appears in github
+* making changes
+* log
+* status
+* add
+* commit
+* push
+* show that a files is there
+* making changes
+* log
+* status
+* add
+* commit
+* push
+* show that a files is there
+
+FOLLOW ALONG - submitting assignments 
+=====
+* creating a remote repository and hooking it up to a local repository
+	* create repo remotely with curl
+	* git init or git clone?
+	* remote add origin master
+* test
+	* create a file
+	* add
+	* then commit
+	* push origin master
+
+LECTURE - let's write some shell scripts and save them
+=====
+* review
+	* nano
+	* chmod u+x
+		* addendum... use #'s ... like 777
+	* cd
+	* ls, ls -a, ls -l
+	* touch
+	* cat
+	* curl
+* review / shell script
+	* nano
+	* chmod u+x
+		* addendum... use #'s ... like 777
+	* execute by using ./
+* talk about sh
+* use bin/bash
+* for loop
+
+LAB
+=====
+* follow along - write a script to ...
+	* for loop that counts from 1 through 10
+* lab - write a second script
+	* that creates a file named one through 10
+		* create a dir
+		* write shell script to create a bunch of files
+	* optional
+		* go back up one dir
+		* rmdir
+		* read about executing commands with backtick
+		* or do the same using cat and redirect to create files with content
+* lab - show twice no loop
+* lab - show twice with loop, multiple arguments
+* copy-with-date - copy file add date
+	
+
+* environment variables
+	* where did all of those commands come from?
+
+finally ... a quick intro to javascript
+=====
+-->
 </td>
 
 </tr>

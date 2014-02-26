@@ -11,38 +11,45 @@ title: MTEC1002 - About Lab #4
 </section>
 
 <section markdown="block">
+### Good News Everyone!
+
+<aside>That usually means not-so-good news</aside>
+
+<div markdown="block" class="img-container">
+![Good News!](../../resources/img/farnsworth.png)
+</div>
+</section>
+
+<section markdown="block">
 ### Our Next Module!
 
-* __A _Whirlwind_ Tour of Processing__
-* and... __VERSION CONTROL!!!__
-	* (YES!)
-	* (hopefully (more on this in a second))
+__VERSION CONTROL!!!__
+
+* (YES!)
+* (but it's actually just more stuff to learn on the commandline)
+* (hopefully (more on this in a second))
+</section>
+
+<section markdown="block">
+### And How?
+
+To motivate the need for version control, we'll also cover:
+
+* a bit more shell scripting
+* just enough __JavaScript__ to write some basic programs:
+	* this is _absolutely not_ a programming class
+	* this is _absolutely not_ a JavaScript class
+	* (it's mostly the stuff that programmers have to do that isn't actually programming)
 </section>
 
 <section markdown="block">
 ### Today's Topics
 
-* just enough __processing__ to motivate the need for version control
-	* I'm assuming some prior knowledge
-	* this is _absolutely not_ a programming class
-	* this is _absolutely not_ a Python class
-	* it's mostly the stuff that programmers have to do that isn't actually programming
 * a quick intro to __version control__ with __git__ and __github__
-</section>
-
-<section markdown="block">
-### Specifically...
-
-* __processing__
-	* downloading, using the IDE
-	* basics
-	* variables, types
-	* control structures
-	* maybe some interaction
-* __git__ and __github__
-	* creating a github account
-	* cloning repositories
-	* adding, committing, and pushing changes
+* a new way of submitting labs
+* review 
+* a few more commands 
+* more about writing shell scripts
 </section>
 
 <section markdown="block">
@@ -61,12 +68,13 @@ git version 1.7.3.2
 </section>
 
 <section markdown="block">
-### How I May Feel if it's not all Machines
-![Freak Out](http://25.media.tumblr.com/tumblr_md1dkmL5lf1rkqfu7o1_500.png)
+### How I May Feel if it's not on All Machines
 
-(I checked a few machines last week, and they seemed like they had old installed versions on them)
+<div markdown="block" class="img-container">
+![Freak Out](http://25.media.tumblr.com/tumblr_md1dkmL5lf1rkqfu7o1_500.png)
+</div>
 </section>
 
 <section markdown="block">
-## [On to Processing](processing.html)
+## [Ok.  Sooo... Version Control! ](version-control.html)
 </section>
