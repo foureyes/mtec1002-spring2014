@@ -52,7 +52,7 @@ Write the command that you used to do this, and all of the output.
 
 
 ==========
-7. Now... using nano, create a shell script in your directory called hello.sh.  It should contain the following text exactly:
+7. Now... using nano, create a shell script in your home directory called hello.sh.  It should contain the following text exactly:
 
 #!/bin/bash
 echo "hi there!"
@@ -71,14 +71,14 @@ Write the commands that you used to do this below.
 
 
 ==========
-9. Run your script.
+9. Run your script (hello.sh).
 
 How did you do this?  What was the output?
 ----------
 
 
 ==========
-10. Change to the root directory.  Try running your script again.  What was the output (if there's an error, write it out)?
+10. Change to the root directory.  Try running your script again (hello.sh).  What was the output (if there's an error, write it out)?
 ----------
 
 
@@ -110,3 +110,55 @@ Write down the last two lines of output for this command
 ----------
 
 
+==========
+15. Set your PATH to include your home directory.  Do the following (substituting student or username for professor)
+
+PATH=$PATH:/Users/professor
+
+Now check your path again.
+
+echo $PATH
+
+Write down the output of the last command.  It should include your home folder.
+----------
+
+
+==========
+16.  Go back to root (/)
+
+Try running your script simply by typing
+
+hello.sh
+
+It should work now!  What is the output?
+----------
+
+
+==========
+17.  Save this file in the repository that you created from parts 1 and 2.
+
+Add and commit it to your local repository and push to the remote repository.  Check github to see that your work was submitted.
+----------
+
+
+==========
+18.  Optional - Try writing this shell script!
+
+In your repository, create an executable shell script called make_5_files that creates 10 files in the directory that it's called in.  The file names should be:
+myfile1.txt
+myfile2.txt
+.
+myfile10.txt
+
+Use a for loop to do this.  Add and save in your repository, push to the remote.
+----------
+
+
+==========
+19.  Optional - Try writing this shell script!
+
+In your repository, create an executable shell script called say_twice.  It should take one argument - a filename.  It will cat out the contents of that file twice, with a row of dashes between each (use cat, echo... then cat again).  Create a test file calle foo.txt ... that contains foo, bar and baz... each on separate lines.
+
+Add and save in your repository, push to the remote.
+
+----------

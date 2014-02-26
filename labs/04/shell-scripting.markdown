@@ -62,8 +62,26 @@ __What command do we use to change permissions ?__ &rarr;
 chmod u+x name_of_file.sh 
 {% endhighlight %}
 
-__What permissions did the previous line give?__ &rarr;
+</div>
+</section>
 
+<section markdown="block">
+### Permissions Continued
+
+__What permissions does the following line give/remove?__ &rarr;
+
+{% highlight bash %}
+chmod u-w name_of_file.sh 
+{% endhighlight %}
+
+<div class="incremental" markdown="block">
+removes write from user
+
+__What permissions do we have to give a file so that we can "run" it?__ &rarr;
+
+{% highlight bash %}
+chmod u+x name_of_file.sh 
+{% endhighlight %}
 </div>
 </section>
 
@@ -151,9 +169,9 @@ echo $MYVAR
 <section markdown="block">
 ### Common Environment Variables
 
-__$PATH__ - contains a colon-separated list of directories that the shell searches for commands that do not contain a slash in their name (commands with slashes are interpreted as file names to execute, and the shell attempts to execute the files directly)
-__$USER__ - the current user
-__$HOME__ - the full path to the current user's home directory
+* __$PATH__ - contains a colon-separated list of directories that the shell searches for commands that do not contain a slash in their name (commands with slashes are interpreted as file names to execute, and the shell attempts to execute the files directly)
+* __$USER__ - the current user
+* __$HOME__ - the full path to the current user's home directory
 
 {% highlight bash %}
 echo $PATH
@@ -190,5 +208,57 @@ jversoza       34930   0.0
 
 {% highlight bash %}
 kill 12345
+{% endhighlight %}
+</section>
+
+<section markdown="block">
+### Shell Script Arguments
+
+You can pass arguments to your shell scripts (just like commands like ls, cd, etc.):
+
+{% highlight bash %}
+./myscript.sh hello hi
+{% endhighlight %}
+
+Within your .sh file (your shell script), you can access these values by using $1, $2, etc ... with each number corresponding to an argument; it starts with $1 as the first argument (the one closest to the command).
+
+{% highlight bash %}
+# using variables in your shell script
+echo $1
+echo $2
+{% endhighlight %}
+</section>
+
+<section markdown="block">
+### Shell Scripts - Using Variables
+
+You can use variables as part of longer strings.  For example, if we called our shell script by writing:
+
+{% highlight bash %}
+./myscript.sh example
+{% endhighlight %}
+
+Within the script:
+
+{% highlight bash %}
+echo "counting words, lines, bytes for ya!"
+wc $1.txt
+{% endhighlight %}
+
+... would count the words in example.txt
+</section>
+
+
+
+<section markdown="block">
+### Shell Scripts and For Loops
+
+You can use the following syntax to repeat code.  Here $i is a variable that can be used... and it represents each number from 1 through 3.
+
+{% highlight bash %}
+for i in {1..3}
+do
+   echo "Counting $i"
+done
 {% endhighlight %}
 </section>
