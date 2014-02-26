@@ -11,6 +11,19 @@ title: MTEC1002 - Changing Files
 </section>
 
 <section markdown="block">
+### Typical Workflow
+
+1. make changes
+2. git status (to see what changes there are)
+3. git add --all (to stage your changes for committing)
+4. git status (to see your staged changes)
+5. git commit -m 'my message' (to save your changes)
+6. git push origin master (optionally send/share your changes to a remote repository)
+
+Check out a workflow chart here: [http://rogerdudler.github.io/git-guide/img/trees.png](http://rogerdudler.github.io/git-guide/img/trees.png)
+</section>
+
+<section markdown="block">
 ### git status
 
 __git status__ - show what changes are ready to be committed as well as changes that you are working on in your working directory that haven't been staged yet
@@ -23,7 +36,6 @@ git status
 <section markdown="block">
 ### git add
 
-http://rogerdudler.github.io/git-guide/img/trees.png
 __git add__ - mark a change to be staged
 
 {% highlight bash %}
@@ -59,6 +71,12 @@ __git log__ - show commit history of your repository or file
 # in the directory of your repository
 
 git log
+{% endhighlight %}
+
+You can also colorize the output:
+
+{% highlight bash %}
+git log --color
 {% endhighlight %}
 </section>
 
@@ -99,16 +117,4 @@ git push origin master
 {% endhighlight %}
 </section>
 
-
-<section markdown="block">
-### Typical Workflow
-
-1. make changes
-2. git status
-3. git add --all
-4. git status
-5. git commit -m 'my message'
-
-(optionally... git push origin master to send to remote repository)
-</section>
 

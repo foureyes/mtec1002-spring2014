@@ -129,6 +129,9 @@ Version Control #1
 	* [__Lab #4, Part 1__ - Creating Repositories](labs/04/lab-04-git-part-01.html)
 * [Changing and Saving Files](labs/04/changing-files.html)
 	* [__Lab #4, Part 2__ -  Changing Files](labs/04/lab-04-git-part-02.html)
+* [Odds and Ends, Shell Scripting Revisited](labs/05/shell-scripting.html) 
+	* [__Lab #4, Part 3__ - Shell Scripting](labs/05/lab-04-git-part-03.html)
+
 
 <!--
 LECTURE - brief intro to version control
@@ -258,6 +261,7 @@ Version Control #2
 	* [__Lab__ - A Short Program, Shared on Github ](labs/05/lab_shapes_to_github.html)
 * [Variables, Types, and Control Structures](labs/05/control.html) 
 	* [__Lab__ - Draw More Stuff](labs/05/draw_more_stuff.html)
+
 {% endcomment %}
 </td>
 </tr>
