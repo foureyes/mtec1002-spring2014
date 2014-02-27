@@ -105,7 +105,7 @@ nothing to commit, working directory clean
 {% endhighlight %}
 * to show the changes that you've saved so far, use __git log__
 {% highlight bash %}
-git log --colo
+git log --color
 {% endhighlight %}
 * it should show you the following...
 {% highlight bash %}

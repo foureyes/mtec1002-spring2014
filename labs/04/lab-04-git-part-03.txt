@@ -39,20 +39,26 @@ Write the command that you used to do this, and all of the output.
 
 
 ==========
-5. Go to your other terminal window.  What happened to nano?  What was the message on the screen?
+5. Stop (kill) the process that's called nano "temp.txt" by using the process id shown in the output of your previous command (first number after user name).
 
 ----------
 
 
 ==========
-6. Close the terminal window that nano was in, and go back to the terminal where you ran ps.
+6. Go to your other terminal window.  What happened to nano?  What was the message on the screen?
+
+----------
+
+
+==========
+7. Close the terminal window that nano was in, and go back to the terminal where you ran ps.
 
 [NO OUTPUT]
 ----------
 
 
 ==========
-7. Now... using nano, create a shell script in your home directory called hello.sh.  It should contain the following text exactly:
+8. Now... using nano, create a shell script in your home directory called hello.sh.  It should contain the following text exactly:
 
 #!/bin/bash
 echo "hi there!"
@@ -64,36 +70,36 @@ What command did you use to do this?
 
 
 ==========
-8. Change the permissions (modify) on hello.sh so that the *user* (u) can *execute* (x) it: 
+9. Change the permissions (modify) on hello.sh so that the *user* (u) can *execute* (x) it: 
 
 Write the commands that you used to do this below.
 ----------
 
 
 ==========
-9. Run your script (hello.sh).
+10. Run your script (hello.sh).
 
 How did you do this?  What was the output?
 ----------
 
 
 ==========
-10. Change to the root directory.  Try running your script again (hello.sh).  What was the output (if there's an error, write it out)?
+11. Change to the root directory.  Try running your script again (hello.sh).  What was the output (if there's an error, write it out)?
 ----------
 
 
 ==========
-11. Now trying using the full, absolute path to your script (that is, starting with /...).  What did you write in?  What did it do?
+12. Now trying using the full, absolute path to your script (that is, starting with /...).  What did you write in?  What did it do?
 ----------
 
 
 ==========
-12.  Go back to the directory that your hello.sh script was in.  What command did you use to change to this directory? 
+13.  Go back to the directory that your hello.sh script was in.  What command did you use to change to this directory? 
 ----------
 
 
 ==========
-13. Type in the following command:
+14. Type in the following command:
 
 echo $PATH
 
@@ -102,7 +108,7 @@ Write down the output of this command
 
 
 ==========
-14. Type in the following command to show all environment variables:
+15. Type in the following command to show all environment variables:
 
 env
 
@@ -111,7 +117,7 @@ Write down the last two lines of output for this command
 
 
 ==========
-15. Set your PATH to include your home directory.  Do the following (substituting student or username for professor)
+16. Set your PATH to include your home directory.  Do the following (substituting student or username for professor)
 
 PATH=$PATH:/Users/professor
 
@@ -124,7 +130,7 @@ Write down the output of the last command.  It should include your home folder.
 
 
 ==========
-16.  Go back to root (/)
+17.  Go back to root (/)
 
 Try running your script simply by typing
 
@@ -135,14 +141,14 @@ It should work now!  What is the output?
 
 
 ==========
-17.  Save this file in the repository that you created from parts 1 and 2.
+18.  Save this file in the repository that you created from parts 1 and 2.
 
 Add and commit it to your local repository and push to the remote repository.  Check github to see that your work was submitted.
 ----------
 
 
 ==========
-18.  Optional - Try writing this shell script!
+19.  Optional - Try writing this shell script!
 
 In your repository, create an executable shell script called make_5_files that creates 10 files in the directory that it's called in.  The file names should be:
 myfile1.txt
@@ -155,7 +161,7 @@ Use a for loop to do this.  Add and save in your repository, push to the remote.
 
 
 ==========
-19.  Optional - Try writing this shell script!
+20.  Optional - Try writing this shell script!
 
 In your repository, create an executable shell script called say_twice.  It should take one argument - a filename.  It will cat out the contents of that file twice, with a row of dashes between each (use cat, echo... then cat again).  Create a test file calle foo.txt ... that contains foo, bar and baz... each on separate lines.
 
