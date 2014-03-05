@@ -130,3 +130,8 @@ td {
 ul {
 	padding-left:1em;
 }
+
+hr {
+	background:#000; 
+	border:0; height:1px
+}

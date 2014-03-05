@@ -131,114 +131,6 @@ Version Control #1
 	* [__Lab #4, Part 2__ -  Changing Files](labs/04/lab-04-git-part-02.html)
 * [Odds and Ends, Shell Scripting Revisited](labs/04/shell-scripting.html) 
 	* [__Lab #4, Part 3__ - Shell Scripting](labs/04/lab-04-git-part-03.txt) (right-click and save-as)
-
-
-<!--
-LECTURE - brief intro to version control
-=====
-* intro to version control
-* submitting assignments
-* how do you save files
-* what's a repository?
-* multiple repositories
-* git is the version control system
-* local repository
-* github offers hosting
-* three trees
-	* committed
-	* staging
-		* everything you want to save
-	* working copy
-		* changes go here
-* commands
-	* create a remote repo on github
-	* git config
-	* create a local repo
-	* hooking the two up to sync
-	* status
-	* stage by using add
-	* save by using commit
-	* send to other repository push
-	* history by using log 
-	* status to tell if something is staged oir not
-
-DEMO - creating and hooking up
-=====
-* creating repository on github
-* creating a local respository
-* hooking the two up
-* show that it appears in github
-* making changes
-* log
-* status
-* add
-* commit
-* push
-* show that a files is there
-* making changes
-* log
-* status
-* add
-* commit
-* push
-* show that a files is there
-
-FOLLOW ALONG - submitting assignments 
-=====
-* creating a remote repository and hooking it up to a local repository
-	* create repo remotely with curl
-	* git init or git clone?
-	* remote add origin master
-* test
-	* create a file
-	* add
-	* then commit
-	* push origin master
-
-LECTURE - let's write some shell scripts and save them
-=====
-* review
-	* nano
-	* chmod u+x
-		* addendum... use #'s ... like 777
-	* cd
-	* ls, ls -a, ls -l
-	* touch
-	* cat
-	* curl
-* review / shell script
-	* nano
-	* chmod u+x
-		* addendum... use #'s ... like 777
-	* execute by using ./
-* talk about sh
-* use bin/bash
-* for loop
-
-LAB
-=====
-* follow along - write a script to ...
-	* for loop that counts from 1 through 10
-* lab - write a second script
-	* that creates a file named one through 10
-		* create a dir
-		* write shell script to create a bunch of files
-	* optional
-		* go back up one dir
-		* rmdir
-		* read about executing commands with backtick
-		* or do the same using cat and redirect to create files with content
-* lab - show twice no loop
-* lab - show twice with loop, multiple arguments
-* copy-with-date - copy file add date
-	
-
-* environment variables
-	* where did all of those commands come from?
-
-finally ... a quick intro to javascript
-=====
--->
 </td>
 
 </tr>
@@ -252,17 +144,40 @@ Version Control #2
 * variables, types and control structures in processing
 </td>
 <td markdown="block">
-
-{% comment %}
 * [About Lab #5](labs/05/meta.html)
-* [Version Control with Git](labs/05/git.html)
-	* [__Lab__ - A Short Program with Version Control](labs/05/lab_shapes.html)
-* [Remote Repositories, Publishing at Github](labs/05/git.html)
-	* [__Lab__ - A Short Program, Shared on Github ](labs/05/lab_shapes_to_github.html)
-* [Variables, Types, and Control Structures](labs/05/control.html) 
-	* [__Lab__ - Draw More Stuff](labs/05/draw_more_stuff.html)
+* [Intro to JavaScript](labs/05/js-intro.html)
+* [Git Review](labs/05/git.html)
+	* [__Lab #5, Part 1__ - Git Workflow Revisted](labs/05/lab-05-git-part-01.html)
+* [JavaScript Variables, Values, Types, Input and Output](labs/05/js-basics.html)
+	* [__Lab #5, Part 2__ - Basic JavaScript Programs](labs/05/lab-05-js-basics-part-02.html)
 
-{% endcomment %}
+<!--
+* [JavaScript Conditionals](labs/05/conditionals.html) 
+	* another type: booleans
+		* true or false
+	* comparison operators
+	* logical operators
+		* not, and, or
+	* type coercion
+	* [__Lab #5, Part 3__ - Conditionals](labs/04/lab-05-js-conditionals-03.html)
+		* grade
+		* days
+		* tip
+		* extra credit - number guessing game
+		* extra credit - colors
+* [JavaScript Loops](labs/05/loops.html) 
+	* creating our own
+		* returning values
+	* [__Lab #5, Part 4__ - Functions](labs/04/lab-05-js-functions-04.html)
+		* exclaim
+		* volume of an object
+* [JavaScript Functions](labs/05/functions.html) 
+	* creating our own
+		* returning values
+	* [__Lab #5, Part 4__ - Functions](labs/04/lab-05-js-functions-04.html)
+		* exclaim
+		* volume of an object
+-->
 </td>
 </tr>
 <tr>

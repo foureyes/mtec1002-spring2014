@@ -11,60 +11,51 @@ title: MTEC1002 - About Lab #5
 </section>
 
 <section markdown="block">
-### Processing Recap 
+### Today's Topics
 
-* we did a little bit of processing
-* what did we learn?
+* version control review
+* JavaScript basics
 
-<div class='incremental' markdwon='block'>
-* setup(), draw()
-* the coordinate system
-* ellipse(), rect()
-* stroke(), noStroke()
-* fill()
-* colors
-</div>
 </section>
 
 <section markdown="block">
-### Recap Version Control
+### Again, This Module is About Version Control
 
-* we very briefly got a taste of using version control
-* we didn't go into it in much detail, but...
-* does anyone remember what we did?
-
-<div class='incremental' markdwon='block'>
-* created an account on github
-* created a repository on github
-* cloned that repository
-* added our code to the repository
-* pushed back up to github
-</div>
-</section>
-
-<section markdown="block">
-### This Module is About Version Control
-
-* which means we'll be doing a little bit of command line stuff
-* a little bit of programming
-* we focused a bit on processing last week
+* which means we'll continue to do command line stuff
+* we'll need to learn a __little bit of programming__ (__which is why we're learning some JavaScript__)
 * so that we can have something to _actually_ version!
 </section>
 
 <section markdown="block">
-### Topics This Week
+### We Learned This...
 
-* some vocabulary
-* creating a local repository
-* staging/adding changes
-* saving changes / commits
-* showing the status, showing the difference between files
-* reverting a commit
-* adding a remote repository to your project
-* pushing to a remote directory
+__What were some concepts and topics that used in our last lab?__ &rarr;
+
+<div class="incremental" markdown="block">
+
+* some vocabulary, such as __repository__, __git__, etc.
+* creating/<strong>init</strong>ializing a local and remote repository
+* staging/<strong>add</strong>ing changes
+* saving changes/<strong>commit</strong>s
+* showing the <strong>status</strong> of your repository
+* showing the <strong>diff</strong>erence between files
+* showing a <strong>log</strong> of all changes
+* <strong>add</strong>ing a <strong>remote</strong> repository to your project
+* sending/<strong>push</strong>ing to a remote repository
+</div>
 </section>
 
 <section markdown="block">
-[git](git.html)
+### Didn't Remember That?
+
+* that's ok, we'll go over the __git workflow__ again in a bit (_after all, this is the version control part of this course!_)
+* but before reviewing version control ...
+
+<div markdown="block" class="img-container">
+![Anticipation](../../resources/img/anticipation-wonka.gif)
+</div>
 </section>
 
+<section markdown="block">
+## [Introducting... JavaScript](js-intro.html)
+</section>
