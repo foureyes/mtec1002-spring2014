@@ -118,7 +118,6 @@ __Submitting Your Assignment__
 <td markdown="block">
 Version Control #1 
 
-* whirlwind intro to Processing
 * quick example of version control and git
 </td>
 <td markdown="block">
@@ -141,7 +140,7 @@ Version Control #1
 Version Control #2 
 
 * basic git commands
-* variables, types and control structures in processing
+* basic JavaScript
 </td>
 <td markdown="block">
 * [About Lab #5](labs/05/meta.html)
