@@ -150,7 +150,27 @@ Version Control #2
 * [JavaScript Variables, Values, Types, Input and Output](labs/05/js-basics.html)
 	* [__Lab #5, Part 2__ - Basic JavaScript Programs](labs/05/lab-05-js-basics-part-02.html)
 
+</td>
+</tr>
+<tr>
+<td><h2>6</h2></td>
+<td><h2>03/12</h2></td>
+<td markdown="block">
+Version Control #3 
+
+* basic git commands revisited
+* basic JavaScript revisited
+* conditionals
+* loops (maybe)
+</td>
+<td markdown="block">
+
 <!--
+* [About Lab #6](labs/06/meta.html)
+* [Git Review, Troubleshooting Remote Repositories](labs/06/git-review.html) 
+	* [__Lab #6, Prep__ - Creating Local and Remote](labs/04/lab-06-create-repos.html) (Together, PLZ)
+* [JavaScript Basics Review](labs/06/js-basics-review.html) 
+	* [__Lab #6, Part 1__ - JavaScript Basics: Values, Types, Operators, Input/Output](labs/04/lab-06-js-basics-review-part-01.html) (Start together)
 * [JavaScript Conditionals](labs/05/conditionals.html) 
 	* another type: booleans
 		* true or false
@@ -158,12 +178,14 @@ Version Control #2
 	* logical operators
 		* not, and, or
 	* type coercion
+	* if/else
 	* [__Lab #5, Part 3__ - Conditionals](labs/04/lab-05-js-conditionals-03.html)
 		* grade
 		* days
 		* tip
 		* extra credit - number guessing game
 		* extra credit - colors
+
 * [JavaScript Loops](labs/05/loops.html) 
 	* creating our own
 		* returning values
@@ -176,22 +198,12 @@ Version Control #2
 	* [__Lab #5, Part 4__ - Functions](labs/04/lab-05-js-functions-04.html)
 		* exclaim
 		* volume of an object
--->
-</td>
-</tr>
-<tr>
-<td><h2>6</h2></td>
-<td><h2>03/12</h2></td>
-<td markdown="block">
-Version Control #3 
-</td>
-<td markdown="block">
-
-{% comment %}
 * [About Lab #6](labs/06/meta.html)
 * [Git Review, Processing Exercises](labs/06/git_and_processing.html)
 	* [__Lab__ - Circles, Squares and Lines](labs/06/lab_processing_review.html)
-{% endcomment %}
+
+-->
+
 </td>
 </tr>
 <tr>
