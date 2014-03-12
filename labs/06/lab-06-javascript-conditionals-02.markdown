@@ -9,8 +9,7 @@ In this lab, you'll be creating several programs:
 
 1. cake
 2. spanish
-3. \* guess
-4. \* changes to guess...
+3. \* guess 
 
 ## Summary of Commands:
 
@@ -138,5 +137,5 @@ no se
 
 ### guess
 
-Write a number guessing game!
+Write a number guessing game!  "Hardcode" a secret number.  Ask the user to guess the secret number.  If they are correct, say "You got it!".  If they are within 1, say "Close, but the number is (the secret number)".  Lastly, if they were totally incorrect, then say, "The number is (the secret number)".  Look up the parseInt function to convert the input into a number so that your comparisons work.
 

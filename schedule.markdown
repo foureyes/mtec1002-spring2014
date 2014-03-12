@@ -165,13 +165,15 @@ Version Control #3
 </td>
 <td markdown="block">
 
-<!--
 * [About Lab #6](labs/06/meta.html)
 * [Git Review, Troubleshooting Remote Repositories](labs/06/git-review.html) 
-	* [__Lab #6, Prep__ - Creating Local and Remote](labs/04/lab-06-create-repos.html) (Together, PLZ)
+	* [__Lab #6, Prep__ - Creating Local and Remote](labs/06/lab-06-prep.html) (Together, PLZ)
 * [JavaScript Basics Review](labs/06/js-basics-review.html) 
-	* [__Lab #6, Part 1__ - JavaScript Basics: Values, Types, Operators, Input/Output](labs/04/lab-06-js-basics-review-part-01.html) (Start together)
-* [JavaScript Conditionals](labs/05/conditionals.html) 
+	* [__Lab #6, Part 1__ - JavaScript Basics: Values, Types, Operators, Input/Output](labs/06/lab-06-javascript-conditionals-01.html) (Start together)
+* [JavaScript Conditionals](labs/06/js-conditionals.html) 
+	* [__Lab #6, Part 2__ - Conditionals](labs/06/lab-06-javascript-conditionals-02.html)
+
+<!--
 	* another type: booleans
 		* true or false
 	* comparison operators
@@ -179,13 +181,11 @@ Version Control #3
 		* not, and, or
 	* type coercion
 	* if/else
-	* [__Lab #5, Part 3__ - Conditionals](labs/04/lab-05-js-conditionals-03.html)
 		* grade
 		* days
 		* tip
 		* extra credit - number guessing game
 		* extra credit - colors
-
 * [JavaScript Loops](labs/05/loops.html) 
 	* creating our own
 		* returning values

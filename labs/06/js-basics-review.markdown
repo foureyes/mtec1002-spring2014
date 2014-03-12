@@ -50,7 +50,7 @@ __Why are we learning JavaScript?__ &rarr;
 __What application / tool do we use to run our programs?__ &rarr; 
 
 <div class="incremental" markdown="block">
-* we'll be using our web browser to run JavaScript programs!</div>
+* we'll be using our web browser to run JavaScript programs!
 * specifically, we'll be using Chrome and Chrome's __JavaScript Console__
 </div>
 </section>
@@ -95,7 +95,9 @@ __Your code goes within the script tags!__
 ### Creating JavaScript Programs
 
 __What tool do we use to write our JavaScript programs?__ &rarr;
+
 <div class="incremental" markdown="block">
+
 * we use a text editor called __SublimeText__
 * if we save the file as some_file_name.html (note the __.html__ extension) before writing...
 * we can use TAB to automplete:
@@ -111,6 +113,7 @@ __What tool do we use to write our JavaScript programs?__ &rarr;
 __How do we actually run our JavaScript programs in Chrome?  Where does the output (and errors) from your program show up?__ &rarr;
 
 <div class="incremental" markdown="block">
+
 * In __Chrome__... go to File &rarr; Open File ... &rarr; browse to the html file you created in SublimeText
 * you'll see output and errors pop up in __Chrome's JavaScript Console__
 * (you can get to this by going to View &rarr; Developer &rarr; JavaScript Console)
@@ -119,7 +122,6 @@ __How do we actually run our JavaScript programs in Chrome?  Where does the outp
 </div>
 </section>
 
-</section>
 
 <section markdown="block">
 ### Trying One Line at a Time
@@ -127,6 +129,7 @@ __How do we actually run our JavaScript programs in Chrome?  Where does the outp
 __How do we try out single lines of JavaScript without writing an entire html file?__ &rarr;
 
 <div class="incremental" markdown="block">
+
 * once again, we can use Chrome's JavaScript console; it lets you try out lines of JavaScript one line at a time interactively
 * you can use this to experiment with code
 * it has access to everything else in the page (we'll see this later)
@@ -153,7 +156,7 @@ Chrome's JavaScript Console is multi-purpose.  __What are the ways that we can u
 </section>
 
 <section markdown="block">
-## Values, Types and Operators
+### Values, Types and Operators
 
 The most basic elements of a JavaScript program are:
 
@@ -168,8 +171,9 @@ The most basic elements of a JavaScript program are:
 __What's a program?  What's a statement?  What's an expression?__ &rarr;
 
 <div class="incremental" markdown="block">
+
 * __program__ - a sequence of statements that specify to a computer actions to perform
-* __statement__ - corresponds to a sentence... it's a full instruction for the computer; __All statements end in a semicolon__ in JavaScript
+* __statement__ - corresponds to a sentence... it's a full instruction for the computer... __all statements end in a semicolon__ in JavaScript (;)
 * __expression__ - a fragment of code that produces a value; it's not a statement by itself
 </div>
 </section>
@@ -188,7 +192,7 @@ __What's a program?  What's a statement?  What's an expression?__ &rarr;
 </section>
 
 <section markdown="block">
-## All statements end in a semicolon in JavaScript
+## All statements end in a semicolon (;) in JavaScript
 </section>
 
 <section markdown="block">
@@ -197,6 +201,7 @@ __What's a program?  What's a statement?  What's an expression?__ &rarr;
 __What's a value, and what are some examples of values in JavaScript?__ &rarr;
 
 <div class="incremental" markdown="block">
+
 * values are just data
 * some examples of values are numbers, like 3.14 and -273 and strings, like "hello" and "hi"
 * there are also special values like:
@@ -212,6 +217,7 @@ __What's a value, and what are some examples of values in JavaScript?__ &rarr;
 __How do we create a value in our program?__ &rarr;
 
 <div class="incremental" markdown="block">
+
 * to create values, just write them!
 * for example: 7 ... or "hello there"
 * values that are written plainly like this are called __literals__
@@ -236,6 +242,7 @@ A values types sometimes determines what we can and can't do with that value!
 __What's an operator?__ &rarr;
 
 <div class="incremental" markdown="block">
+
 * operators allow us to combine and transform values
 * operators have __operands__, 
 	* operands are the values that supply to operators
@@ -263,6 +270,7 @@ __What's an operator?__ &rarr;
 __Name 5 binary arithmetic operators (they take two operands, one on either side)__ &rarr;
 
 <div class="incremental" markdown="block">
+
 * __+__ - addition
 * __-__ - subtraction
 * __\*__ - multiplication
