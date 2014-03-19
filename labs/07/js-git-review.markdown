@@ -9,69 +9,9 @@ title: MTEC1002 - Version Control Review
 
 {% include title-slide-footer.html %}
 </section>
-<!--
 
 <section markdown="block">
-### Topics
-
-* creating repos, workflow
-* expressions
-* statements
-* types so far
-* built-in functions
-	* console.log
-	* prompt
-* a program to square a number
-
-</section>
-
-<section markdown="block">
-### Version Control - Definition
-
-__What is version control?__ &rarr;
-
-<div class="incremental" markdown="block">
-
-__Version control software__ allows you to record changes to a file or set of files over time. With version control, you can:
-</div>
-</section>
-
-<section markdown="block">
-### And Why!?
-
-__Why use version control anyway?__ &rarr;
-
-
-<div class="incremental" markdown="block">
-
-* so that you can __review__ changes made over time, and track __who__ made those changes
-* to document work by leaving __comments__ on changes that you've made
-* __easily recover from accidentally breaking or deleting code__ by __revert__ing to a previous state
-* it make sharing and collaborating with others easier through the ability to __send, receive and automatically merge__ changes
-* __it's expected that you know this as a professional programmer__
-* um ... it's how we submit assignments!
-</div>
-
-</section>
-
-<section markdown="block">
-### Tools
-
-__What version control software are we using?  What is the website we use to store assignments?  What is the relationship between the two?__ &rarr;
-
-<div class="incremental" markdown="block">
-
-* __git__ is solely the __version control__ system that we're using
-* __github__ is a __website__ that _hosts_ (stores) git repositories
-	* that means it can store all versions of your files
-	* (but only after you've sent changes to it)
-* __git__ and __github__ are two totally separate things!
-* we'll be using __git__ to submit our assignments by posting them to __github__
-</div>
-</section>
-
-<section markdown="block">
-### Vocabulary
+### About Repositories
 
 What is a __repository__, __local repository__, __remote repository__, __commit__, and __diff__? &rarr;
 
@@ -85,9 +25,8 @@ What is a __repository__, __local repository__, __remote repository__, __commit_
 </div>
 </section>
 
-
 <section markdown="block">
-### More Vocabulary
+### Changing and Saving Files
 
 In your __local repository__, describe what is contained in the: __working directory__, __index__ and __HEAD__. &rarr;
 
@@ -117,11 +56,79 @@ __What is the primary way that we use git?  That is, what is the root command, a
 </section>
 
 <section markdown="block">
-### Setting Up Repositories
+### Commands for Setting Up Repositories
 
-__What's the workflow for setting up repositories for our assignments? (just the high level description, not the actual commands)__ &rarr;
+__What are the actual commands that you would use to set up and link your repositories?__ &rarr;
 
+<div class="incremental" markdown="block">
+{% highlight bash %}
+# create a local repository
+git init
+
+# configure it with your name and email
+git config user.name  "your name"
+git config user.email "your@email.address"
+
+# create a remote repository
+curl -u 'your github user name' https://api.github.com/user/repos -d '{"name":"your repository name"}'
+
+# link the two
+git remote add origin "your username"@"the url to your repository on github"
+{% endhighlight %}
+</div>
 </section>
+
+<section markdown="block">
+### Commands for Saving and Sharing Changes?
+
+__What's are the actual commands that you use for making, saving and sharing changes?  Let's start with just making the change and prepping it to be saved.__ &rarr;
+
+<div class="incremental" markdown="block">
+
+{% highlight bash %}
+# (make changes)
+
+# show the exact, line-by-line changes that you've made
+git diff --color
+
+# check on the status of your changes
+git status
+
+# stage your changes / prep them to be saved
+git add --all 
+
+# check your staged changes using git status again
+git status
+
+# (continued...)
+{% endhighlight %}
+</div>
+</section>
+
+<section markdown="block">
+### Continued...
+
+__Saving and sending to the remote repository__ &rarr;
+
+<div class="incremental" markdown="block">
+{% highlight bash %}
+
+# save them, make sure you remember your comment by using -m!
+git commit -m 'my message'
+
+# show a history of your changes
+git log --color (show your changes so far)
+
+# send to your remote repository
+git push origin master
+{% endhighlight %}
+</div>
+</section>
+
+
+
+
+<!--
 
 <section markdown="block">
 ### Corresponding Commands Continued
