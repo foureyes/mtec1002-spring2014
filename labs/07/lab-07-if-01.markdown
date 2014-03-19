@@ -1,197 +1,246 @@
 ---
 layout: lab
-title: JavaScript Basics
+title: JavaScript Conditionals
 prefix: ../../
 ---
 # Lab 7 - Conditionals, Boolean Logic
 
 In this lab, you'll be creating several programs:
 
-1. dice roll 1, dice roll 2 ... if both are 1's... say snake eyes, otherwise ... just a normal roll
-2. dice roll 1, dice roll 2 ... show sum (use parseInt)
-3. grade (use pasreInt)
+1. snake eyes
+2. add dice
+3. fortune
 4. days
-5. fortune (pick a number)
-6. number guessing game, number guessing game within 1
+5. guess
+6. \*grade 
 7. \*tip
 
-## Summary of Commands:
-
-__THESE ARE NOT LAB INSTRUCTIONS.__
-
-The following is just a reference.  The lab instructions are below.
-
-{% highlight bash %}
-# create a local repository
-git init
-
-# configure it with your name and email
-git config user.name  "your name"
-git config user.email "your@email.address"
-
-# create a remote repository
-curl -u 'your github user name' https://api.github.com/user/repos -d '{"name":"your repository name"}'
-
-# link the two
-git remote add origin "your username"@"the url to your repository on github"
-
-# two ways to show all remote repositories
-git remote -v
-cat .git/config
-
-# removing a remote repository by name (usually origin)
-git remote remove name_of_remote
-
-# changing / setting the url of a named remote repository (usually origin)
-git remote set-url name_of_remote new_remote_url
-
-# look at the differences between your last save and your current changes (line by line)
-git diff --color
-
-# check on the status of your changes
-git status
-
-# "stage" or mark your changes as ready to be saved
-git add --all
-
-# save!
-git commit -m 'my message'
-
-# show a log of your changes so far
-git log --color (show your changes so far)
-
-# send to a remote repository (to submit an assignment)
-git push origin master 
-{% endhighlight %}
 
 ## Instructions
 
-Note that __ALL OF THESE FILES MUST BE CREATED IN THE REPOSITORY THAT YOU CREATED FOR THIS LAB__.
+Note that __ALL OF THESE FILES MUST BE AVED IN THE LOCAL REPOSITORY THAT YOU CREATED FOR THIS LAB__.
 
-### say twice
+### snake eyes
 
-Write a program that takes user input and repeats the user input twice (both words on the same lin) in the JavaScript console.
+Write a program that asks for the result of two dice rolls.  If both rolls are 1, it will shout, "SNAKE EYES!".  Otherwise, it should just say "That's a normal roll".
 
-* using SublimeText, create a new file called __saytwice.html__ in your repository directory: __~/Desktop/jversoza/lab-06-javascript-conditionals/__
+* using SublimeText, create a new file called __snakeeyes.html__ in your repository directory: __~/Desktop/jversoza/lab-07-if-while/__
 * setup an html file, and add script tags... start writing your JavaScript between the script tags
-* the program should ask for a word: "Give me a word to say twice"
-* the program should repeat the input twice on the same line with a space inbetween...  back to the __JavaScript console__ 
-	* for example, if someone enters "hello" in the prompt dialog
-	* the output in the console would be "hello hello"
+* the program should ask for the result of the first die roll: "Give me a number for the first roll (1-6)"
+* the program should ask for the result of the second die roll: "Give me a number for the second roll (1-6)"
+* the program should say "SNAKE EYES!" if both rolls are 1, and "That's a normal roll" otherwise
+* use the parseInt function to convert input from a string to a number (for example: num1 = parseInt(roll1, 10)) before comparing!
 * example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
 {% highlight bash %}
-(prompt) Give me a word to say twice
-> hello
-hello hello
+(prompt) Give me a number for the first roll (1-6)
+> 1
+(prompt) Give me a number for the second roll (1-6)
+> 1
+SNAKE EYES!
 {% endhighlight %}
 * save your file in SublimeText
-* use status, add commit and push to save your file in version control and submit it
+* use git status, add, commit, and push to save your file in version control and submit it
 
 <hr>
 
-### shout
+### add dice
 
-Write a program that takes user input and repeats the user input, but with three exclamation points afterwards. 
+Write a program that asks for the result of two dice rolls.  Add the results of both rolls and print out the sum.
 
-* using SublimeText, create a new file called __shout.html__ in your repository directory: __~/Desktop/jversoza/lab-06-javascript-conditionals/__
+* using SublimeText, create a new file called __adddice.html__ in your repository directory: __~/Desktop/jversoza/lab-07-if-while/__
 * setup an html file, and add script tags... start writing your JavaScript between the script tags
-* the program should ask for a word: "Give me a word, and I'll shout it out"
-* the program should repeat the word, but with three exclamation points added to it
-* the output should go to the __JavaScript console__ 
+* the program should ask for the result of the first die roll: "Give me a number for the first roll (1-6)"
+* the program should ask for the result of the second die roll: "Give me a number for the second roll (1-6)"
+* use the parseInt function to convert both inputs from a string to a number (for example: num1 = parseInt(roll1, 10)) 
+* then... add both numbers together and print out the output to the JavaScript console
 * example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
 {% highlight bash %}
-(prompt) Give me a word, and I'll shout it out
-> yeah
-yeah!!!
+(prompt) Give me a number for the first roll (1-6)
+> 1
+(prompt) Give me a number for the second roll (1-6)
+> 5
+The sum of both rolls is 6.
 {% endhighlight %}
 * save your file in SublimeText
-* use status, add commit and push to save your file in version control and submit it
-<hr>
-
-### temperature
-
-Write a program that calculates celsius to fahrenheit based on user input.
-
-* using SublimeText, create a new file called __temperature.html__ in your repository directory: __~/Desktop/jversoza/lab-06-javascript-conditionals/__
-* setup an html file, and add script tags... start writing your JavaScript between the script tags
-* the program should ask for the temperature in celsius
-* find the formula for celsius to faahrenheit conversion online!
-* translate that formula into javascript 
-* the program should output to the __JavaScript console__: c degrees celsius is f degrees fahrenheit
-* (obvs with f and c substituted with the appropriate calculated values)
-* example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
-{% highlight bash %}
-(prompt) Please enter a temperature in celsius
-> 37
-37 degrees celsius is 98 degrees fahrenheit
-{% endhighlight %}
-* save your file in SublimeText
-* use status, add commit and push to save your file in version control and submit it
+* use git status, add, commit, and push to save your file in version control and submit it
 
 <hr>
 
-### miles
+### fortune
 
-Write a program that calculates miles-per-gallon based on user input for miles driven and gallons of gas used.
+Write a program that asks for number.  The program will translate that number into a fortune.
 
-* using SublimeText, create a new file called __miles.html__ in your repository directory: __~/Desktop/jversoza/lab-06-javascript-conditionals/__
+* using SublimeText, create a new file called __fortune.html__ in your repository directory: __~/Desktop/jversoza/lab-07-if-while/__
 * setup an html file, and add script tags... start writing your JavaScript between the script tags
-* miles-per-gallon (mpg) can be calculated using the following formula... 
-* mpg = miles driven / gallons of gas used 
-* ask the user for the number of miles driven and the gallons of gas used
-* calculate miles-per-gallon and output the result to the JavaScript console
+* the program should ask for a number: "Give me a number between 1 and 3, and I'll predict your future..."
+* use the parseInt function to convert the input from a string to a number (for example: num = parseInt(answer, 10)) 
+* compare the resulting number to a number corresponding to a __of your own creation__:
+	* 1 - you will type in the word "git" many times
+	* 2 - you will be hungry by the end of class
+	* 3 - ...
+* print out the corresponding fortune to the JavaScript console...
+* if the number doesn't correspond to a fortune, ignore the input
 * example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
 {% highlight bash %}
-(prompt) How many miles did you drive?
->20
-(prompt) How many gallons of gas did you use?
->2
-Your car gets 10.0 miles per gallon.
+# Run 1
+(prompt) Give me a number between 1 and 3, and I'll predict your future...
+> 2
+you will be hungry by the end of class
+
+# Run 2
+(prompt) Give me a number between 1 and 3, and I'll predict your future...
+> 24
+(no output)
 {% endhighlight %}
 * save your file in SublimeText
-* use status, add commit and push to save your file in version control and submit it
+* use git status, add, commit, and push to save your file in version control and submit it
+
+
+
+### days
+
+Write a program that asks for number.  The program will translate that number to a day of the week.
+
+* using SublimeText, create a new file called __adddice.html__ in your repository directory: __~/Desktop/jversoza/lab-07-if-while/__
+* setup an html file, and add script tags... start writing your JavaScript between the script tags
+* the program should ask for a number: "Give me a number for the day of the week"
+* use the parseInt function to convert the input from a string to a number (for example: num = parseInt(day, 10)) 
+* compare the resulting number to a number corresponding to a day of the week:
+	* 1 for Monday
+	* 2 for Tuesday ...
+	* up through 7 for Sunday
+* print out the corresponding day to the JavaScript console: "That day is Thursday!" 
+* if the number does not match a day, the program should say "That's not a day!"
+* example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
+{% highlight bash %}
+# Run 1
+(prompt) Give me a number for the day of the week
+> 2
+Tuesday
+
+# Run 2
+(prompt) Give me a number for the day of the week
+> 34
+That's not a day!
+{% endhighlight %}
+* save your file in SublimeText
+* use git status, add, commit, and push to save your file in version control and submit it
+
 
 <hr>
 
-### \*numbers
-(This one's hard!) Write a program that outputs the number in the thousands, hundreds, tens and ones places of a number. 
 
-* using SublimeText, create a new file called __numbers.html__ in your repository directory: __~/Desktop/jversoza/lab-06-javascript-conditionals/__
+### guess
+
+Write a number guessing game.
+
+* using SublimeText, create a new file called __guess.html__ in your repository directory: __~/Desktop/jversoza/lab-07-if-while/__
 * setup an html file, and add script tags... start writing your JavaScript between the script tags
-* ask the user for a number
-* calculate the numbers in the thousands, hundreds, tens and ones places
-* output each place to the JavaScript console
-* one solution is to use some numeric operators to determine each place (maybe modulo, division and subtraction would help)
-* you may have to calculate each place separately
-* don't worry about input that's not a positive whole number below 10,000
+* create a variable to hold a secret number
+* the program should ask for a number: "Guess the secret number"
+* use the parseInt function to convert the input from a string to a number (for example: num = parseInt(guess, 10)) 
+* if the number inputted matches the secret number, print out "You got it!"
+* if the number inputted is within 1 of the secret number, print out "Close, the secret number was [the secret number]"
+* if the number inputted is not the secret number, and is not within 1, print out "Nope, it was [the secret number]"
 * example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
 {% highlight bash %}
-(prompt) Please enter a number
-> 256
+# Assuming secret number is 5
 
-0 thousands
-2 hundreds
-5 tens
-6 ones
+# Run 1
+(prompt) Guess the secret number
+> 2
+Nope, it was 5
+
+
+# Run 2
+(prompt) Guess the secret number
+> 4
+Close, the secret number was 5
+
+
+# Run 3
+(prompt) Guess the secret number
+> 5
+You got it!
 {% endhighlight %}
 * save your file in SublimeText
-* use status, add commit and push to save your file in version control and submit it
+* use git status, add, commit, and push to save your file in version control and submit it
 
 <hr>
 
-### \*tree
+### grade
 
-(This one's slightly hard... try doing it in just one line!) Print out a tree!
+Write a program that converts a numeric score to a letter grade.
 
-* using SublimeText, create a new file called __tree.html__ in your repository directory: __~/Desktop/jversoza/lab-06-javascript-conditionals/__
+* using SublimeText, create a new file called __grade.html__ in your repository directory: __~/Desktop/jversoza/lab-07-if-while/__
 * setup an html file, and add script tags... start writing your JavaScript between the script tags
-* print out an ascii art tree to the JavaScript console
-<pre>
-   /\
-  /  \
-  /  \
- /____\
-   ||
-</pre>
+* create a variable to hold a secret number
+* the program should ask for a score: "What was your score?"
+* use the parseInt function to convert the input from a string to a number (for example: num = parseInt(guess, 10)) 
+* use the chart below to translate from number to letter grade:
+{% highlight bash %}
+90 - 100: A
+80 - 89:  B
+70 - 79:  C
+60 - 69:  D
+< 60:     F
+{% endhighlight %}
+* print out the corresponding grade
+* if the number doesn't fall between 0 and 100, ignore the input
+* example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
+
+{% highlight bash %}
+(prompt) What was your score?
+> 84
+B
+{% endhighlight %}
 * save your file in SublimeText
-* use status, add commit and push to save your file in version control and submit it
+* use git status, add, commit, and push to save your file in version control and submit it
+
+<hr>
+
+### tip
+
+Create a tip calculator.
+
+* using SublimeText, create a new file called __grade.html__ in your repository directory: __~/Desktop/jversoza/lab-07-if-while/__
+* setup an html file, and add script tags... start writing your JavaScript between the script tags
+* the program should ask the following:
+	* how many people?	
+	* how much did it cost?
+	* how was the service? 
+		* the values for this can be: terrible, poor, ok, good, great
+		* only ask about service if there are less than 6 people
+* if the number of people are > 6 tip should always be 20%, regardless of service.
+* otherwise, calculate the tip using the following table:
+	* terrible = no tip (0%)
+	* poor - 10%
+	* ok - 15%
+	* good - 20%
+	* great - 25%
+* output the calculated tip.
+* example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
+{% highlight bash %}
+Run 1: 
+-----
+(prompt) How many people? > 2
+(prompt) How much did it cost? > 25
+(prompt) How was the service (terrible, poor, ok, good, great)? > great
+You should probably tip $6.25!
+
+ 
+Run 2: 
+-----
+(prompt) How many people? > 4
+(prompt) How much did it cost? > 70
+(prompt) How was the service (terrible, poor, ok, good, great)? > meh
+Couldn't understand meh service; using default 15 percent.
+You should probably tip $10.5!
+
+Run 3: 
+-----
+(prompt) How many people? > 200
+(prompt) How much did it cost? > 950
+You should probably tip $190.0!
+{% endhighlight %}
+

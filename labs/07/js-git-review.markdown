@@ -5,9 +5,13 @@ title: MTEC1002 - Version Control Review
 
 <section markdown="block" class="title-slide">
 
-# Version Control Review, Troubleshooting 
+# Submitting Assignments, JavaScript Review
 
 {% include title-slide-footer.html %}
+</section>
+
+<section markdown="block">
+## Version Control!
 </section>
 
 <section markdown="block">
@@ -79,7 +83,7 @@ git remote add origin "your username"@"the url to your repository on github"
 </section>
 
 <section markdown="block">
-### Commands for Saving and Sharing Changes?
+### Commands for Saving and Sharing Changes
 
 __What's are the actual commands that you use for making, saving and sharing changes?  Let's start with just making the change and prepping it to be saved.__ &rarr;
 
@@ -106,7 +110,7 @@ git status
 </section>
 
 <section markdown="block">
-### Continued...
+### Saving and Sharing Continued...
 
 __Saving and sending to the remote repository__ &rarr;
 
@@ -128,32 +132,9 @@ git push origin master
 
 
 
-<!--
 
 <section markdown="block">
-### Corresponding Commands Continued
-
-__Saving and sending to the remote repository__ &rarr;
-
-<div class="incremental" markdown="block">
-{% highlight bash %}
-# check your staged changes
-git status
-
-# save them, make sure you remember your comment by using -m!
-git commit -m 'my message'
-
-# show a history of your changes
-git log --color (show your changes so far)
-
-# send to your remote repository
-git push origin master
-{% endhighlight %}
-</div>
-</section>
-
-<section markdown="block">
-### Details on git status
+### git status
 
 __What does git status do?__ &rarr;
 
@@ -164,89 +145,83 @@ __git status__ - show what changes are ready to be committed as well as changes 
 </section>
 
 <section markdown="block">
-### Additional Notes on git add
+### git add
 
+__What does git add do? Does it take any arguments or does it have flags?__ &rarr;
+
+<div class="incremental" markdown="block">
 __git add__ marks a file or files as ready to be saved.  
 
-__There are two ways to use it:__ &rarr;
-
 {% highlight bash %}
-# add all
+# add all to stage all of your changes
 git add --all 
 
-# add specific file
+# add a path to a file to add a specific file
 git add relative/path/to/myfile.txt
 {% endhighlight %}
+</div>
 </section>
 
 <section markdown="block">
-### Commit Messages
+### git commit
 
-When you commit (save) __remember to add a commit message__ using the __-m__ option.
+__What does git commit do? Does it take any arguments or does it have flags?__ &rarr;
+
+
+<div class="incremental" markdown="block">
+__git commit__ _saves_ your changes to your local repository.
 
 {% highlight bash %}
 # in the directory of your repository
 git commit -m 'commit message goes here'
 {% endhighlight %}
+</div>
 </section>
 
 <section markdown="block">
-### Some Troubleshooting
+### Showing and Getting Rid of Remote Repositories
 
-If you're having issues sending your changes to your remote repository (github)...
+How do you... __Show your remote repository names and urls?__ __...and how do you  get rid of remote repositories?__ &rarr;
 
-Show your remote repository names and urls:
-
+<div class="incremental" markdown="block">
 {% highlight bash %}
+# show remote repositories
 git remote -v
+
+# The output should look something like...
+# origin	https://jversoza@github.com/jversoza/lab-07-javascript-conditionals.git (fetch)
+# origin	https://jversoza@github.com/jversoza/lab-07-javascript-conditionals.git (push)
+
+# remove remote repository (assuming remote repository name is origin)
+git remote remove origin
 {% endhighlight %}
+</div>
 
-The output should look something like...
-
-{% highlight bash %}
-origin	https://github.com/jversoza/lab-06-javascript-conditionals.git (fetch)
-origin	https://github.com/jversoza/lab-06-javascript-conditionals.git (push)
-{% endhighlight %}
-
-If it's incorrect, try changing the associated url:
-
-{% highlight bash %}
-git remote set-url origin https://your_github_user_name@github.com/your_github_user_name/lab-06-javascript-conditionals.git 
-{% endhighlight %}
 </section>
 
 <section markdown="block">
-### Source Material
+### Troubleshooting
 
-See the first two chapters of the second edition of [Eloquent JavaScript](http://eloquentjavascript.net/2nd_edition/preview/) for more detailed information:
+If you have trouble sending your changes to github, make sure your remote repository url is correct...
 
-* [Chapter 1 - Values](http://eloquentjavascript.net/2nd_edition/preview/01_values.html)
-* [Chapter 2 - Program Structure](http://eloquentjavascript.net/2nd_edition/preview/02_program_structure.html)
-</section>
+{% highlight bash %}
+# show remote repositories
+git remote -v
 
-<section markdown="block">
-### JavaScript
+# should give back something like...
+# origin	https://jversoza@github.com/jversoza/lab-07-javascript-conditionals.git (fetch)
+# origin	https://jversoza@github.com/jversoza/lab-07-javascript-conditionals.git (push)
 
-__What's JavaScript?__ &rarr; 
+# remove remote repository (assuming remote repository name is origin)
+git remote remove origin
 
-<div class="incremental" markdown="block">
-* __JavaScript__ is a __widely used__, __high-level__ programming language that is __available on many platforms__
-* it was originally created in 1995 as a way to add interactivity (through programming) to web pages in __Netscape Navigator__!
-* __JavaScript__ and __Java__ are two entirely different programming languages
+# add new remote
+git remote add origin https://jversoza@github.com/jversoza/lab-07-javascript-conditionals.git
 </div>
 </section>
 
 <section markdown="block">
-### Rationale for Using JavaScript
-
-__Why are we learning JavaScript?__ &rarr;
-
-<div class="incremental" markdown="block">
-* we need _something_ to put into version control
-* some understanding of basic JavaScript will be helpful in other classes, specifically with classes geared towards web development
-* JavaScript is a __widely used__, __high-level__ programming language that is __available on nearly every platform__
-* some people (_me_) think it's __fun__
-</div>
+## JavaScript!
 </section>
 
 <section markdown="block">
@@ -358,61 +333,30 @@ Chrome's JavaScript Console is multi-purpose.  __What are the ways that we can u
 
 <section markdown="block">
 ## JavaScript Basics...
+
+<!--
+* what types do we know
+	* what are some examples of each?
+* what operators do we know
+* put together expressions using variables, values and operators
+* put together  statements
+* built in functions
+	* console.log
+	* prompt()
+* sample program.... double a number that's entered... using a temporary variable
+-->
 </section>
 
-<section markdown="block">
-### Values, Types and Operators
-
-The most basic elements of a JavaScript program are:
-
-* values
-* types
-* operators
-</section>
 
 <section markdown="block">
-### What Exactly is a Program?
+### Data Types and Values
 
-__What's a program?  What's a statement?  What's an expression?__ &rarr;
+__What's a value and what's a data type?__ &rarr;
 
 <div class="incremental" markdown="block">
 
-* __program__ - a sequence of statements that specify to a computer actions to perform
-* __statement__ - corresponds to a sentence... it's a full instruction for the computer... __all statements end in a semicolon__ in JavaScript (;)
-* __expression__ - a fragment of code that produces a value; it's not a statement by itself
-</div>
-</section>
-
-<section markdown="block">
-### Expressions and Statements Continued
-
-{% highlight html %}
-// Statement
-1 + 5;
-
-// Even these are statements:
-1;
-"hi";
-{% endhighlight  %}
-</section>
-
-<section markdown="block">
-## All statements end in a semicolon (;) in JavaScript
-</section>
-
-<section markdown="block">
-### Values
-
-__What's a value, and what are some examples of values in JavaScript?__ &rarr;
-
-<div class="incremental" markdown="block">
-
-* values are just data
-* some examples of values are numbers, like 3.14 and -273 and strings, like "hello" and "hi"
-* there are also special values like:
-	* __Infinity__ (and negative Infinity!)
-	* __NaN__ - not-a-number
-	* __null/undefined__ - _absence of a value_
+* values are just data - for example: 3.14, "hello"
+* a __type__ is just a kind or category of value.  
 </div>
 </section>
 
@@ -432,83 +376,47 @@ __How do we create a value in our program?__ &rarr;
 <section markdown="block">
 ### Data Types
 
-A __type__ is just a kind or category of value.  Here are three data types in JavaScript:
 
-* __numbers__ - numeric data (clearly!)
-* __strings__ - an ordered sequence of characters (alphanumeric, punctuation, spaces, etc.)
+__What are some data types that we know?__ &rarr;
+
+<div class="incremental" markdown="block">
+* __number__ - numeric data (clearly!)
+* __string__ - an ordered sequence of characters (alphanumeric, punctuation, spaces, etc.)
 * __boolean__ values - true / false
+* there's also __undefined__... when we try to use a variable that hasn't been created yet
+</div>
 
-A values types sometimes determines what we can and can't do with that value!
 </section>
 
 <section markdown="block">
-### Operators
+### Data Types
 
-__What's an operator?__ &rarr;
+A value's data __type__ determines how that value behaves when used in functions or transformed/combined with __operators__.
 
-<div class="incremental" markdown="block">
-
-* operators allow us to combine and transform values
-* operators have __operands__, 
-	* operands are the values that supply to operators
-	* __binary__ operators have one operand 
-	* __unary__ operators have two operands
-* operators give back values... 
-	* using operators with values yields other values!
-</div>
 </section>
 
 <section markdown="block">
 ### Numbers
 
-* numbers are just _numbers_
-* you can represent 
-	* positive and negative whole numbers: 23, 42, -10
-	* decimals (with a period): 2.3, 4.2
+* numbers are, of course,  _numbers_
+* including... positive and negative whole numbers: 23, 42, -10
+* as well as decimals (with a period): 2.3, 4.2
 * no need for commas
 * JavaScript uses a fixed number of bits to store numbers: _64 bits_
 </section>
 
-<section markdown="block">
-### Numeric Operators
-
-__Name 5 binary arithmetic operators (they take two operands, one on either side)__ &rarr;
-
-<div class="incremental" markdown="block">
-
-* __+__ - addition
-* __-__ - subtraction
-* __\*__ - multiplication
-* __/__ - division
-* __%__ - modulo (remainder operator)
-</div>
-
-</section>
-
-<section markdown="block">
-### Numeric Operators and Precedence
-
-__What is the resulting value of this expression?__ &rarr;
-
-{% highlight html %}
-6 + 20 % 8
-{% endhighlight %}
-
-<div class="incremental" markdown="block">
-* order of operations: parentheses, exponents, multiplication, division, addition, subtraction (PEMDAS)
-* modulo is the same precedence as multiplication and division
-* answer is 10
-</div>
-</section>
 
 <section markdown="block">
 ### Some Special Numbers...
 
+__Are there any special values for numbers other than actual integer and floating point numbers?__ &rarr;
+
+<div class="incremental" markdown="block">
 * __Infinity, -Infintity__ - positive and negative infinities (don't use these, they're not that useful, and not mathematically solid!)
 * __NaN__ (not-a-number) - this results from any numeric operation that doesn't give back a meaniingful result... such as 0/0
+</div>
 
 </section>
-
 
 <section markdown="block">
 ### Strings
@@ -519,16 +427,13 @@ __What's a string, and give an example of a string literal__ &rarr;
 A __string__ is an ordered sequence of characters.  You can tell that a value is a string if it is surrounded by single or double quotes:
 
 {% highlight html %}
-"I am a string"
 "I'm a string"
+'I\'m a string'
 {% endhighlight %}
 </div>
 
 </section>
 
-<section markdown="block">
-## Quoted text is a string!
-</section>
 
 <section markdown="block">
 ### Empty Strings
@@ -571,6 +476,48 @@ __How do we write a backslash, quote, tab or a new line in a string?__ &rarr;
 
 
 <section markdown="block">
+### Operators
+
+__What's an operator and what are some examples of operators?__ &rarr;
+
+<div class="incremental" markdown="block">
+
+* operators allow us to combine and transform values
+* operators have __operands__, 
+	* __operands__ are the values that supplied to operators
+	* __binary__ operators have one operand 
+	* __unary__ operators have two operands
+* __operators give back values__ 
+	* using operators with values yields other values!
+</div>
+</section>
+
+<section markdown="block">
+### Numeric Operators
+
+__Name 5 binary arithmetic operators (they take two operands, one on either side)__ &rarr;
+
+<div class="incremental" markdown="block">
+
+* __+__ - addition
+* __-__ - subtraction
+* __\*__ - multiplication
+* __/__ - division
+* __%__ - modulo (remainder operator)
+</div>
+
+</section>
+
+<section markdown="block">
+### Numeric Operators and Precedence
+
+* order of operations: parentheses, exponents, multiplication, division, addition, subtraction (PEMDAS)
+* modulo is the same precedence as multiplication and division
+</section>
+
+
+
+<section markdown="block">
 ### String Operators
 
 __We learned about one operator that works on strings.  What was it?__ &rarr;
@@ -591,14 +538,12 @@ Unary Operators only have a single operand to the right:
 
 * __+__ - convert to positive number
 * __-__ - convert to negative number
-* typeof - gives the _type_ of a value (Number, String, etc.)
 
-__Let's try some of these.__ &rarr;
+__What's the operator that gives back the type of a value?__ &rarr;
 
-{% highlight html %}
-+10
-typeof "hi there"
-{% endhighlight %}
+<div class="incremental" markdown="block">
+__typeof__ - gives the _type_ of a value (Number, String, etc.)
+</div>
 
 </section>
 
@@ -613,9 +558,8 @@ Again, __typeof__ is:
 __What are the types that we know?  What would we get with this code:__  &rarr;
 
 {% highlight html %}
-typeof "five"
-typeof 5
-typeof "5"
+typeof true
+typeof "10"
 {% endhighlight %}
 
 <div class="incremental" markdown="block">
@@ -624,7 +568,6 @@ typeof "5"
 </div>
 
 </section>
-
 
 <section markdown="block">
 ### Functions
@@ -665,6 +608,40 @@ JavaScript comes with several built in functions.  We learned two of them.  __Wh
 </div>
 </section>
 
+
+<section markdown="block">
+## Vaues, Operators and Functions can be Combined to Make Expressions
+</section>
+
+<section markdown="block">
+### What Exactly is a Program?
+
+__What's a program?  What's a statement?  What's an expression?__ &rarr;
+
+<div class="incremental" markdown="block">
+
+* __program__ - a sequence of statements that specify to a computer actions to perform
+* __statement__ - corresponds to a sentence... it's a full instruction for the computer... __all statements end in a semicolon__ in JavaScript (;)
+* __expression__ - a fragment of code that produces a value; it's not a statement by itself
+</div>
+</section>
+
+<section markdown="block">
+### Expressions and Statements Continued
+
+{% highlight html %}
+# the entire line below is a statement
+var x = 1 + 5;
+
+# 1 + 5 in the statement above is just an expression... that produces a value
+{% endhighlight  %}
+</section>
+
+<section markdown="block">
+## All statements end in a semicolon (;) in JavaScript
+</section>
+
+
 <section markdown="block">
 ### Variables
 
@@ -698,12 +675,9 @@ var answer = prompt("Yes or no!?");
 <section markdown="block">
 ### Comments
 
-Comments allow the programmer to write notes that the JavaScript interpreter will skip over / ignore
+Comments allow the programmer to write notes that the JavaScript interpreter will skip over / ignore.  __How do you specify a comment in your program?__ &rarr;
 
-* these are meant for humans to read, not the computer.
-* you can comment by starting a line with //
-* or by stopping and starting a series of lines with /\* \*/
-
+<div class="incremental" markdown="block">
 {% highlight html %}
 // a comment
 /*
@@ -711,23 +685,32 @@ a long
 comment
 */
 {% endhighlight  %}
+</div>
+
 </section>
 
 <section markdown="block">
-### A Sample Program
+### Let's Write a Prgoram That...
 
-__What do you think this program does?__ &rarr;
+* asks the user for a number
+* doubles the number and saves it in a variable
+* prints out the new number to the JavaScript console
+
+</section>
+
+<section markdown="block">
+### A Potential Solution
+
 {% highlight html %}
 <!DOCTYPE html>
 <html>
 <body>
 <script>
-var answer = prompt("Give me something to say twice:");
-console.log(answer + " " + answer);
+var num = prompt("Give me a number; I'll double it");
+var twice_the_num = num * 2;
+console.log(twice_the_num);
 </script>
 </body>
 </html>
 {% endhighlight  %}
-
-__Let's write it together.__ &rarr;
 </section>

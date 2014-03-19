@@ -11,57 +11,8 @@ In this lab, you'll be:
 2. linking the two with each other so that they can be synchronized
 3. associating a name and email address with your local repository
 4. creating a program that calculates the area of a rectangle
-5. \* creating a program that calculates the area of a trapezoid: example, base1 = 6, base2 = 10, height = 4... area is 32
+5. \* creating a program that calculates the area of a triangle
 6. sending these programs to github
-
-## Summary of Commands:
-
-__THESE ARE NOT LAB INSTRUCTIONS.__
-
-The following is just a reference.  The lab instructions are below.
-
-{% highlight bash %}
-# create a local repository
-git init
-
-# configure it with your name and email
-git config user.name  "your name"
-git config user.email "your@email.address"
-
-# create a remote repository
-curl -u 'your github user name' https://api.github.com/user/repos -d '{"name":"your repository name"}'
-
-# link the two
-git remote add origin "your username"@"the url to your repository on github"
-
-# two ways to show all remote repositories
-git remote -v
-cat .git/config
-
-# removing a remote repository by name (usually origin)
-git remote remove name_of_remote
-
-# changing / setting the url of a named remote repository (usually origin)
-git remote set-url name_of_remote new_remote_url
-
-# look at the differences between your last save and your current changes (line by line)
-git diff --color
-
-# check on the status of your changes
-git status
-
-# "stage" or mark your changes as ready to be saved
-git add --all
-
-# save!
-git commit -m 'my message'
-
-# show a log of your changes so far
-git log --color (show your changes so far)
-
-# send to a remote repository (to submit an assignment)
-git push origin master 
-{% endhighlight %}
 
 ## Instructions
 
@@ -73,16 +24,16 @@ This will create a local git repository to store your work for this lab.  The re
 * (if doesn't already exist) create a folder that consists of your first initial and last name on your Desktop
 {% highlight bash %}
 cd ~/Desktop
-mkdir myname
+mkdir your_first_initial_last_name
 {% endhighlight %}
 * within that folder, create another folder called __lab-07-if-while__ and __change into it__
 {% highlight bash %}
-cd myname
+cd your_first_initial_last_name
 mkdir lab-07-if-while
 cd lab-07-if-while
 {% endhighlight %}
 * use pwd to verify that you're in the correct folder
-	* you should be in __~/Desktop/myname/lab-07-if-while__
+	* you should be in __~/Desktop/your_first_initial_last_name/lab-07-if-while__
 	* if you're not, cd into it
 * to prove that this is not yet a repository, list __all__ files in your current directory 
 {% highlight bash %}
@@ -91,8 +42,8 @@ ls -al
 * it should mostly be empty
 {% highlight bash %}
 total 0
-drwxr-xr-x  2 joe  staff   68 Feb 26 07:52 .
-drwxr-xr-x  3 joe  staff  102 Feb 26 07:52 ..
+drwxr-xr-x  2 joe  staff   68 Mar 18 18:03 .
+drwxr-xr-x  3 joe  staff  102 Mar 18 18:03 ..
 {% endhighlight %}
 * in your lab-07-if-while folder, create your repository!
 {% highlight bash %}
@@ -162,7 +113,7 @@ git remote -v
 {% endhighlight %}
 * it should _do nothing_
 * now, link your local repository to your remote repository on github by using git remote add 
-* make sure to substitute the two spots where it says "your_github_user_name" with github username
+* make sure to substitute the two spots where it says "your_github_user_name" with your github username
 <!--_-->
 {% highlight bash %}
 git remote add origin https://your_github_user_name@github.com/your_github_user_name/lab-07-if-while.git 
@@ -175,8 +126,8 @@ git remote -v
 {% endhighlight %}
 * it should show origin ... and your repository url:
 {% highlight bash %}
-origin	https://github.com/jversoza/lab-07-if-while.git (fetch)
-origin	https://github.com/jversoza/lab-07-if-while.git (push)
+origin	https://jversoza@github.com/jversoza/lab-07-if-while.git (fetch)
+origin	https://jversoza@github.com/jversoza/lab-07-if-while.git (push)
 {% endhighlight %}
 
 ### Creating and Saving Changes Locally, Sending to Remote Repository
@@ -208,6 +159,10 @@ nothing to commit (create/copy files and use "git add" to track)
 ![Save As](../../resources/img/sublime-save-as-menu.png)
 * make sure you navigate to your __~/Desktop/yourname/lab-07-if-while__ before saving!
 ![Save As](../../resources/img/sublime-save-as.png)
+* add text to your file: 
+{% highlight bash %}
+lab 7, if and while
+{% endhighlight %}
 * switch back to terminal
 * use __git status__ to show that you've made changes
 {% highlight bash %}
@@ -272,7 +227,7 @@ git log --color
 {% highlight bash %}
 commit 5b24d2777a602908978916ca8fe9c8dd2ed6036b
 Author: joe <jversoza@citytech.cuny.edu>
-Date:   Wed Mar 5 11:45:21 2014 -0500
+Date:   Wed Mar 18 18:42:33 2014 -0500
 
     added readme
 
@@ -290,27 +245,29 @@ To https://github.com/jversoza/lab-07-if-while.git
  * [new branch]      master -> master
 {% endhighlight %}
 * go back to github and look in your repository.  you should see that file appear.
-* go back to SublimeText
-* add two lines to your README.markdown file
+
+<hr>
+
+### area of a rectangle
+
+Write a program that takes user input and calculate the area of a rectangle based on that input
+
+* using SublimeText, create a new file called __rectangle.html__ in your repository directory: __~/Desktop/jversoza/lab-07-if-while/__
+* setup an html file, and add script tags... start writing your JavaScript between the script tags
+* the program should ask for a length: "Give me a length"
+* the program should ask for a width: "Give me a width"
+* the program should calculate the area of a rectangle with that length and width
+* it should about the resulting value to the  __JavaScript console__ 
+	* for example, if someone enters "5" and "7"  in the prompt dialogs
+	* the output in the console would be "The area is 35"
+* example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
 {% highlight bash %}
-This is lab 07...
-It's about JavaScript conditionals.
+(prompt) Give me a length
+> 7
+(prompt) Give me a width
+> 5
+The area is 35.
 {% endhighlight %}
-* save your file: File &rarr; Save or Command+s
-* go back to terminal
-* use git diff to show your changes
-{% highlight bash %}
-git diff --color
-{% endhighlight %}
-* use git status, add and then commit to save your changes
-* use git push to send them to your remote repository
-* if you click through the filename on github, you'll see your changes
-* when you're done try the following:
-	* show your remote url... 
-	* add it to your README file and save it!
-	* commit your change...
-	* set your remote url to some url that does not exist (change the lab number to 7, for example)
-	* push the change to your remote
-	* note the error!
-	* set your url appropriately
-	* attempt to push your change again
+* save your file in SublimeText
+* use git status, add,  commit, and push to save your file in version control and submit it
+

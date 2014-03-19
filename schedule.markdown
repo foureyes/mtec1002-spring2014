@@ -183,13 +183,14 @@ Version Control #3
 * while loops
 </td>
 <td markdown="block">
-<!--
 
+<!--
 * [About Lab #7](labs/07/meta.html)
 * [Quick Review, Prep](labs/07/js-git-review.html)
 	* [__Lab #7, Prep__ - Creating Local and Remote, Warm Up Program](labs/07/lab-07-prep.html) 
 * [Conditionals Revisited](labs/07/js-conditionals-revisited.html) 
 	* [__Lab #7, Part 1__ - JavaScript Conditionals](labs/07/lab-07-if-01.html)
+* Possibly While Loops?
 * [JavaScript While Loops](labs/07/js-while.html) 
 	* [__Lab #7, Part 2__ - While Loops](labs/07/lab-07-while-02.html)
 -->

@@ -19,37 +19,6 @@ See the first two chapters of the second edition of [Eloquent JavaScript](http:/
 * [Chapter 2 - Program Structure](http://eloquentjavascript.net/2nd_edition/preview/02_program_structure.html)
 </section>
 
-<section markdown="block">
-### Topics
-
-* what does === do?
-* what does !== do?
-* tests both type and value
-* how to write an if statement?
-* how to write if else
-* how to write if else if
-* what situations would you use?
-	* if 
-	* consecutive ifs
-	* if else
-	* if else if
-	* if else if else
-* sample programs
-* parseInt
-	* write a quick program to add 10 to number
-	* what's the type of?
-	* javascript does some weird things
-	* to prevent that, coerce to an int
-* other comparison operators
-* logical operators
-	* and, or, not
-	* examples
-		* yes or YES or y
-		* two inputs - are you going out?  is it raining?  need an umbrella if yes to goth
-		* how tall are you? - between x and y
-			* use parse int
-* write a program that... 
-</section>
 
 <section markdown="block">
 ### Boolean Values
@@ -70,36 +39,65 @@ false
 <section markdown="block">
 ### Boolean Operators
 
-There are a couple of operators that return boolean values!
+__What are some operators that return boolean values?__ &rarr;
 
+<div class="incremental" markdown="block">
 * __===__ - equals - checks if both operands are the __same value and type__
 	* gives back true if both are the same value and type
 	* gives back false otherwise
 * __!==__ - not equals - checks if the operands are __not the same value or type__
 	* gives back true if both operands are not the same value or type
 	* gives back false otherwise
+</div>
 
 </section>
 
 <section markdown="block">
 ### Boolean Expressions
 
-You can create boolean expressions with these operators:
+You can create boolean expressions with these operators.  __What is the value that results from the following expressions?  What type are they?__ &rarr;
 
 {% highlight html %}
 1 === "1"
 12 !== "cat"
 {% endhighlight %}
 
-__By the way... what is the type of value given back by these, and how do we find out what the type actually is?__ &rarr;
 
 <div class="incremental" markdown="block">
 {% highlight html %}
 # boolean
-var result =  1 === "1"
-typeof result
+false
+true
 {% endhighlight %}
 </div>
+
+</section>
+
+<section markdown="block">
+### Additional Comparison Operators
+
+__Can you think of other comparison operators that JavaScript may have?__ &rarr;
+
+<div class="incremental" markdown="block">
+* these all return boolean values
+* less than - __&lt;__
+* greater than - __&gt;__
+* less than or equal to - __&lt;=__
+* greater than or equal to- __&gt;=__
+<div>
+
+</section>
+
+<section markdown="block">
+### Additional Comparison Operators Continued
+
+{% highlight html %}
+# false!
+5 > 7
+
+# true!
+5 >= 5
+{% endhighlight %}
 
 </section>
 
@@ -127,6 +125,9 @@ if (some_boolean_expression) {
 }
 {% endhighlight %}
 
+* [Diagram for if statements](../../resources/img/if.png)
+* [Diagram for consecutive if statements](../../resources/img/if-consecutive.png)
+
 </section>
 
 <section markdown="block">
@@ -141,6 +142,9 @@ if (some_boolean_expression) {
 	// do stuff here if expression is false
 }
 {% endhighlight %}
+
+* [Diagram for if / else statements](../../resources/img/if-else.png)
+* else statements are always attached to an if!
 
 </section>
 
@@ -160,9 +164,20 @@ if (boolean_expression_1) {
 }
 {% endhighlight %}
 
+* [Diagram for if / else if statements](../../resources/img/if-else-if.png)
 </section>
+
+
 <section markdown="block">
-### Boolean Expression
+### Usage
+
+* use if statements if there's a single alternative path of execution
+* use if/else  statements if there's a two possible alternative paths of execution
+* use if/else if statements if there's more than two possible alternative paths of execution
+</section>
+
+<section markdown="block">
+### Boolean Expressions
 
 Note that within the parentheses is some expression that produces a boolean values (true or false).
 
@@ -187,3 +202,34 @@ if (boolean_expression_1) {
 
 </section>
 
+
+<section markdown="block">
+### Logical Operators
+
+Logical operators allow you to combine boolean values!
+
+* __and__ (represented as __&amp;&amp;__) - takes two operands.  
+	* only gives back true when both operands are true.
+	* gives back false otherwise
+* __or__ (represented as __||__) - takes two operands. 
+	* returns true if either operand is true
+	* it only gives back false when both operands are false.
+</section>
+
+<section markdown="block">
+### Using Logical Operators
+
+Examples
+
+{% highlight html %}
+# variable num is between 1 and 10
+if(num >= 1 and num <=10) {
+	print("it's between 1 and 10")
+}
+
+# answer is yeah or yes
+if(answer === 'yes' and answer === 'yeah' ) {
+	print("YUP!")
+}
+{% endhighlight %}
+</section>
