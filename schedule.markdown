@@ -173,25 +173,30 @@ Version Control #3
 * [JavaScript Conditionals](labs/06/js-conditionals.html) 
 	* [__Lab #6, Part 2__ - Conditionals](labs/06/lab-06-javascript-conditionals-02.html)
 
+</td>
+</tr>
+<tr>
+<td><h2>7</h2></td>
+<td><h2>03/19</h2></td>
+<td markdown="block">
+* conditionals revisted
+* while loops
+</td>
+<td markdown="block">
 <!--
-	* another type: booleans
-		* true or false
-	* comparison operators
-	* logical operators
-		* not, and, or
-	* type coercion
-	* if/else
-		* grade
-		* days
-		* tip
-		* extra credit - number guessing game
-		* extra credit - colors
-* [JavaScript Loops](labs/05/loops.html) 
-	* creating our own
-		* returning values
-	* [__Lab #5, Part 4__ - Functions](labs/04/lab-05-js-functions-04.html)
-		* exclaim
-		* volume of an object
+
+* [About Lab #7](labs/07/meta.html)
+* [Quick Review, Prep](labs/07/js-git-review.html)
+	* [__Lab #7, Prep__ - Creating Local and Remote, Warm Up Program](labs/07/lab-07-prep.html) 
+* [Conditionals Revisited](labs/07/js-conditionals-revisited.html) 
+	* [__Lab #7, Part 1__ - JavaScript Conditionals](labs/07/lab-07-if-01.html)
+* [JavaScript While Loops](labs/07/js-while.html) 
+	* [__Lab #7, Part 2__ - While Loops](labs/07/lab-07-while-02.html)
+-->
+
+
+<!--
+coercion, truthiness
 * [JavaScript Functions](labs/05/functions.html) 
 	* creating our own
 		* returning values
@@ -201,29 +206,8 @@ Version Control #3
 * [About Lab #6](labs/06/meta.html)
 * [Git Review, Processing Exercises](labs/06/git_and_processing.html)
 	* [__Lab__ - Circles, Squares and Lines](labs/06/lab_processing_review.html)
-
 -->
 
-</td>
-</tr>
-<tr>
-<td><h2>7</h2></td>
-<td><h2>03/19</h2></td>
-<td markdown="block">
-JavaScript #1
-</td>
-<td markdown="block">
-{% comment %}
-* [About Lab #7](labs/07/meta.html)
-* [Version Control Workflow](labs/07/workflow.html)
-* [Review Setup, Statements, Math, Variables](labs/07/processing.html)
-	* [__Lab__ (Follow Along) Draw a Snowman](labs/07/lab_7_part_1_snowman.html)
-	* [__Lab__ (On Your Own) Draw a Car](labs/07/lab_7_part_2_car.html)
-* [Animation](labs/07/processing.html)
-	* [__Lab__ (Follow Along) - Animate Your Snowman](labs/07/lab_7_part_3_animate_snowman.html)
-	* [__Lab__ (On Your Own) - Animate Your Car](labs/07/lab_7_part_4_animate_car.html)
-* Animation and Conditionals Preview
-{% endcomment %}
 </td>
 </tr>
 <tr>
