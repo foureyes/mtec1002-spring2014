@@ -217,7 +217,7 @@ git remote remove origin
 
 # add new remote
 git remote add origin https://jversoza@github.com/jversoza/lab-07-javascript-conditionals.git
-</div>
+{% endhighlight %}
 </section>
 
 <section markdown="block">
@@ -610,7 +610,7 @@ JavaScript comes with several built in functions.  We learned two of them.  __Wh
 
 
 <section markdown="block">
-## Vaues, Operators and Functions can be Combined to Make Expressions
+## Values, Operators and Functions can be Combined to Make Expressions
 </section>
 
 <section markdown="block">
@@ -690,7 +690,7 @@ comment
 </section>
 
 <section markdown="block">
-### Let's Write a Prgoram That...
+### Let's Write a Program That...
 
 * asks the user for a number
 * doubles the number and saves it in a variable

@@ -101,7 +101,7 @@ you will be hungry by the end of class
 
 Write a program that asks for number.  The program will translate that number to a day of the week.
 
-* using SublimeText, create a new file called __adddice.html__ in your repository directory: __~/Desktop/jversoza/lab-07-if-while/__
+* using SublimeText, create a new file called __days.html__ in your repository directory: __~/Desktop/jversoza/lab-07-if-while/__
 * setup an html file, and add script tags... start writing your JavaScript between the script tags
 * the program should ask for a number: "Give me a number for the day of the week"
 * use the parseInt function to convert the input from a string to a number (for example: num = parseInt(day, 10)) 
@@ -174,7 +174,6 @@ Write a program that converts a numeric score to a letter grade.
 
 * using SublimeText, create a new file called __grade.html__ in your repository directory: __~/Desktop/jversoza/lab-07-if-while/__
 * setup an html file, and add script tags... start writing your JavaScript between the script tags
-* create a variable to hold a secret number
 * the program should ask for a score: "What was your score?"
 * use the parseInt function to convert the input from a string to a number (for example: num = parseInt(guess, 10)) 
 * use the chart below to translate from number to letter grade:
@@ -203,7 +202,7 @@ B
 
 Create a tip calculator.
 
-* using SublimeText, create a new file called __grade.html__ in your repository directory: __~/Desktop/jversoza/lab-07-if-while/__
+* using SublimeText, create a new file called __tip.html__ in your repository directory: __~/Desktop/jversoza/lab-07-if-while/__
 * setup an html file, and add script tags... start writing your JavaScript between the script tags
 * the program should ask the following:
 	* how many people?	

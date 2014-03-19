@@ -29,7 +29,7 @@ Besides numbers and strings, there is another type that we talked about briefly.
 * a boolean value is __true__ or __false__
 * a literal __true__ and __false__ is just:
 
-{% highlight html %}
+{% highlight js %}
 true
 false
 {% endhighlight %}
@@ -57,15 +57,15 @@ __What are some operators that return boolean values?__ &rarr;
 
 You can create boolean expressions with these operators.  __What is the value that results from the following expressions?  What type are they?__ &rarr;
 
-{% highlight html %}
+{% highlight js %}
 1 === "1"
 12 !== "cat"
 {% endhighlight %}
 
 
 <div class="incremental" markdown="block">
-{% highlight html %}
-# boolean
+{% highlight js %}
+// boolean
 false
 true
 {% endhighlight %}
@@ -84,18 +84,18 @@ __Can you think of other comparison operators that JavaScript may have?__ &rarr;
 * greater than - __&gt;__
 * less than or equal to - __&lt;=__
 * greater than or equal to- __&gt;=__
-<div>
+</div>
 
 </section>
 
 <section markdown="block">
 ### Additional Comparison Operators Continued
 
-{% highlight html %}
-# false!
+{% highlight js %}
+// false!
 5 > 7
 
-# true!
+// true!
 5 >= 5
 {% endhighlight %}
 
@@ -119,7 +119,7 @@ A conditional is a way of allowing us to conditionally execute code based on a b
 
 Conditionally execute a branch of code.
 
-{% highlight html %}
+{% highlight js %}
 if (some_boolean_expression) {
 	// do stuff here if expression is true
 }
@@ -135,7 +135,7 @@ if (some_boolean_expression) {
 
 Execute one branch if condition is true, another branch if condition is false.  An else must have a preceding if!
 
-{% highlight html %}
+{% highlight js %}
 if (some_boolean_expression) {
 	// do stuff here if expression is true
 } else {
@@ -154,7 +154,7 @@ if (some_boolean_expression) {
 Chain multiple conditions.  You can add else at the end as well.  Conditions are evaluated until the first true condition, at which point the if statement finishes immediately.
 
 
-{% highlight html %}
+{% highlight js %}
 if (boolean_expression_1) {
 	// do stuff here if expression 1 is true
 } else if (boolean_expression_2) {
@@ -181,7 +181,7 @@ if (boolean_expression_1) {
 
 Note that within the parentheses is some expression that produces a boolean values (true or false).
 
-{% highlight html %}
+{% highlight js %}
 if (boolean_expression_1) {
 	// do stuff here if expression 1 is true
 } 
@@ -194,7 +194,7 @@ if (boolean_expression_1) {
 
 Curly braces denote statements of code that are grouped together.  Everything within the curly braces below is considered part of the if statement.
 
-{% highlight html %}
+{% highlight js %}
 if (boolean_expression_1) {
 	// do stuff here if expression 1 is true
 } 
@@ -211,7 +211,7 @@ Logical operators allow you to combine boolean values!
 * __and__ (represented as __&amp;&amp;__) - takes two operands.  
 	* only gives back true when both operands are true.
 	* gives back false otherwise
-* __or__ (represented as __||__) - takes two operands. 
+* __or__ (represented as __&#124;&#124;__) - takes two operands. 
 	* returns true if either operand is true
 	* it only gives back false when both operands are false.
 </section>
@@ -221,15 +221,28 @@ Logical operators allow you to combine boolean values!
 
 Examples
 
-{% highlight html %}
-# variable num is between 1 and 10
-if(num >= 1 and num <=10) {
+{% highlight js %}
+// variable num is between 1 and 10
+if(num >= 1 && num <=10) {
 	print("it's between 1 and 10")
 }
 
-# answer is yeah or yes
-if(answer === 'yes' and answer === 'yeah' ) {
+// answer is yeah or yes
+if(answer === 'yes' || answer === 'yeah' ) {
 	print("YUP!")
 }
+{% endhighlight %}
+</section>
+
+<section markdown="block">
+### Converting from Numbers to Strings
+
+Use the built-in function __parseInt__ to convert a number to a string.
+
+* parseInt takes two arguments, the string to convert, and the radix (which will be 10 for us)
+* we can use this when we get user input... __why would we need to do this?__...
+
+{% highlight js %}
+var num = parseInt(answer, 10);
 {% endhighlight %}
 </section>
