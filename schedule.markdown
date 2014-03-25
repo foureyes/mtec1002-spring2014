@@ -201,6 +201,8 @@ Version Control #3
 JavaScript #2
 </td>
 <td markdown="block">
+<!--
+
 * [About Lab #8](labs/08/meta.html)
 * [Quick Review Conditionals, Prep](labs/08/js-git-review.html)
 	* see slide on parseInt
@@ -214,6 +216,8 @@ JavaScript #2
 	* [__Lab #8, Part 1__ - JavaScript Loops](labs/08/lab-08-part-01-loops.html)
 * [Canvas](labs/08/js-canvas.html) 
 	* [__Lab #8, Part 2__ - Canvas](labs/08/lab-08-part-02-canvas.html)
+
+-->
 
 </td>
 </tr>
