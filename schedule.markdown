@@ -191,24 +191,6 @@ Version Control #3
 	* [__Lab #7, Part 1__ - JavaScript Conditionals](labs/07/lab-07-if-01.html)
 * Possibly While Loops?
 
-<!--
-* [JavaScript While Loops](labs/07/js-while.html) 
-	* [__Lab #7, Part 2__ - While Loops](labs/07/lab-07-while-02.html)
--->
-
-
-<!--
-coercion, truthiness
-* [JavaScript Functions](labs/05/functions.html) 
-	* creating our own
-		* returning values
-	* [__Lab #5, Part 4__ - Functions](labs/04/lab-05-js-functions-04.html)
-		* exclaim
-		* volume of an object
-* [About Lab #6](labs/06/meta.html)
-* [Git Review, Processing Exercises](labs/06/git_and_processing.html)
-	* [__Lab__ - Circles, Squares and Lines](labs/06/lab_processing_review.html)
--->
 
 </td>
 </tr>
@@ -219,15 +201,20 @@ coercion, truthiness
 JavaScript #2
 </td>
 <td markdown="block">
-{% comment %}
 * [About Lab #8](labs/08/meta.html)
-* [Clone and Fork](labs/08/clone_and_fork.html)
-	* [__Lab__ (Follow Along) Clone and Fork](labs/08/lab_8_part_1_clone_and_fork.html)
-* [Random and Triangle](labs/08/random_triangle.html);
-* [Conditionals](labs/08/conditionals.html)
-	* [__Lab__ (Follow Along) Conditionals and Animation](labs/08/lab_8_part_2_conditionals.html)
-	* [__Lab__ (On Your Own) Conditionals and Parallax](labs/08/lab_8_part_3_more_animation.html)
-{% endcomment %}
+* [Quick Review Conditionals, Prep](labs/08/js-git-review.html)
+	* see slide on parseInt
+	* see slide on if, if-else, if else if
+	* see slide on logical operators
+	* [__Lab #8, Prep__ - Creating Local and Remote, Warm Up Program(s)](labs/08/lab-08-prep.html) 
+		* see slide on parseInt
+		* see slide on if, if-else, if else if
+		* see slide on logical operators
+* [Loops](labs/08/js-loops.html) 
+	* [__Lab #8, Part 1__ - JavaScript Loops](labs/08/lab-08-part-01-loops.html)
+* [Canvas](labs/08/js-canvas.html) 
+	* [__Lab #8, Part 2__ - Canvas](labs/08/lab-08-part-02-canvas.html)
+
 </td>
 </tr>
 <tr>

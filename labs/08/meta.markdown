@@ -1,80 +1,69 @@
 ---
 layout: slides
-title: MTEC1002 - About Lab #8
+title: MTEC1002 - About Lab #6
 ---
 
 <section markdown="block" class="title-slide">
 
-# About Lab #8
+# About Lab #7
 
 {% include title-slide-footer.html %}
 </section>
 
 <section markdown="block">
-## Y.  STILL MOAR PROCESSING. BUT...
+## Soooo... version control.  That was fun, right?
 </section>
 
 <section markdown="block">
-### Today's Topics
+### Finished the 2nd Module
 
-* just a couple of git and github related _newness_
-	* copying an entire remote repo locally using git (__clone__)
-	* copying someone else's github repo so that you can modify it (__forking__)
-* a couple of new processing jams
-	* __triangle__
-	* __random__
-* some familiar stuff, but more in-depth
-	* __animation__ (more than one object, __parallax__)
-	* __conditionals__ (well, we knew this)
-	* __for loops__
+In the past few classes (4, 5, and 6) we learned version control... and we used JavaScript to learn it.
+
+__Why do we use it again?  Do you think you'll give it a try on your own projects?__ &rarr;
 </section>
 
 <section markdown="block">
-### Lab Grades
+### We're in the 3rd Module 
 
-* posted on blackboard (please check!)
-* each lab was worth __10__ points 
-* dropped lowest lab grade
-* only received 0 if you were absent and did not send in make-up work
-* average was __9/10__!
-* will send out averages and details end-of-week
-	* (though you can probably calculate this yourself beforehand if you're curious)
-</section>
+Classes 7, 8 and 9
 
-
-<section markdown="block">
-### Module 1 - Commandline - Grading Details
-
-* reviewed each lab, and...
-* only took off points for skipped/unfinished questions
-* lenient regarding answers (even if output was incorrect, still gave credit)
-* (lab questions answered / total lab questions) * 10 points 
-* rounded up!
-* look for more details in blackboard
+* we're done learning _new_ stuff about version control (for now)
+	* we'll use what we've learned about git to continue submitting our assignments to github
+	* we may come back to git in the next module
+* we'll focus on __JavaScript__ for __this module__
+* next module will be incorporate something more visual with __JavaScript__ (web pages or canvas)
 </section>
 
 <section markdown="block">
-### Module 2 - Version Control - Grading Details
+### Where We've Been and Where We're Going
 
-__10 points possible for drawing assignments__
-
-* +3 attendance and work		
-* +1 working program (no syntax errors)		
-* +2 program meets majority of specifications		
-* +1 program meets all specifications		
-* +3 successfully submitting using git and github		
-
-(this is the way I'm grading module 3 as well)
+1. Command line (1 - 3)
+2. Version control, with JavaScript (4 - 6)
+3. __JavaScript part 1 (7 - 9)__
+4. JavaScript part 2 (10 - 12)
+5. Publishing, remote servers (13 - 15)
 </section>
 
 <section markdown="block">
-### Extra Credit?
+### Review Topics
 
-Yes.  Lab 5... 3rd drawing counted as extra credit.
+* basic git commands revisited (again)
+	* creating repos
+	* working with files
+* basic JavaScript revisited
+	* data types
+	* input and output / calling functions
+	* conditionals
+</section>
 
-* +1 attempting dog drawing
-* +1 dog drawing meets some specifications		
-* +1 dog drawing meets all specifications		
+<section markdown="block">
+### New Topics
 
-(these were additional points... so over 10 was possible for lab 5)
+* converting from a string to a number
+* comparison operators and logical operators
+* while loops
+</section>
+
+<section markdown="block">
+## [Submitting Assignments, Warm-Up](js-git-review.html)
 </section>

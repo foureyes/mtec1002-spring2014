@@ -485,8 +485,8 @@ __What's an operator and what are some examples of operators?__ &rarr;
 * operators allow us to combine and transform values
 * operators have __operands__, 
 	* __operands__ are the values that supplied to operators
-	* __binary__ operators have one operand 
-	* __unary__ operators have two operands
+	* __binary__ operators have two operands
+	* __unary__ operators have one operand
 * __operators give back values__ 
 	* using operators with values yields other values!
 </div>

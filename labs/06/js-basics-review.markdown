@@ -35,7 +35,7 @@ __What's JavaScript?__ &rarr;
 ### Rationale for Using JavaScript
 
 __Why are we learning JavaScript?__ &rarr;
-
+s
 <div class="incremental" markdown="block">
 * we need _something_ to put into version control
 * some understanding of basic JavaScript will be helpful in other classes, specifically with classes geared towards web development
@@ -246,8 +246,8 @@ __What's an operator?__ &rarr;
 * operators allow us to combine and transform values
 * operators have __operands__, 
 	* operands are the values that supply to operators
-	* __binary__ operators have one operand 
-	* __unary__ operators have two operands
+	* __binary__ operators have two operands
+	* __unary__ operators have one operand
 * operators give back values... 
 	* using operators with values yields other values!
 </div>

@@ -1,5 +1,0 @@
-todo
-* easy git tut
-* removing from staging
-
-=====
