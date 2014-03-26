@@ -252,7 +252,7 @@ To https://github.com/jversoza/lab-08-for.git
 
 ## Instructions for Warm-Up Programs
 
-Note that __ALL OF THESE FILES MUST BE AVED IN THE LOCAL REPOSITORY THAT YOU CREATED FOR THIS LAB__.
+Note that __ALL OF THESE FILES MUST BE SAVED IN THE LOCAL REPOSITORY THAT YOU CREATED FOR THIS LAB__.
 
 <hr>
 
