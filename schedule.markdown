@@ -204,6 +204,7 @@ JavaScript #2
 * [About Lab #8](labs/08/meta.html)
 * [Quick Review Conditionals, Prep](labs/08/js-conditionals-review.html)
 	* [__Lab #8, Prep__ - Creating Local and Remote, Warm Up Program(s)](labs/08/lab-08-prep.html) 
+<!--
 * [Loops](labs/08/js-loops.html) 
 	* for loop
 	* count from one to 10
@@ -224,6 +225,7 @@ JavaScript #2
 * maybe while loop?
 	* guessing game...
 
+-->
 </td>
 </tr>
 <tr>
