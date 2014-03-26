@@ -3,7 +3,7 @@ layout: lab
 title: JavaScript For Loops
 prefix: ../../
 ---
-# Lab 8 - JavaScript For Loops
+# Lab 8 - Part 1 - JavaScript For Loops
 
 In this lab, you'll be creating several programs:
 
@@ -74,6 +74,8 @@ Let's party...
 PARTY NOW!!!
 {% endhighlight %}
 
+<hr>
+
 ### average
 
 Ask for four numbers, output the average of those numbers.  Use a for loop to do this.
@@ -98,9 +100,37 @@ Ask for four numbers, output the average of those numbers.  Use a for loop to do
 The average is 5.
 {% endhighlight %}
 
-### \*fizzbuzz
+<hr>
+
+### \*largest
 
 Ask for four numbers, output the largest of those numbers.  Use a for loop to do this.
+
+* using SublimeText, create a new file called __largest.html__ in your repository directory: __~/Desktop/jversoza/lab-08-for/__
+* setup an html file, and add script tags... start writing your JavaScript between the script tags
+* ask for a number 4 times: "Number please...."
+* using comparison operators and a conditional (in each iteration), determine the current largest number...
+* remember to convert from a string to an int!
+* say: "The largest number is x", with x replaced by the current largest number
+* example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
+
+{% highlight bash %}
+(prompt) Number please...
+> 4
+(prompt) Number please...
+> 6
+(prompt) Number please...
+> 1
+(prompt) Number please...
+> 9
+The largest number is 9
+{% endhighlight %}
+
+<hr>
+
+### \*fizzbuzz
+
+Count from 1 to 100, but print out fizz or buzz depending on special conditions.
 
 * using SublimeText, create a new file called __fizzbuzz.html__ in your repository directory: __~/Desktop/jversoza/lab-08-for/__
 * setup an html file, and add script tags... start writing your JavaScript between the script tags
@@ -108,7 +138,7 @@ Ask for four numbers, output the largest of those numbers.  Use a for loop to do
 * for multiples of three, print out "Fizz" instead of the number 
 * for multiples of five, print out "Buzz" instead of the number
 * for multiples of both three and five print “FizzBuzz”
-* example output is below
+* example output is below:
 
 {% highlight python %}
 1

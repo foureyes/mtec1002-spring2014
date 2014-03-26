@@ -209,8 +209,6 @@ JavaScript #2
 * [Canvas](labs/08/canvas.html) 
 	* [__Lab #8, Part 2__ - Canvas](labs/08/lab-08-part-02-canvas.html)
 * maybe while loop?
-
--->
 </td>
 </tr>
 <tr>
