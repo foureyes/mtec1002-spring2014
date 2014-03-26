@@ -293,8 +293,8 @@ Write a program that determines if you've ordered enough pizza.  It assumes 8 sl
 * using SublimeText, create a new file called __enough.html__ in your repository directory: __~/Desktop/jversoza/lab-08-for/__
 * setup an html file, and add script tags... start writing your JavaScript between the script tags
 * output - "Let's find out if you ordered enough pizza?"
-* ask for a username and assign it to a new variable: "How many pies did you order?"
-* ask for a password and assign it to a new variable : "How many people are eating pizza?"
+* ask for number of slices and assign it to a new variable: "How many pies did you order?"
+* ask for number of people and assign it to a new variable : "How many people are eating pizza?"
 * calculate how many slices are needed based on the number of people (remember, 2 per person)
 * calculate total slices there are based on the number of pies (remember, 8 per pie)
 * use a conditional - an if / else - with a comparison operator to determine if there are enough pies
