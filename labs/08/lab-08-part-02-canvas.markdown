@@ -13,7 +13,7 @@ In this lab, you'll be creating the following programs:
 
 ## Instructions
 
-Note that __ALL OF THESE FILES MUST BE AVED IN THE LOCAL REPOSITORY THAT YOU CREATED FOR THIS LAB__.
+Note that __ALL OF THESE FILES MUST BE SAVED IN THE LOCAL REPOSITORY THAT YOU CREATED FOR THIS LAB__.
 
 ### squarecircle
 
