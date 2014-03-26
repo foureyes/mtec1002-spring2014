@@ -3,22 +3,24 @@ layout: lab
 title: Prep - Creating Local and Remote Repositories
 prefix: ../../
 ---
-# Lab 7 - Prep - Creating Local and Remote Repositories, Warm-Up Programs
+# Lab 8 - Prep - Creating Local and Remote Repositories, Warm-Up Programs
 
 In this lab, you'll be:
 
 1. creating two repositories, one local and one remote
 2. linking the two with each other so that they can be synchronized
 3. associating a name and email address with your local repository
-4. creating a program that calculates the area of a rectangle
-5. \* creating a program that calculates the area of a triangle
-6. sending these programs to github
+4. creating the following programs:
+	1. password to pizza site
+	2. ordered enough pizza? (remember to use parseint)
+	3. price for pizza toppings
+	4. \* tip (for pizza restaurant, of course)
 
-## Instructions
+## Instructions for Repository Set Up
 
 ### Set up Your Local Repository
 
-This will create a local git repository to store your work for this lab.  The repository will be in ~/Desktop/yourname/lab-07-if-while.
+This will create a local git repository to store your work for this lab.  The repository will be in ~/Desktop/yourname/lab-08-for.
 
 * open terminal
 * (if doesn't already exist) create a folder that consists of your first initial and last name on your Desktop
@@ -26,14 +28,14 @@ This will create a local git repository to store your work for this lab.  The re
 cd ~/Desktop
 mkdir your_first_initial_last_name
 {% endhighlight %}
-* within that folder, create another folder called __lab-07-if-while__ and __change into it__
+* within that folder, create another folder called __lab-08-for__ and __change into it__
 {% highlight bash %}
 cd your_first_initial_last_name
-mkdir lab-07-if-while
-cd lab-07-if-while
+mkdir lab-08-for
+cd lab-08-for
 {% endhighlight %}
 * use pwd to verify that you're in the correct folder
-	* you should be in __~/Desktop/your_first_initial_last_name/lab-07-if-while__
+	* you should be in __~/Desktop/your_first_initial_last_name/lab-08-for__
 	* if you're not, cd into it
 * to prove that this is not yet a repository, list __all__ files in your current directory 
 {% highlight bash %}
@@ -42,16 +44,16 @@ ls -al
 * it should mostly be empty
 {% highlight bash %}
 total 0
-drwxr-xr-x  2 joe  staff   68 Mar 18 18:03 .
-drwxr-xr-x  3 joe  staff  102 Mar 18 18:03 ..
+drwxr-xr-x  2 joe  staff   68 Mar 26 19:21 .
+drwxr-xr-x  3 joe  staff  102 Mar 26 19:21 ..
 {% endhighlight %}
-* in your lab-07-if-while folder, create your repository!
+* in your lab-08-for folder, create your repository!
 {% highlight bash %}
 git init
 {% endhighlight %}
 * it should say:
 {% highlight bash %}
-Initialized empty Git repository in /Users/joe/Desktop/jversoza/lab-07-if-while/.git/
+Initialized empty Git repository in /Users/joe/Desktop/jversoza/lab-08-for/.git/
 {% endhighlight %}
 * show that this worked by listing __all__ files in your current directory
 {% highlight bash %}
@@ -83,17 +85,17 @@ This will create a remote git repository on github.  It will also link your loca
 * you should have all of the previous lab related repositories 
 * go back to terminal
 * using the commandline, create a remote repository on github by using the command below...
-* substitute your github username where it says "your github user name" (keep the single quotes and __KEEP "name":__ at the end of the line; don't change that!).  the name of the repository is lab-07-if-while (you can see that specified at the end of the command)
+* substitute your github username where it says "your github user name" (keep the single quotes and __KEEP "name":__ at the end of the line; don't change that!).  the name of the repository is lab-08-for (you can see that specified at the end of the command)
 {% highlight bash %}
-curl -u 'your github user name' https://api.github.com/user/repos -d '{"name":"lab-07-if-while"}'
+curl -u 'your github user name' https://api.github.com/user/repos -d '{"name":"lab-08-for"}'
 {% endhighlight %}
 * it should output a bunch of text!
 {% highlight bash %}
 Enter host password for user 'jversoza':
 {
   "id": 17210769,
-  "name": "lab-07-if-while",
-  "full_name": "jversoza/lab-07-if-while",
+  "name": "lab-08-for",
+  "full_name": "jversoza/lab-08-for",
   "owner": {
     "login": "jversoza",
 	...
@@ -103,9 +105,9 @@ Enter host password for user 'jversoza':
 * refresh your page on github
 * you should see the new repository added
 * go back to terminal
-* make sure you're in your local repository folder for __lab-07-if-while__
+* make sure you're in your local repository folder for __lab-08-for__
 	* use __pwd__ to do this
-	* you should be in __~/Desktop/yourname/lab-07-if-while__
+	* you should be in __~/Desktop/yourname/lab-08-for__
 	* if you're not in your lab folder, change your directory to it
 * run this command to show that you have not linked your local repository to any remote repository yet
 {% highlight bash %}
@@ -116,7 +118,7 @@ git remote -v
 * make sure to substitute the two spots where it says "your_github_user_name" with your github username
 <!--_-->
 {% highlight bash %}
-git remote add origin https://your_github_user_name@github.com/your_github_user_name/lab-07-if-while.git 
+git remote add origin https://your_github_user_name@github.com/your_github_user_name/lab-08-for.git 
 {% endhighlight %}
 * (alternatively, if you click on your repo you can see your remote repository's url on the lower right hand side of the page...)
 ![Repository List](../../resources/img/repos-url.png)
@@ -126,8 +128,8 @@ git remote -v
 {% endhighlight %}
 * it should show origin ... and your repository url:
 {% highlight bash %}
-origin	https://jversoza@github.com/jversoza/lab-07-if-while.git (fetch)
-origin	https://jversoza@github.com/jversoza/lab-07-if-while.git (push)
+origin	https://jversoza@github.com/jversoza/lab-08-for.git (fetch)
+origin	https://jversoza@github.com/jversoza/lab-08-for.git (push)
 {% endhighlight %}
 
 ### Creating and Saving Changes Locally, Sending to Remote Repository
@@ -135,9 +137,9 @@ origin	https://jversoza@github.com/jversoza/lab-07-if-while.git (push)
 In this part of the lab, you will create a text file in your local repository, and then you'll send it to your remote repository.
 
 * open terminal
-* make sure you're in your local repository folder for lab-07-if-while
+* make sure you're in your local repository folder for lab-08-for
 	* use __pwd__ to do this
-	* you should be in __~/Desktop/yourname/lab-07-if-while__
+	* you should be in __~/Desktop/yourname/lab-08-for__
 	* if you're not in your lab folder, change your directory to it
 	* if this doesn't exist yet... make sure you completed the beginning part of this lab
 * use __git status__ to show that there aren't any changes yet
@@ -155,13 +157,13 @@ nothing to commit (create/copy files and use "git add" to track)
 * create a file called __README.markdown__ using __SublimeText__ (see below...)
 * go to Applications &rarr; SublimeText (or use Command+Spacebar to activate spotlight search, then start typing Sublime)
 * once SublimeText is open, go to File &rarr; New (or Command+n) to create a new file
-* save your file by going to File &rarr; Save As to save your files as __README.markdown__ in your __~/Desktop/yourname/lab-07-if-while__
+* save your file by going to File &rarr; Save As to save your files as __README.markdown__ in your __~/Desktop/yourname/lab-08-for__
 ![Save As](../../resources/img/sublime-save-as-menu.png)
-* make sure you navigate to your __~/Desktop/yourname/lab-07-if-while__ before saving!
+* make sure you navigate to your __~/Desktop/yourname/lab-08-for__ before saving!
 ![Save As](../../resources/img/sublime-save-as.png)
 * add text to your file: 
 {% highlight bash %}
-lab 7, if and while
+lab 8, for
 {% endhighlight %}
 * switch back to terminal
 * use __git status__ to show that you've made changes
@@ -227,7 +229,7 @@ git log --color
 {% highlight bash %}
 commit 5b24d2777a602908978916ca8fe9c8dd2ed6036b
 Author: joe <jversoza@citytech.cuny.edu>
-Date:   Wed Mar 18 18:42:33 2014 -0500
+Date:   Wed Mar 26 20:18:51 2014 -0500
 
     added readme
 
@@ -241,33 +243,154 @@ git push origin master
 Counting objects: 3, done.
 Writing objects: 100% (3/3), 242 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
-To https://github.com/jversoza/lab-07-if-while.git
+To https://github.com/jversoza/lab-08-for.git
  * [new branch]      master -> master
 {% endhighlight %}
 * go back to github and look in your repository.  you should see that file appear.
 
 <hr>
 
-### area of a rectangle
+## Instructions for Warm-Up Programs
 
-Write a program that takes user input and calculate the area of a rectangle based on that input
+Note that __ALL OF THESE FILES MUST BE AVED IN THE LOCAL REPOSITORY THAT YOU CREATED FOR THIS LAB__.
 
-* using SublimeText, create a new file called __rectangle.html__ in your repository directory: __~/Desktop/jversoza/lab-07-if-while/__
+<hr>
+
+### password
+
+Write a program for a pizza ordering site that asks for your user name and password.  The program will have a _hardcoded_ username and password of your choosing.  Ask the user for their username, then ask for their password.  Based on their input, display an appropriate message to the JavaScript console.
+
+* using SublimeText, create a new file called __password.html__ in your repository directory: __~/Desktop/jversoza/lab-08-for/__
 * setup an html file, and add script tags... start writing your JavaScript between the script tags
-* the program should ask for a length: "Give me a length"
-* the program should ask for a width: "Give me a width"
-* the program should calculate the area of a rectangle with that length and width
-* it should about the resulting value to the  __JavaScript console__ 
-	* for example, if someone enters "5" and "7"  in the prompt dialogs
-	* the output in the console would be "The area is 35"
+* output - "Welcome to Pizza 4 U"
+* create two variables, one for username and one for password
+* set each to a value of your choosing
+* ask for a username and assign it to a new variable: "What is your user name?"
+* ask for a password and assign it to a new variable : "What is your password?"
+* say "WELCOME!" if the user input matches the username and password that you set
+* say "K THX BAI" if the user input does not match either the username or password that was set
+* use logical operators and if / else to do this
 * example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
 {% highlight bash %}
-(prompt) Give me a length
-> 7
-(prompt) Give me a width
-> 5
-The area is 35.
+# assuming that the hardcoded username and password are albert and secret respectively...
+
+(prompt) What is your username?
+> albert
+(prompt) What is your password?
+> secret
+WELCOME!
 {% endhighlight %}
+
 * save your file in SublimeText
-* use git status, add,  commit, and push to save your file in version control and submit it
+* use git status, add, commit, and push to save your file in version control and submit it
+
+<hr>
+
+### enough
+
+Write a program that determines if you've ordered enough pizza.  It assumes 8 slices per pie, and 2 slices per person.  It will ask for how many people and how many pies... and based on the input, it will display an appropriate message.
+
+* using SublimeText, create a new file called __enough.html__ in your repository directory: __~/Desktop/jversoza/lab-08-for/__
+* setup an html file, and add script tags... start writing your JavaScript between the script tags
+* output - "Let's find out if you ordered enough pizza?"
+* ask for a username and assign it to a new variable: "How many pies did you order?"
+* ask for a password and assign it to a new variable : "How many people are eating pizza?"
+* calculate how many slices are needed based on the number of people (remember, 2 per person)
+* calculate total slices there are based on the number of pies (remember, 8 per pie)
+* use a conditional - an if / else - with a comparison operator to determine if there are enough pies
+* say "x pies is equal to y slices" (with x and y substituted appropriately)
+* say "x people need y slices" (with x and y substituted appropriately)
+* say "U NEED MOAR 'ZA" if there are not enough slices
+* (optional) - print out how many extra slices are needed...
+* the program should say "ENOUGH!" if there are enough (or more) slices to accommodate the number of people specified
+* example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
+{% highlight bash %}
+
+Let's find out if you ordered enough pizza?
+(prompt) How many pies did you order?
+> 3 
+(prompt) How many people are eating pizza?
+> 15
+3 pies are 24 slices
+15 people need 30 slices
+U NEED MOAR 'ZA
+{% endhighlight %}
+
+* save your file in SublimeText
+* use git status, add, commit, and push to save your file in version control and submit it
+<hr>
+
+### toppings
+
+Write a program that gives back the price of a topping based on user input...
+
+* using SublimeText, create a new file called __toppings.html__ in your repository directory: __~/Desktop/jversoza/lab-08-for/__
+* setup an html file, and add script tags... start writing your JavaScript between the script tags
+* say - "We have mushrooms, pepperoni, and anchovies."
+* ask for a topping: "What topping would you like?"
+* based on the input, say "That's an extra x dollars" with x substituted appropriately:
+	* mushrooms - $2
+	* pepperoni - $3
+	* anchovies - $4
+* if the topping that the user put in does not exist, say "Sorry, we don't have that"
+* use an if / else if / else to do this
+* example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
+{% highlight bash %}
+
+We have mushrooms, pepperoni, and anchovies.
+(prompt) What topping would you like?
+> mushroom
+That's an extra 2 dollars.
+{% endhighlight %}
+
+* save your file in SublimeText
+* use git status, add, commit, and push to save your file in version control and submit it
+
+<hr>
+
+
+### tip
+
+Create a tip calculator.
+
+* using SublimeText, create a new file called __tip.html__ in your repository directory: __~/Desktop/jversoza/lab-07-if-while/__
+* setup an html file, and add script tags... start writing your JavaScript between the script tags
+* the program should ask the following:
+	* how many people?	
+	* how much did it cost?
+	* how was the service? 
+		* the values for this can be: terrible, poor, ok, good, great
+		* only ask about service if there are less than 6 people
+* if the number of people are > 6 tip should always be 20%, regardless of service.
+* otherwise, calculate the tip using the following table:
+	* terrible = no tip (0%)
+	* poor - 10%
+	* ok - 15%
+	* good - 20%
+	* great - 25%
+* output the calculated tip.
+* example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
+{% highlight bash %}
+# Run 1: 
+# -----
+(prompt) How many people? > 2
+(prompt) How much did it cost? > 25
+(prompt) How was the service (terrible, poor, ok, good, great)? > great
+You should probably tip $6.25!
+
+ 
+# Run 2: 
+# -----
+(prompt) How many people? > 4
+(prompt) How much did it cost? > 70
+(prompt) How was the service (terrible, poor, ok, good, great)? > meh
+Couldn't understand meh service; using default 15 percent.
+You should probably tip $10.5!
+
+# Run 3: 
+# -----
+(prompt) How many people? > 200
+(prompt) How much did it cost? > 950
+You should probably tip $190.0!
+{% endhighlight %}
 

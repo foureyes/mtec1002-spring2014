@@ -1,37 +1,17 @@
 ---
 layout: slides
-title: MTEC1002 - About Lab #6
+title: MTEC1002 - About Lab #8
 ---
 
 <section markdown="block" class="title-slide">
 
-# About Lab #7
+# About Lab #8
 
 {% include title-slide-footer.html %}
 </section>
 
 <section markdown="block">
-## Soooo... version control.  That was fun, right?
-</section>
-
-<section markdown="block">
-### Finished the 2nd Module
-
-In the past few classes (4, 5, and 6) we learned version control... and we used JavaScript to learn it.
-
-__Why do we use it again?  Do you think you'll give it a try on your own projects?__ &rarr;
-</section>
-
-<section markdown="block">
-### We're in the 3rd Module 
-
-Classes 7, 8 and 9
-
-* we're done learning _new_ stuff about version control (for now)
-	* we'll use what we've learned about git to continue submitting our assignments to github
-	* we may come back to git in the next module
-* we'll focus on __JavaScript__ for __this module__
-* next module will be incorporate something more visual with __JavaScript__ (web pages or canvas)
+## More JavaScript - This Time... LOOPS
 </section>
 
 <section markdown="block">
@@ -47,23 +27,21 @@ Classes 7, 8 and 9
 <section markdown="block">
 ### Review Topics
 
-* basic git commands revisited (again)
-	* creating repos
-	* working with files
-* basic JavaScript revisited
-	* data types
-	* input and output / calling functions
-	* conditionals
+* data types
+* type coercion
+* conditionals
+* logical operators
+* parseInt
 </section>
 
 <section markdown="block">
 ### New Topics
 
-* converting from a string to a number
-* comparison operators and logical operators
-* while loops
+* for loops
+* drawing with canvas
+* maybe while loops
 </section>
 
 <section markdown="block">
-## [Submitting Assignments, Warm-Up](js-git-review.html)
+## [Submitting Assignments, Review Conditionals](js-conditionals-review.html)
 </section>

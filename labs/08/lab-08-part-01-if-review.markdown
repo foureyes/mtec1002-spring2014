@@ -7,13 +7,11 @@ prefix: ../../
 
 In this lab, you'll be creating several programs:
 
-1. snake eyes
-2. add dice
-3. fortune
-4. days
-5. guess
-6. \*grade 
-7. \*tip
+1. password to pizza site
+2. ordered enough pizza? (remember to use parseint)
+3. price for pizza toppings
+4. \* pizza pie calculator
+5. \* tip (for pizza restaurant, of course)
 
 
 ## Instructions
