@@ -1,142 +1,130 @@
 ---
 layout: lab
-title: JavaScript Conditionals
+title: JavaScript For Loops
 prefix: ../../
 ---
-# Lab 6 - JavaScript Conditionals
+# Lab 8 - JavaScript For Loops
 
 In this lab, you'll be creating several programs:
 
-1. count by 2's
-2. count by 1's up to a number... (use parseInt)
-3. \* keep on going / stop
-4. \* number guessing game
+1. tens
+2. party 
+3. average
+4. \*largest
+5. \*fizzbuzz
 
-## Summary of Commands:
-
-__THESE ARE NOT LAB INSTRUCTIONS.__
-
-The following is just a reference.  The lab instructions are below.
-
-{% highlight bash %}
-# create a local repository
-git init
-
-# configure it with your name and email
-git config user.name  "your name"
-git config user.email "your@email.address"
-
-# create a remote repository
-curl -u 'your github user name' https://api.github.com/user/repos -d '{"name":"your repository name"}'
-
-# link the two
-git remote add origin "your username"@"the url to your repository on github"
-
-# two ways to show all remote repositories
-git remote -v
-cat .git/config
-
-# removing a remote repository by name (usually origin)
-git remote remove name_of_remote
-
-# changing / setting the url of a named remote repository (usually origin)
-git remote set-url name_of_remote new_remote_url
-
-# look at the differences between your last save and your current changes (line by line)
-git diff --color
-
-# check on the status of your changes
-git status
-
-# "stage" or mark your changes as ready to be saved
-git add --all
-
-# save!
-git commit -m 'my message'
-
-# show a log of your changes so far
-git log --color (show your changes so far)
-
-# send to a remote repository (to submit an assignment)
-git push origin master 
-{% endhighlight %}
 
 ## Instructions
 
 Note that __ALL OF THESE FILES MUST BE CREATED IN THE REPOSITORY THAT YOU CREATED FOR THIS LAB__.
 
-### cake
+### tens
 
-Write a program that asks the user if they want cake.  Based on the response, it will output a different message to the JavaScript Console.
+Write a program that counts by 10's from 20 to 100
 
-* using SublimeText, create a new file called __cake.html__ in your repository directory: __~/Desktop/jversoza/lab-06-javascript-conditionals/__
+* using SublimeText, create a new file called __tens.html__ in your repository directory: __~/Desktop/jversoza/lab-08-for/__
 * setup an html file, and add script tags... start writing your JavaScript between the script tags
-* the program should ask: "Do you want cake?"
-* based on the user's input:
-	* print out "Have some cake." if the user says exactly "yes"
-	* print out "No cake for you" if the user says anything other than "yes"
-* example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
+* the program should count from 20 to 100 by 10's
+* example output below...
+
 {% highlight bash %}
-# Run 1
-(prompt) Do you want cake?
-> yes
-Have some cake.
-# Run 2
-(prompt) Do you want cake?
-> maybe
-No cake for you.
-{% endhighlight %}
-* save your file in SublimeText
-* use status, add commit and push to save your file in version control and submit it
-* modify your program so that the program accepts no as an answer, and says something different if it is not yes and not no:
-	* print out "Have some cake." if the user says exactly "yes"
-	* print out "No cake for you." if the user says exactly "no"
-	* print out "I don't understand." if the user types anything else"
-* example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
-{% highlight bash %}
-# Run 1
-(prompt) Do you want cake?
-> no
-No cake for you
-# Run 2
-(prompt) Do you want cake?
-> maybe
-I don't understand
+20
+30
+.
+.
+100
 {% endhighlight %}
 * save your file in SublimeText
 * use status, add commit and push to save your file in version control and submit it
 
 <hr>
 
-### spanish
+### party
 
-Write a program that translates english words to Spanish.
+Write a program that acts for user input... and counts down from that number to exactly 1.  After it counts down to 1, it says "PARTY TIME!!!".
 
-* using SublimeText, create a new file called __spanish.html__ in your repository directory: __~/Desktop/jversoza/lab-06-javascript-conditionals/__
+* using SublimeText, create a new file called __party.html__ in your repository directory: __~/Desktop/jversoza/lab-08-for/__
 * setup an html file, and add script tags... start writing your JavaScript between the script tags
-* the program should ask for a word: "Give me a word in English..."
-* based on the user's input:
-	* output "gato" if the user says "cat"
-	* output "pero" if the user says "dog"
-	* output "caballo" if the user says "horse"
-	* output "no se" if the user says anything else
-* example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
-{% highlight bash %}
-# Run 1
-(prompt) Give me a word in English...
-> gato
-cat
-# Run 2
-(prompt) Give me a word in English...
-> bear
-no se
-{% endhighlight %}
+* say - "Let's party..."
+* ask for a number: "How long 'til the party?"
+* based on the input, it should count down from that number to __1__
+* remember to convert from a string to an int!
+* if the number that is input is less than 1, then say "PARTY NOW!!!"
+* at the end, say "PARTY TIME!!!"
 * save your file in SublimeText
-* use status, add commit and push to save your file in version control and submit it
-`
-<hr>
+* use git status, add, commit, and push to save your file in version control and submit it
+* example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
 
-### guess
+{% highlight bash %}
+# Run 1: 
+# -----
+Let's party...
+(prompt) How long 'til the party?
+> 3
+3
+2
+1
+PARTY TIME!!!
 
-Write a number guessing game!  "Hardcode" a secret number.  Ask the user to guess the secret number.  If they are correct, say "You got it!".  If they are within 1, say "Close, but the number is (the secret number)".  Lastly, if they were totally incorrect, then say, "The number is (the secret number)".  Look up the parseInt function to convert the input into a number so that your comparisons work.
+# Run 2: 
+# -----
+Let's party...
+(prompt) How long 'til the party?
+> -1
+PARTY NOW!!!
+{% endhighlight %}
 
+### average
+
+Ask for four numbers, output the average of those numbers.  Use a for loop to do this.
+
+* using SublimeText, create a new file called __average.html__ in your repository directory: __~/Desktop/jversoza/lab-08-for/__
+* setup an html file, and add script tags... start writing your JavaScript between the script tags
+* ask for a number 4 times: "Number please...."
+* calculate the average of those 4 numbers
+* remember to convert from a string to an int!
+* say: "The average is x", with x replaced by the actual average of the inputs.
+* example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
+
+{% highlight bash %}
+(prompt) Number please...
+> 4
+(prompt) Number please...
+> 6
+(prompt) Number please...
+> 1
+(prompt) Number please...
+> 9
+The average is 5.
+{% endhighlight %}
+
+### \*fizzbuzz
+
+Ask for four numbers, output the largest of those numbers.  Use a for loop to do this.
+
+* using SublimeText, create a new file called __fizzbuzz.html__ in your repository directory: __~/Desktop/jversoza/lab-08-for/__
+* setup an html file, and add script tags... start writing your JavaScript between the script tags
+* print out 1 to 100 ...with the following exceptions:
+* for multiples of three, print out "Fizz" instead of the number 
+* for multiples of five, print out "Buzz" instead of the number
+* for multiples of both three and five print “FizzBuzz”
+* example output is below
+
+{% highlight python %}
+1
+2
+Fizz
+4
+Buzz
+Fizz
+.
+.
+14
+FizzBuzz
+16
+.
+.
+98
+Fizz
+Buzz
+{% endhighlight %}

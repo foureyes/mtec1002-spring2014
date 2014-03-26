@@ -204,26 +204,11 @@ JavaScript #2
 * [About Lab #8](labs/08/meta.html)
 * [Quick Review Conditionals, Prep](labs/08/js-conditionals-review.html)
 	* [__Lab #8, Prep__ - Creating Local and Remote, Warm Up Program(s)](labs/08/lab-08-prep.html) 
-<!--
-* [Loops](labs/08/js-loops.html) 
-	* for loop
-	* count from one to 10
-	* four words, say them backwards
+* [Loops](labs/08/for.html) 
 	* [__Lab #8, Part 1__ - JavaScript Loops](labs/08/lab-08-part-01-loops.html)
-		* count from 10 to 20
-		* count from 1 up to number entered
-		* ask for exactly 4 numbers - give back their average
-		* count backwards by 10
-		* fizz buzz
-* [Canvas](labs/08/js-canvas.html) 
+* [Canvas](labs/08/canvas.html) 
 	* [__Lab #8, Part 2__ - Canvas](labs/08/lab-08-part-02-canvas.html)
-		* draw a square and a circle
-		* ask for a number, draw circle with that radius
-		* draw 5 squares using a for loop
-		* ask for a number... draw that many squares
-		* draw alternating squares and circles (use modulo)
 * maybe while loop?
-	* guessing game...
 
 -->
 </td>

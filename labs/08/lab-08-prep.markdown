@@ -353,7 +353,7 @@ That's an extra 2 dollars.
 
 Create a tip calculator.
 
-* using SublimeText, create a new file called __tip.html__ in your repository directory: __~/Desktop/jversoza/lab-07-if-while/__
+* using SublimeText, create a new file called __tip.html__ in your repository directory: __~/Desktop/jversoza/lab-08-for/__
 * setup an html file, and add script tags... start writing your JavaScript between the script tags
 * the program should ask the following:
 	* how many people?	

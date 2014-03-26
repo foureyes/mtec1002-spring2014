@@ -10,9 +10,8 @@ title: MTEC1002 - JavaScript Conditionals
 {% include title-slide-footer.html %}
 </section>
 
-<section markdown="block" class="title-slide">
+<section markdown="block">
 ## Quick Rundown of Git Commands 
-{% include title-slide-footer.html %}
 </section>
 
 <section markdown="block">

@@ -7,12 +7,11 @@ prefix: ../../
 
 In this lab, you'll be creating several programs:
 
-1. password to pizza site
-2. ordered enough pizza? (remember to use parseint)
-3. price for pizza toppings
-4. \* pizza pie calculator
-5. \* tip (for pizza restaurant, of course)
-
+1. draw a square and a circle
+2. ask for a number, draw circle with that radius
+3. draw 5 squares using a for loop
+4. ask for a number... draw that many squares
+5. draw alternating squares and circles (use modulo)
 
 ## Instructions
 
