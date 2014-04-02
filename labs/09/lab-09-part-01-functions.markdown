@@ -21,7 +21,7 @@ Note that __ALL OF THESE FILES MUST BE CREATED IN THE REPOSITORY THAT YOU CREATE
 
 Write a program that says hello three times.
 
-* using SublimeText, create a new file called __tens.html__ in your repository directory: __~/Desktop/jversoza/lab-09-canvas/__
+* using SublimeText, create a new file called __greetings.html__ in your repository directory: __~/Desktop/jversoza/lab-09-canvas/__
 * setup an html file, and add script tags... start writing your JavaScript between the script tags
 * the program should say "hello" three times in the JavaScript console
 * do this by creating a function called greet
