@@ -56,7 +56,7 @@ function foo() {
 <section markdown="block">
 ### A Function With Parameters
 
-To create a function that has no inputs, but executes some code...
+To create a function that has an input, and executes some code...
 
 {% highlight js %}
 function foo(s) {
@@ -68,7 +68,7 @@ function foo(s) {
 <section markdown="block">
 ### A Function With Parameters That Returns a Value
 
-To create a function that has no inputs, but executes some code...
+To create a function that has an inputs, and returns a value....
 
 {% highlight js %}
 function foo(s) {
