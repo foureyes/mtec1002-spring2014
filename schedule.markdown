@@ -218,11 +218,11 @@ JavaScript #3
 
 <!--
 * [About Lab #9](labs/09/meta.html)
+* [Review](labs/09/review.html)
 * [Prep](labs/09/prep.html)
 	* [__Lab #9, Prep__ - Creating Local and Remote, Warm Up Program)](labs/09/lab-09-prep.html) 
 		* count
-
-* [Quick Review Conditionals, Loops](labs/09/functions.html)
+* [Funcions](labs/09/functions.html)
 	* [__Lab #9, Prep__ - Review For Loops](labs/09/lab-09-part-01-functions.html) 
 		* calling functions
 		* define function

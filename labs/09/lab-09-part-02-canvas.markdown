@@ -91,12 +91,75 @@ Write a program that asks for a number and a color - red, green, or blue. It wil
 
 Draw five squares using a for loop
 
-* using SublimeText, create a new file called __five.html__ in your repository directory: __~/Desktop/jversoza/lab-08-canvas/__
+* using SublimeText, create a new file called __five.html__ in your repository directory: __~/Desktop/jversoza/lab-09-canvas/__
 * setup an html file
 * create a canvas element of at least 300 by 300
-* add script tags... start writing your JavaScript between the script tags
-* draw five squares, each below the other (creating a vertical line of squares)
-* (optional) \*ask for a number, draw that many squares
-* (optional) \*alternate between squares and circles 
-	* hint: use a conditional for this
-	* hint: use modulo to switch between circles and squares (% 2 will give back 0 or 1)
+* add an onload attribute to the body tag to call a function called draw
+* add script tags
+* create a draw function within your script tags
+* start writing your program in your draw function
+* draw five black squares, all adjacent to eachother using a for loop!
+* example image below
+
+![five](../../resources/img/lab-09-five.png)
+
+<hr>
+
+### car
+
+Draw five squares using a for loop
+
+* using SublimeText, create a new file called __car.html__ in your repository directory: __~/Desktop/jversoza/lab-09-canvas/__
+* setup an html file
+* create a canvas element of at least 300 by 300
+* add an onload attribute to the body tag to call a function called draw
+* add script tags
+* create a draw function within your script tags
+* start writing your program in your draw function
+* draw a car!
+* example image below
+
+![car](../../resources/img/lab-09-car.png)
+
+<hr>
+
+### car
+
+Draw a car...
+
+* using SublimeText, create a new file called __car.html__ in your repository directory: __~/Desktop/jversoza/lab-09-canvas/__
+* setup an html file
+* create a canvas element of at least 300 by 300
+* add an onload attribute to the body tag to call a function called draw
+* add script tags
+* create a draw function within your script tags
+* start writing your program in your draw function
+* draw a car!
+* use two rectangles and two circles
+* make the color of the rectangles different from the color of the circles
+* example image below
+
+![car](../../resources/img/lab-09-car.png)
+
+<hr>
+
+### \*alternating
+
+Draw a row of circles and squares.
+
+* using SublimeText, create a new file called __alternating.html__ in your repository directory: __~/Desktop/jversoza/lab-09-canvas/__
+* setup an html file
+* create a canvas element of at least 300 by 300
+* add an onload attribute to the body tag to call a function called draw
+* add script tags
+* create a draw function within your script tags
+* start writing your program in your draw function
+* draw a 10 shapes - 5 circles and 5 squares
+* they should be alternating horizontally
+* the squares and the circles should be colored differently
+* hint: use a conditional for this
+* hint: use modulo to switch between circles and squares (% 2 will give back 0 or 1)
+* (optional) \*ask for a number, draw that many shapes
+* example image below
+
+![alternating](../../resources/img/lab-09-alternating.png)
