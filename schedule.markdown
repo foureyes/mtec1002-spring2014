@@ -206,9 +206,6 @@ JavaScript #2
 	* [__Lab #8, Prep__ - Creating Local and Remote, Warm Up Program(s)](labs/08/lab-08-prep.html) 
 * [Loops](labs/08/for.html) 
 	* [__Lab #8, Part 1__ - JavaScript Loops](labs/08/lab-08-part-01-loops.html)
-* [Canvas](labs/08/canvas.html) 
-	* [__Lab #8, Part 2__ - Canvas](labs/08/lab-08-part-02-canvas.html)
-* maybe while loop?
 </td>
 </tr>
 <tr>
@@ -219,31 +216,25 @@ JavaScript #3
 </td>
 <td markdown="block">
 
-{% comment %}
+<!--
 * [About Lab #9](labs/09/meta.html)
-* Review git and processing So Far
-	* two ways for repository
-	* workflow
-	* random and triangle
-* Functions
-	* calling functions
+* [Prep](labs/09/prep.html)
+	* [__Lab #9, Prep__ - Creating Local and Remote, Warm Up Program)](labs/09/lab-09-prep.html) 
+		* count
+
+* [Quick Review Conditionals, Loops](labs/09/functions.html)
+	* [__Lab #9, Prep__ - Review For Loops](labs/09/lab-09-part-01-functions.html) 
+		* calling functions
 		* define function
 		* define call
 		* define arguments and parameters
 		* define return... 
 		* define void
 	* creating functions
-	* [__Lab__ (Follow Along) Ice Cream](labs/09/lab_9_part_1_ice_cream.html)
-	* [__Lab__ (On Your Own) House](labs/09/lab_9_part_2_house.html)
-* Interactivity
-	* mouseClicked, mouseX, mouseY
-	* keyPressed, keyCode, UP, DOWN, etc.
-	* [__Lab__ (Follow Along) Face](labs/09/lab_9_part_3_house.html)
-	* [__Lab__ (On Your Own) Duck!](labs/09/lab_9_part_4_duck.html)
-* Collaboration
-	* git pull
-	* shared repository (not tied to an account... organization)
-{% endcomment %}
+* [Canvas](labs/09/canvas.html) 
+	* [__Lab #9, Part 2__ - Canvas](labs/09/lab-09-part-02-canvas.html)
+		* draw face
+-->
 </td>
 </tr>
 <tr>

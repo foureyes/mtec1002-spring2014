@@ -132,8 +132,15 @@ context.fill();
 
 {% highlight js %}
 context.beginPath();
-context.arc(i * 30 + 10, 10, 10, 0, 2 * Math.PI, true);
+context.arc(30, 10, 10, 0, 2 * Math.PI, true);
 context.closePath();
 context.fill();
 {% endhighlight %}
 </section>
+
+<!--
+fill example
+context.fillStyle = "#00ff00";
+hex colors
+whole example
+-->
