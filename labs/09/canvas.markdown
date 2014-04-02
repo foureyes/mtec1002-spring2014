@@ -144,7 +144,6 @@ Here's everything put together.
 function draw() {
 	var sketch = document.getElementById('sketch');
 	var context = sketch.getContext("2d");
-	context.fillRect(30, 30, 50, 50);
 	// draw stuff here!
 }
 </script>

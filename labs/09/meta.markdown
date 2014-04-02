@@ -1,17 +1,17 @@
 ---
 layout: slides
-title: MTEC1002 - About Lab #8
+title: MTEC1002 - About Lab #9
 ---
 
 <section markdown="block" class="title-slide">
 
-# About Lab #8
+# About Lab #9
 
 {% include title-slide-footer.html %}
 </section>
 
 <section markdown="block">
-## More JavaScript - This Time... LOOPS
+## Even More JavaScript 
 </section>
 
 <section markdown="block">
@@ -27,21 +27,21 @@ title: MTEC1002 - About Lab #8
 <section markdown="block">
 ### Review Topics
 
-* data types
-* type coercion
-* conditionals
-* logical operators
-* parseInt
+* if statements
+* for loops
 </section>
 
 <section markdown="block">
 ### New Topics
 
-* for loops
+* functions
 * drawing with canvas
-* maybe while loops
 </section>
 
 <section markdown="block">
-## [Submitting Assignments, Review Conditionals](js-conditionals-review.html)
+### Midterm Grades
+
+* posted by April 10th
+* check blackboard
+* each assignment is worth 7% of your grade
 </section>

@@ -216,25 +216,14 @@ JavaScript #3
 </td>
 <td markdown="block">
 
-<!--
 * [About Lab #9](labs/09/meta.html)
-* [Review](labs/09/review.html)
 * [Prep](labs/09/prep.html)
 	* [__Lab #9, Prep__ - Creating Local and Remote, Warm Up Program)](labs/09/lab-09-prep.html) 
 		* count
-* [Funcions](labs/09/functions.html)
+* [Functions](labs/09/functions.html)
 	* [__Lab #9, Prep__ - Review For Loops](labs/09/lab-09-part-01-functions.html) 
-		* calling functions
-		* define function
-		* define call
-		* define arguments and parameters
-		* define return... 
-		* define void
-	* creating functions
 * [Canvas](labs/09/canvas.html) 
 	* [__Lab #9, Part 2__ - Canvas](labs/09/lab-09-part-02-canvas.html)
-		* draw face
--->
 </td>
 </tr>
 <tr>

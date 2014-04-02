@@ -1,11 +1,11 @@
 ---
 layout: slides
-title: MTEC1002 - JavaScript Conditionals
+title: MTEC1002 - Prep, Review
 ---
 
 <section markdown="block" class="title-slide">
 
-# Conditionals Review
+# Prep, Review
 
 {% include title-slide-footer.html %}
 </section>
@@ -111,8 +111,9 @@ git remote add origin https://jversoza@github.com/jversoza/lab-08-new.git
 </section>
 
 <section markdown="block">
-## Starting a JavaScript Program
+## JavaScript
 </section>
+
 
 <section markdown="block">
 ### A Template
@@ -137,41 +138,7 @@ __Your code goes within the script tags!__
 </div>
 </section>
 
-<section markdown="block">
-### Creating JavaScript Programs
 
-__What tool do we use to write our JavaScript programs, and how do we use it set up our JavaScript projects?__ &rarr;
-
-<div class="incremental" markdown="block">
-
-* we use a text editor called __SublimeText__
-* if we save the file as some_file_name.html (note the __.html__ extension) before writing...
-* we can use TAB to automplete:
-	* start typing html... and hit TAB
-* then... __add the script tags__
-* (again, your code goes between the script tags)
-</div>
-</section>
-
-<section markdown="block">
-### Running a Program
-
-__How do we run our JavaScript programs?  Where does the output (and errors) from your program show up?__ &rarr;
-
-<div class="incremental" markdown="block">
-
-* we run our programs in __Chrome__, so start/switch to __Chrome__
-* go to File &rarr; Open File ... &rarr; browse to the html file you created in __SublimeText__
-* you'll see output and errors pop up in __Chrome's JavaScript Console__
-* (you can get to this by going to View &rarr; Developer &rarr; JavaScript Console)
-* if you make changes to your original file, just refresh the page (Command + r)
-
-</div>
-</section>
-
-<section markdown="block">
-## JavaScript Basics...
-</section>
 
 <section markdown="block">
 ### Data Types and Values
@@ -527,57 +494,6 @@ __What type of value does prompt always return?  What type of value does parseIn
 </div>
 </section>
 
-<section markdown="block">
-## Values, Operators and Functions can be Combined to Make Expressions
-</section>
-
-<section markdown="block">
-### Some Definitions
-
-__What's a program?  What's a statement?  What's an expression?__ &rarr;
-
-<div class="incremental" markdown="block">
-
-* __program__ - a sequence of statements that specify to a computer actions to perform
-* __statement__ - corresponds to a sentence... it's a full instruction for the computer... __all statements end in a semicolon__ in JavaScript (;)
-* __expression__ - a fragment of code that produces a value; it's not a statement by itself
-</div>
-</section>
-
-<section markdown="block">
-### Expressions and Statements Continued
-
-{% highlight html %}
-# the entire line below is a statement
-var x = 1 + 5;
-
-# 1 + 5 in the statement above is just an expression... that produces a value
-{% endhighlight  %}
-</section>
-
-<section markdown="block">
-## All statements end in a semicolon (;) in JavaScript
-</section>
-
-
-<section markdown="block">
-### Variables
-
-__What are variables and how do you use them in JavaScript?__ &rarr;
-
-<div class="incremental" markdown="block">
-* __variables__ are names bound to values:  
-* you can use a variable's name wherever you want to use that value.
-* to create a variable, use the special word, var, followed by =, then the value, and finally a semicolon
-
-{% highlight html %}
-var x = 23;
-
-// using that variable
-console.log(x + 7);
-{% endhighlight %}
-</div>
-</section>
 
 <section markdown="block">
 ### Using Prompt With Variables
@@ -590,22 +506,6 @@ var answer = prompt("Yes or no!?");
 
 </section>
 
-<section markdown="block">
-### Comments
-
-Comments allow the programmer to write notes that the JavaScript interpreter will skip over / ignore.  __How do you specify a comment in your program?__ &rarr;
-
-<div class="incremental" markdown="block">
-{% highlight html %}
-// a comment
-/*
-a long
-comment
-*/
-{% endhighlight  %}
-</div>
-
-</section>
 
 
 <section markdown="block">
@@ -708,3 +608,57 @@ if (boolean_expression_1) {
 * use if/else  statements if there's a two possible alternative paths of execution
 * use if/else if statements if there's more than two possible alternative paths of execution
 </section>
+
+<section markdown="block">
+### Repeat That Again?
+
+__What construct do we use if we want to execute a block of code multiple times without writing it multiple times?__ &rarr;
+
+<div class="incremental" markdown="block">
+* we use a for loop!
+* __what does a for loop look like... what are its parts?__ &rarr;
+</div>
+</section>
+
+<section markdown="block">
+### For Loop Dissected
+
+A for loop consists of the keyword, __for__, and three parts, separated by a semicolon,  contained within parentheses:
+
+* initialization - declares a variable and value to start with
+* condition - a condition for the loop to stop 
+* _afterthought_ - a way to increment/decrement or change the variable on each iteration so that the condition is eventually met
+
+You can use the variable that you declare in the initialization within your for loop!
+</section>
+
+<section markdown="block">
+### For Loop Parts
+
+{% highlight js %}
+//    initialization
+//    |        condition
+//    |        |       afterthought/increment
+//    |        |       |
+for(var i = 0; i <= 5; i = i + 1) {
+	console.log(i);
+}
+{% endhighlight %}
+</section>
+
+<section markdown="block">
+### Counting By 3's 
+
+__Create a for loop that counts from 0 up to and including 9 by 3's?__ &rarr;
+
+<div class="incremental" markdown="block">
+{% highlight js %}
+for(var i = 0; i <= 9; i = i + 3) {
+	console.log(i);
+}
+
+{% endhighlight %}
+</div>
+</section>
+
+

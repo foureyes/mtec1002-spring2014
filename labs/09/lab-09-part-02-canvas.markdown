@@ -33,6 +33,7 @@ Write a program that draws a square.
 * start writing your program in your draw function
 * draw a black square
 * the square should be at least 100 pixels wide and 100 pixels high
+* use git status, add, commit, and push to save your file in version control and submit it
 * example image below
 
 ![square](../../resources/img/lab-09-square.png)
@@ -52,6 +53,7 @@ Write a program that draws a square and a circle next to each other.
 * start writing your program in your draw function
 * draw a black square of any dimensions
 * draw a black circle next to the square
+* use git status, add, commit, and push to save your file in version control and submit it
 * example image below
 
 ![squarecircle](../../resources/img/lab-09-squarecircle.png)
@@ -77,6 +79,7 @@ Write a program that asks for a number and a color - red, green, or blue. It wil
 * draw the circle in at the center of your canvas
 * (if your canvase is 300 x 300, then the circle should be at 150 x 150)
 * the program should use the input to draw a circle with that radius
+* use git status, add, commit, and push to save your file in version control and submit it
 * example images below
 
 ![customcircle1](../../resources/img/lab-09-customcircle-1.png)
@@ -99,31 +102,15 @@ Draw five squares using a for loop
 * create a draw function within your script tags
 * start writing your program in your draw function
 * draw five black squares, all adjacent to eachother using a for loop!
+* use git status, add, commit, and push to save your file in version control and submit it
 * example image below
 
 ![five](../../resources/img/lab-09-five.png)
 
-<hr>
-
-### car
-
-Draw five squares using a for loop
-
-* using SublimeText, create a new file called __car.html__ in your repository directory: __~/Desktop/jversoza/lab-09-canvas/__
-* setup an html file
-* create a canvas element of at least 300 by 300
-* add an onload attribute to the body tag to call a function called draw
-* add script tags
-* create a draw function within your script tags
-* start writing your program in your draw function
-* draw a car!
-* example image below
-
-![car](../../resources/img/lab-09-car.png)
 
 <hr>
 
-### car
+### \*car
 
 Draw a car...
 
@@ -137,6 +124,7 @@ Draw a car...
 * draw a car!
 * use two rectangles and two circles
 * make the color of the rectangles different from the color of the circles
+* use git status, add, commit, and push to save your file in version control and submit it
 * example image below
 
 ![car](../../resources/img/lab-09-car.png)
@@ -160,6 +148,7 @@ Draw a row of circles and squares.
 * hint: use a conditional for this
 * hint: use modulo to switch between circles and squares (% 2 will give back 0 or 1)
 * (optional) \*ask for a number, draw that many shapes
+* use git status, add, commit, and push to save your file in version control and submit it
 * example image below
 
 ![alternating](../../resources/img/lab-09-alternating.png)

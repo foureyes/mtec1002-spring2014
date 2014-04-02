@@ -7,7 +7,7 @@ prefix: ../../
 
 In this lab, you'll be creating several programs:
 
-1. hello
+1. greetings
 2. pluralize 
 3. \*factorial
 4. \*prime
@@ -17,143 +17,70 @@ In this lab, you'll be creating several programs:
 
 Note that __ALL OF THESE FILES MUST BE CREATED IN THE REPOSITORY THAT YOU CREATED FOR THIS LAB__.
 
-### tens
+### greetings
 
-Write a program that counts by 10's from 20 to 100
+Write a program that says hello three times.
 
-* using SublimeText, create a new file called __tens.html__ in your repository directory: __~/Desktop/jversoza/lab-08-for/__
+* using SublimeText, create a new file called __tens.html__ in your repository directory: __~/Desktop/jversoza/lab-09-canvas/__
 * setup an html file, and add script tags... start writing your JavaScript between the script tags
-* the program should count from 20 to 100 by 10's
+* the program should say "hello" three times in the JavaScript console
+* do this by creating a function called greet
+* greet will print out hello exactly once
+* call the greet function three times
+* use git status, add, commit, and push to save your file in version control and submit it
 * example output below...
 
 {% highlight bash %}
-20
-30
-.
-.
-100
+hello
+hello
+hello
 {% endhighlight %}
-* save your file in SublimeText
-* use status, add commit and push to save your file in version control and submit it
 
 <hr>
 
-### party
+### pluralize
 
-Write a program that acts for user input... and counts down from that number to exactly 1.  After it counts down to 1, it says "PARTY TIME!!!".
+Write a program that creates a plural version of a word inputted by a user.
 
-* using SublimeText, create a new file called __party.html__ in your repository directory: __~/Desktop/jversoza/lab-08-for/__
+* using SublimeText, create a new file called __pluralize.html__ in your repository directory: __~/Desktop/jversoza/lab-09-canvas/__
 * setup an html file, and add script tags... start writing your JavaScript between the script tags
-* say - "Let's party..."
-* ask for a number: "How long 'til the party?"
-* based on the input, it should count down from that number to __1__
-* remember to convert from a string to an int!
-* if the number that is input is less than 1, then say "PARTY NOW!!!"
-* at the end, say "PARTY TIME!!!"
-* save your file in SublimeText
+* define a function called pluralize
+* it should have one parameter, word
+* it should __give back__ a value - the plural version of the word passed in
+* ask for a word: "Word please:"
+* it should call your pluralize function
+* pluralize will give back the word with an s appended to the end of it
+* use the result of calling your pluralize function to print the plural version to the JavaScript console
+* \*add an if-else-if statement to handle the following words: moose (moose), automaton (automata), mouse (mice)
 * use git status, add, commit, and push to save your file in version control and submit it
-* example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
+* example interaction is below (everything after the greater than sign (&gt;) is user input using the prompt function):
 
 {% highlight bash %}
-# Run 1: 
-# -----
-Let's party...
-(prompt) How long 'til the party?
-> 3
-3
-2
-1
-PARTY TIME!!!
-
-# Run 2: 
-# -----
-Let's party...
-(prompt) How long 'til the party?
-> -1
-PARTY NOW!!!
+(prompt) Word please:
+> car
+cars
 {% endhighlight %}
 
 <hr>
 
-### average
+### factorial
 
-Ask for four numbers, output the average of those numbers.  Use a for loop to do this.
+Write a program that calculates the factorial of a number entered by the user.  Factorial is the product of all positive integers less than or equal to a number.  4! (or 4 factorial) = 4 * 3 * 2 * 1 = 24
 
-* using SublimeText, create a new file called __average.html__ in your repository directory: __~/Desktop/jversoza/lab-08-for/__
+* using SublimeText, create a new file called __factorial.html__ in your repository directory: __~/Desktop/jversoza/lab-09-canvas/__
 * setup an html file, and add script tags... start writing your JavaScript between the script tags
-* ask for a number 4 times: "Number please...."
-* calculate the average of those 4 numbers
-* remember to convert from a string to an int!
-* say: "The average is x", with x replaced by the actual average of the inputs.
-* example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
+* define a function called factorial
+* it should have one parameter, n
+* it should __give back__ an number - the product of all positive numbers less than or equal to the user input
+* ask for a word: "Number please::"
+* it should then call your factorial function
+* factorial will give back the result of the calculation
+* use the result of calling your factorial function to print the factorial
+* hint: use a for loop to do this
+* example interaction is below (everything after the greater than sign (&gt;) is user input using the prompt function):
 
 {% highlight bash %}
-(prompt) Number please...
+(prompt) Number please:
 > 4
-(prompt) Number please...
-> 6
-(prompt) Number please...
-> 1
-(prompt) Number please...
-> 9
-The average is 5.
-{% endhighlight %}
-
-<hr>
-
-### \*largest
-
-Ask for four numbers, output the largest of those numbers.  Use a for loop to do this.
-
-* using SublimeText, create a new file called __largest.html__ in your repository directory: __~/Desktop/jversoza/lab-08-for/__
-* setup an html file, and add script tags... start writing your JavaScript between the script tags
-* ask for a number 4 times: "Number please...."
-* using comparison operators and a conditional (in each iteration), determine the current largest number...
-* remember to convert from a string to an int!
-* say: "The largest number is x", with x replaced by the current largest number
-* example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
-
-{% highlight bash %}
-(prompt) Number please...
-> 4
-(prompt) Number please...
-> 6
-(prompt) Number please...
-> 1
-(prompt) Number please...
-> 9
-The largest number is 9
-{% endhighlight %}
-
-<hr>
-
-### \*fizzbuzz
-
-Count from 1 to 100, but print out fizz or buzz depending on special conditions.
-
-* using SublimeText, create a new file called __fizzbuzz.html__ in your repository directory: __~/Desktop/jversoza/lab-08-for/__
-* setup an html file, and add script tags... start writing your JavaScript between the script tags
-* print out 1 to 100 ...with the following exceptions:
-* for multiples of three, print out "Fizz" instead of the number 
-* for multiples of five, print out "Buzz" instead of the number
-* for multiples of both three and five print “FizzBuzz”
-* example output is below:
-
-{% highlight python %}
-1
-2
-Fizz
-4
-Buzz
-Fizz
-.
-.
-14
-FizzBuzz
-16
-.
-.
-98
-Fizz
-Buzz
+24
 {% endhighlight %}
