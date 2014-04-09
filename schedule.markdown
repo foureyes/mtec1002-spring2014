@@ -237,6 +237,8 @@ Javascript #4
 </td>
 <td markdown="block">
 
+<!--
+
 * [About Lab #10](labs/10/meta.html)
 * [Prep](labs/10/prep.html)
 	* [__Lab #10, Prep__ - Warm Up Program](labs/10/lab-10-prep.html) 
@@ -247,7 +249,6 @@ Javascript #4
 * [Click Events](labs/10/click.html) 
 	* [__Lab #10, Part 3__ - Events](labs/10/lab-10-part-03-click.html)
 
-<!--
 
 * cheat sheet
 * drawing revisited, events, new template
