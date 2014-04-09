@@ -237,7 +237,6 @@ Javascript #4
 </td>
 <td markdown="block">
 
-<!--
 
 * [About Lab #10](labs/10/meta.html)
 * [Prep](labs/10/prep.html)
@@ -247,46 +246,9 @@ Javascript #4
 * [Events, Drawing Revisited](labs/10/events.html) 
 	* [__Lab #10, Part 2__ - Events](labs/10/lab-10-part-02-events.html)
 * [Click Events](labs/10/click.html) 
-	* [__Lab #10, Part 3__ - Events](labs/10/lab-10-part-03-click.html)
+	* [__Lab #10, Part 3__ - Click](labs/10/lab-10-part-03-click.html)
 
 
-* cheat sheet
-* drawing revisited, events, new template
-	* js events... you can add event listeners that call a function
-		* addeventlistener
-			* DOMContentLoaded
-	* demo 
-		* new template
-		* show with loops
-		* moon function
-	* labs
-* click event
-	* demo
-		* click
-		* circle function
-		* click - show click circles
-	* lab
-		* click-rect
-		* 
-		* keep track of global, increment it
-		* face
-		
-	
-* demo... gh pages
-* git branch
-* html 
-	* definitions
-		* document
-		* tag
-		* attribute
-		* tree
-	* html
-	* title
-	* list
-	* paragraph	
-	* link
-
--->
 </td>
 </tr>
 <tr>

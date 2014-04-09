@@ -3,7 +3,7 @@ layout: lab
 title: JavaScript Functions
 prefix: ../../
 ---
-# Lab 10 - Part 2 - JavaScript Functions
+# Lab 10 - Part 1 - JavaScript Functions
 
 In this lab, you'll be creating the following programs:
 

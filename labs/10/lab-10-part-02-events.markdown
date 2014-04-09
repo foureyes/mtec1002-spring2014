@@ -1,6 +1,6 @@
 ---
 layout: lab
-title: Canvas
+title: Events and Drawing Revisited
 prefix: ../../
 ---
 # Lab 10 - Part 2 - Events and Drawing Revisited
@@ -101,7 +101,7 @@ Draw a grid of squares.
 * use git status, add, commit, and push to save your file in version control and submit it
 * example image below
 
-![grid](../../resources/img/lab-10--grid-1.png)
+![grid](../../resources/img/lab-10-grid-1.png)
 
 <hr>
 
@@ -135,7 +135,7 @@ Draw a face!
 * use git status, add, commit, and push to save your file in version control and submit it
 * example image below
 
-![grid](../../resources/img/lab-10-face-1.png)
+![face](../../resources/img/lab-10-face-1.png)
 
 <hr>
 
@@ -148,5 +148,5 @@ Draw a face!
 * use git status, add, commit, and push to save your file in version control and submit it
 * example image below
 
-![grid](../../resources/img/lab-10-face-2-function.png)
+![multiface](../../resources/img/lab-10-face-2-function.png)
 
