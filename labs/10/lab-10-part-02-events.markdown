@@ -34,8 +34,8 @@ Write a program that draws multiple squares using a for loop.
 * create three variables, x and y (both equal to 0) and size (equal to 20)
 * use a for loop to loop from 0 through (up-to and including) 4
 * use your for loop variable to modify the variables you created, x, y and size
-	*  size should be equal to the loop variable * 20
-	*  y should be equal to size + size
+	*  size should be constant (20)
+	*  y should be equal to loop variable, i * something larger than size (30)
 	*  x should always be equal to 100
 	* in the for loop, draw a rectangle using the variables you created: context.fillRect(x, y, size, size);
 * example image below
