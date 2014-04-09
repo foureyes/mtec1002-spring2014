@@ -12,6 +12,21 @@ title: MTEC1002 - JavaScript For Loop
 
 
 <section markdown="block">
+### Functions Revisited
+
+* can be defined anywhere
+* scope
+* with or without return values
+* as types
+* demo
+	* demo for loop
+	* demo conditional / if statement
+	* create function - area of a triangle
+	* create function - sum of numbers
+</section>
+
+
+<section markdown="block">
 ### Built-in Functions
 
 __What are some functions that we know?__

@@ -237,7 +237,6 @@ Javascript #4
 </td>
 <td markdown="block">
 
-<!--
 * [About Lab #10](labs/10/meta.html)
 * [Prep](labs/10/prep.html)
 	* [__Lab #10, Prep__ - Warm Up Program](labs/10/lab-10-prep.html) 
@@ -247,27 +246,10 @@ Javascript #4
 	* [__Lab #10, Part 2__ - Events](labs/10/lab-10-part-02-events.html)
 * [Click Events](labs/10/click.html) 
 	* [__Lab #10, Part 3__ - Events](labs/10/lab-10-part-03-click.html)
--->
 
 <!--
 
 * cheat sheet
-* functions revisited
-	* can be defined anywhere
-	* scope
-	* with or without return values
-	* as types
-	* demo
-		* demo for loop
-		* demo conditional / if statement
-		* create function - area of a triangle
-		* create function - sum of numbers
-	* labs
-		* add-five function ... returns value
-		* min function
-			* step by step
-		* what's the output of this code?
-		* \* add heart function
 * drawing revisited, events, new template
 	* js events... you can add event listeners that call a function
 		* addeventlistener
@@ -277,17 +259,6 @@ Javascript #4
 		* show with loops
 		* moon function
 	* labs
-		* single loop, 4 squares vertical
-			* change to horizontal
-			* make squares blue
-			* gradually increasing size squares,
-			* EC change color of squares in loop
-		* nested loops grid of squares 
-			* EC with diagonal diff color
-		* face
-			* plain
-			* write a function called face
-			* write a function called face parameterize
 * click event
 	* demo
 		* click

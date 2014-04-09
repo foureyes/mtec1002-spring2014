@@ -3,22 +3,20 @@ layout: lab
 title: Prep - Creating Local and Remote Repositories, Warm-Up
 prefix: ../../
 ---
-# Lab 9 - Prep - Creating Local and Remote Repositories, Warm-Up Programs
+# Lab 10 - Prep - Creating Local and Remote Repositories, Warm-Up Programs
 
 In this lab, you'll be:
 
 1. creating two repositories, one local and one remote
 2. linking the two with each other so that they can be synchronized
 3. associating a name and email address with your local repository
-4. creating the following programs:
-	1. count down from 100 to 0 by 10's
-	2. \*asks for 3 numbers using a for loop; gives the sum
+4. warm up by trying out __codecademy__!
 
 ## Instructions for Repository Set Up
 
 ### Set up Your Local Repository
 
-This will create a local git repository to store your work for this lab.  The repository will be in ~/Desktop/yourname/lab-09-canvas.
+This will create a local git repository to store your work for this lab.  The repository will be in ~/Desktop/yourname/lab-10-events.
 
 * open terminal
 * (if doesn't already exist) create a folder that consists of your first initial and last name on your Desktop
@@ -26,14 +24,14 @@ This will create a local git repository to store your work for this lab.  The re
 cd ~/Desktop
 mkdir your_first_initial_last_name
 {% endhighlight %}
-* within that folder, create another folder called __lab-09-canvas__ and __change into it__
+* within that folder, create another folder called __lab-10-events__ and __change into it__
 {% highlight bash %}
 cd your_first_initial_last_name
-mkdir lab-09-canvas
-cd lab-09-canvas
+mkdir lab-10-events
+cd lab-10-events
 {% endhighlight %}
 * use pwd to verify that you're in the correct folder
-	* you should be in __~/Desktop/your_first_initial_last_name/lab-09-canvas__
+	* you should be in __~/Desktop/your_first_initial_last_name/lab-10-events__
 	* if you're not, cd into it
 * to prove that this is not yet a repository, list __all__ files in your current directory 
 {% highlight bash %}
@@ -45,13 +43,13 @@ total 0
 drwxr-xr-x  2 joe  staff   68 Mar 26 19:21 .
 drwxr-xr-x  3 joe  staff  102 Mar 26 19:21 ..
 {% endhighlight %}
-* in your lab-09-canvas folder, create your repository!
+* in your lab-10-events folder, create your repository!
 {% highlight bash %}
 git init
 {% endhighlight %}
 * it should say:
 {% highlight bash %}
-Initialized empty Git repository in /Users/joe/Desktop/jversoza/lab-09-canvas/.git/
+Initialized empty Git repository in /Users/joe/Desktop/jversoza/lab-10-events/.git/
 {% endhighlight %}
 * show that this worked by listing __all__ files in your current directory
 {% highlight bash %}
@@ -78,34 +76,34 @@ git config -l
 
 This will create a remote git repository on github.  It will also link your local repository with this remote repository.  In order to submit your work, you will send your files / changes from your local repository to the remote repository on github.
 
-* log in to github; you should see the list of repositories on the right	
-![Repository List](../../resources/img/repos-screen.png)
-* you should have all of the previous lab related repositories 
-* go back to terminal
-* using the commandline, create a remote repository on github by using the command below...
-* substitute your github username where it says "your github user name" (keep the single quotes and __KEEP "name":__ at the end of the line; don't change that!).  the name of the repository is lab-09-canvas (you can see that specified at the end of the command)
+* using the commandline, create a remote repository on github by using curl
+* substitute your github username where it says "your github user name" (keep the single quotes and __KEEP "name":__ at the end of the line; don't change that!).  the name of the repository is lab-10-events (you can see that specified at the end of the command)
+* __KEEP '{"name":"lab-10-events"}' as is__, but __change 'your github user name' appropriately__
 {% highlight bash %}
-curl -u 'your github user name' https://api.github.com/user/repos -d '{"name":"lab-09-canvas"}'
+# keep {"name" ...
+# but change 'your github user name'
+curl -u 'your github user name' https://api.github.com/user/repos -d '{"name":"lab-10-events"}'
 {% endhighlight %}
 * it should output a bunch of text!
 {% highlight bash %}
 Enter host password for user 'jversoza':
 {
   "id": 17210769,
-  "name": "lab-09-canvas",
-  "full_name": "jversoza/lab-09-canvas",
+  "name": "lab-10-events",
+  "full_name": "jversoza/lab-10-events",
   "owner": {
     "login": "jversoza",
 	...
 }
 {% endhighlight %}
 <!--_-->
-* refresh your page on github
-* you should see the new repository added
+* log in to github; you should see the list of repositories on the right	
+![Repository List](../../resources/img/repos-screen.png)
+* you should have this new repository
 * go back to terminal
-* make sure you're in your local repository folder for __lab-09-canvas__
+* make sure you're in your local repository folder for __lab-10-events__
 	* use __pwd__ to do this
-	* you should be in __~/Desktop/yourname/lab-09-canvas__
+	* you should be in __~/Desktop/yourname/lab-10-events__
 	* if you're not in your lab folder, change your directory to it
 * run this command to show that you have not linked your local repository to any remote repository yet
 {% highlight bash %}
@@ -116,7 +114,8 @@ git remote -v
 * make sure to substitute the two spots where it says "your_github_user_name" with your github username
 <!--_-->
 {% highlight bash %}
-git remote add origin https://your_github_user_name@github.com/your_github_user_name/lab-09-canvas.git 
+# change your_github_user_name in two places!
+git remote add origin https://your_github_user_name@github.com/your_github_user_name/lab-10-events.git 
 {% endhighlight %}
 * (alternatively, if you click on your repo you can see your remote repository's url on the lower right hand side of the page...)
 ![Repository List](../../resources/img/repos-url.png)
@@ -126,8 +125,8 @@ git remote -v
 {% endhighlight %}
 * it should show origin ... and your repository url:
 {% highlight bash %}
-origin	https://jversoza@github.com/jversoza/lab-09-canvas.git (fetch)
-origin	https://jversoza@github.com/jversoza/lab-09-canvas.git (push)
+origin	https://jversoza@github.com/jversoza/lab-10-events.git (fetch)
+origin	https://jversoza@github.com/jversoza/lab-10-events.git (push)
 {% endhighlight %}
 
 ### Creating and Saving Changes Locally, Sending to Remote Repository
@@ -135,9 +134,9 @@ origin	https://jversoza@github.com/jversoza/lab-09-canvas.git (push)
 In this part of the lab, you will create a text file in your local repository, and then you'll send it to your remote repository.
 
 * open terminal
-* make sure you're in your local repository folder for lab-09-canvas
+* make sure you're in your local repository folder for lab-10-events
 	* use __pwd__ to do this
-	* you should be in __~/Desktop/yourname/lab-09-canvas__
+	* you should be in __~/Desktop/yourname/lab-10-events__
 	* if you're not in your lab folder, change your directory to it
 	* if this doesn't exist yet... make sure you completed the beginning part of this lab
 * use __git status__ to show that there aren't any changes yet
@@ -155,13 +154,13 @@ nothing to commit (create/copy files and use "git add" to track)
 * create a file called __README.markdown__ using __SublimeText__ (see below...)
 * go to Applications &rarr; SublimeText (or use Command+Spacebar to activate spotlight search, then start typing Sublime)
 * once SublimeText is open, go to File &rarr; New (or Command+n) to create a new file
-* save your file by going to File &rarr; Save As to save your files as __README.markdown__ in your __~/Desktop/yourname/lab-09-canvas__
+* save your file by going to File &rarr; Save As to save your files as __README.markdown__ in your __~/Desktop/yourname/lab-10-events__
 ![Save As](../../resources/img/sublime-save-as-menu.png)
-* make sure you navigate to your __~/Desktop/yourname/lab-09-canvas__ before saving!
+* make sure you navigate to your __~/Desktop/yourname/lab-10-events__ before saving!
 ![Save As](../../resources/img/sublime-save-as.png)
 * add text to your file: 
 {% highlight bash %}
-lab 8, for
+lab 10, events
 {% endhighlight %}
 * switch back to terminal
 * use __git status__ to show that you've made changes
@@ -241,74 +240,15 @@ git push origin master
 Counting objects: 3, done.
 Writing objects: 100% (3/3), 242 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
-To https://github.com/jversoza/lab-09-canvas.git
+To https://github.com/jversoza/lab-10-events.git
  * [new branch]      master -> master
 {% endhighlight %}
-* go back to github and look in your repository.  you should see that file appear.
-* continue with programs below
 
-## Instructions for Warm-Up Programs
+### When You're Done... Try This!
 
-Note that __ALL OF THESE FILES MUST BE SAVED IN THE LOCAL REPOSITORY THAT YOU CREATED FOR THIS LAB__.
+[Codecademy JavaScript - Choose Your Own Adventure!](http://www.codecademy.com/courses/javascript-beginner-en-x9DnD/0/1?curriculum_id=506324b3a7dffd00020bf661)
 
-<hr>
-
-### tens
-
-Write a program that counts down from 100 to 0 by 10's, but skip 50
-
-* using SublimeText, create a new file called __tens.html__ in your repository directory: __~/Desktop/jversoza/lab-09-canvas/__
-* setup an html file, and add script tags... start writing your JavaScript between the script tags
-* output a countdown to the console that starts with 100 and ends at 0
-* the program should count down by 10's
-* use a for loop to do this
-* set the start by changing the beginning of your loop (var i = ...)
-* set the end by changing the middle of your loop (i >= ...)
-* count by 10's by changing the end of your loop (i = i - ...)
-* skip 50
-* do this using an if statement
-* the if statement should be inside your for loop
-* example output is below 
-
-{% highlight bash %}
-100
-90
-80
-70
-60
-40
-30
-20
-10
-0
-{% endhighlight %}
-
-* save your file in SublimeText
-* use git status, add, commit, and push to save your file in version control and submit it
-
-<hr>
-
-### sum
-
-Write a program that asks for three numbers.  It will print out the sum of all three numbers.
-
-* using SublimeText, create a new file called __sum.html__ in your repository directory: __~/Desktop/jversoza/lab-09-canvas/__
-* setup an html file, and add script tags... start writing your JavaScript between the script tags
-* ask for three numbers
-* use a for loop to do this
-* keep track of the sum
-* output the sum at the end of the program
-* example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):
-{% highlight bash %}
-
-(prompt) Number plz
-> 23 
-(prompt) Number plz
-> 2
-(prompt) Number plz
-> 5
-The sum is 30
-{% endhighlight %}
-
-* save your file in SublimeText
-* use git status, add, commit, and push to save your file in version control and submit it
+* go through the exercise
+* when you're finished, create a text file in your repository called feedback.txt...
+	* let me know what you think about Codecademy
+	* add, commit and push to github when you're done writing

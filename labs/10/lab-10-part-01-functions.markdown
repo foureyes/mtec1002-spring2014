@@ -1,86 +1,118 @@
 ---
 layout: lab
-title: JavaScript For Loops
+title: JavaScript Functions
 prefix: ../../
 ---
-# Lab 9 - Part 2 - JavaScript Functions
+# Lab 10 - Part 2 - JavaScript Functions
 
-In this lab, you'll be creating several programs:
+In this lab, you'll be creating the following programs:
 
-1. greetings
-2. pluralize 
-3. \*factorial
-4. \*prime
-
+1. heart
+2. sandwich
+3. triangle
+4. \* min
 
 ## Instructions
 
 Note that __ALL OF THESE FILES MUST BE CREATED IN THE REPOSITORY THAT YOU CREATED FOR THIS LAB__.
 
-### greetings
+### heart
 
-Write a program that says hello three times.
+Write a program that adds a heart to the beginning of two strings - "stuff" and "JavaScript".  Do this by creating a function
 
-* using SublimeText, create a new file called __greetings.html__ in your repository directory: __~/Desktop/jversoza/lab-09-canvas/__
+* using SublimeText, create a new file called __heart.html__ in your repository directory: __~/Desktop/jversoza/lab-10-events/__
 * setup an html file, and add script tags... start writing your JavaScript between the script tags
-* the program should say "hello" three times in the JavaScript console
-* do this by creating a function called greet
-* greet will print out hello exactly once
-* call the greet function three times
-* use git status, add, commit, and push to save your file in version control and submit it
+* create a function called heart (use: function yourFunctionName(param1, param2 ...))
+* it should take only one parameter; call it word
+* it should return a value ... the word with an ascii art heart attached to the beginning of it  &gt;3 (use return ... to do this)
+* call your function twice... (function name, then arguments within parentheses: yourFunctionName(arg1, arg2 ...))
+	* ...and assign the output to a variable (var varname1 = yourFunctionName(arg1, ...))
+	* the first time, pass in "stuff" as an argument
+	* the second timee, pass in "" as an argument
+* print out both variables to the JavaScript console (console.log(...))
 * example output below...
 
 {% highlight bash %}
-hello
-hello
-hello
+<3 stuff
+<3 JavaScript
 {% endhighlight %}
 
 <hr>
 
-### pluralize
+### sandwich
 
-Write a program that creates a plural version of a word inputted by a user.
+Write a program that adds an arbitrary character to the beginning and end of a string. It will ask the user for a word and another word to surround it with. 
 
-* using SublimeText, create a new file called __pluralize.html__ in your repository directory: __~/Desktop/jversoza/lab-09-canvas/__
+* using SublimeText, create a new file called __sandwich.html__ in your repository directory: __~/Desktop/jversoza/lab-10-events/__
 * setup an html file, and add script tags... start writing your JavaScript between the script tags
-* define a function called pluralize
-* it should have one parameter, word
-* it should __give back__ a value - the plural version of the word passed in
+* define a function called sandwich
+* it should have two parameters, word and surround
+* it should __give back__ a value - the the string, word, with the string, surround, at the beginning and end of it
 * ask for a word: "Word please:"
-* it should call your pluralize function
-* pluralize will give back the word with an s appended to the end of it
-* use the result of calling your pluralize function to print the plural version to the JavaScript console
-* \*add an if-else-if statement to handle the following words: moose (moose), automaton (automata), mouse (mice)
-* use git status, add, commit, and push to save your file in version control and submit it
-* example interaction is below (everything after the greater than sign (&gt;) is user input using the prompt function):
+* ask for a surrounding word: "What should I surround it with?"
+* it should call your sandwich function will give back the word surrounded appropriately 
+	* for example youFunctionName("HELLO", "*") gives back "*HELLO*"
+* save the result of calling your sandwich function 
+* print out the result to the JavaScript console
 
 {% highlight bash %}
 (prompt) Word please:
-> car
-cars
+> hello
+(prompt) What should I surround it with?:
+> x
+xhellox
 {% endhighlight %}
 
 <hr>
 
-### factorial
+### triangle
 
-Write a program that calculates the factorial of a number entered by the user.  Factorial is the product of all positive integers less than or equal to a number.  4! (or 4 factorial) = 4 * 3 * 2 * 1 = 24
+Write a program that asks for a base and height of a triangle.  It will output the area.
 
-* using SublimeText, create a new file called __factorial.html__ in your repository directory: __~/Desktop/jversoza/lab-09-canvas/__
+
+* using SublimeText, create a new file called __triangle.html__ in your repository directory: __~/Desktop/jversoza/lab-10-events/__
 * setup an html file, and add script tags... start writing your JavaScript between the script tags
-* define a function called factorial
-* it should have one parameter, n
-* it should __give back__ an number - the product of all positive numbers less than or equal to the user input
-* ask for a word: "Number please::"
-* it should then call your factorial function
-* factorial will give back the result of the calculation
-* use the result of calling your factorial function to print the factorial
-* hint: use a for loop to do this
-* example interaction is below (everything after the greater than sign (&gt;) is user input using the prompt function):
+* define a function called area_of_triangle
+* it should have two parameters, b and h (base and height)
+* look up the formula for the area
+* your function should calculate the area and store it in a variable
+* it should __give back__ the resulting area (return)
+* your program should ask for a base: "What is the base of the triangle?""
+* your program should ask for a height: "What is the height of the triangle?""
+* use the function you just created to calculate area based on input
+* save the result of your function call in variable
+* print out the result to the JavaScript console
 
 {% highlight bash %}
-(prompt) Number please:
-> 4
-24
+(prompt) What is the base of the triangle? 
+> 20
+(prompt) What is the height of the triangle? 
+> 5
+The area of the triangle is 50
+{% endhighlight %}
+
+<hr>
+
+### min
+
+Write a program that asks for two numbers and determines which one is smaller.  It will output the smaller one to the JavaScript console.
+
+* using SublimeText, create a new file called __min.html__ in your repository directory: __~/Desktop/jversoza/lab-10-events/__
+* setup an html file, and add script tags... start writing your JavaScript between the script tags
+* define a function called min
+* it should have two parameters, a and b 
+* your function should determine which number is smaller, a or b (either works if they're equal)
+* it should __give back__ the smaller number (return)
+* your program should ask for one number: "Number 1:""
+* your program should ask for another number: "Number 2:""
+* use the function you just created to determine the smaller of the two
+* save the result of your function call in variable
+* print out the result to the JavaScript console
+
+{% highlight bash %}
+(prompt) Number 1:
+> 20
+(prompt) Number 2: 
+> 7
+The smaller number is 7
 {% endhighlight %}
