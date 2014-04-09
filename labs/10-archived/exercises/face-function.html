@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<canvas id="sketch" width="800" height="600">
+</canvas>
+<script>
+document.addEventListener('DOMContentLoaded', main);
+
+function main() {
+	var sketch = document.getElementById('sketch');
+	var context = sketch.getContext("2d");
+	draw_face(context, 200, 200);
+	draw_face(context, 400, 200);
+	draw_face(context, 600, 200);
+}
+function draw_circle(context, x, y, r) {
+	context.beginPath();
+	context.arc(x, y, r, 0, 2 * Math.PI, true);
+	context.closePath();
+	context.fill();
+}
+
+function draw_face(context, x, y) {
+	// face
+	context.fillStyle = "#118833";	
+	draw_circle(context, x, y, 140);
+
+	// eyes white
+	context.fillStyle = "#ffffff";
+	draw_circle(context, x - 80, y - 20, 35);
+	draw_circle(context, x + 10, y - 20, 35)
+
+	// eyes black
+	context.fillStyle = "#000000";
+	draw_circle(context, x - 90, y - 20, 25)
+	draw_circle(context, x, y - 20, 25);
+
+	// mouth
+	context.fillStyle = "#000000";
+	context.fillRect(x - 70, y + 50, 70, 30);
+}
+</script>
+</body>
+</html>

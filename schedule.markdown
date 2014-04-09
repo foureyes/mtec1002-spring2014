@@ -219,9 +219,8 @@ JavaScript #3
 * [About Lab #9](labs/09/meta.html)
 * [Prep](labs/09/prep.html)
 	* [__Lab #9, Prep__ - Creating Local and Remote, Warm Up Program)](labs/09/lab-09-prep.html) 
-		* count
 * [Functions](labs/09/functions.html)
-	* [__Lab #9, Prep__ - Review For Loops](labs/09/lab-09-part-01-functions.html) 
+	* [__Lab #9, Part 1__ - Review For Loops](labs/09/lab-09-part-01-functions.html) 
 * [Canvas](labs/09/canvas.html) 
 	* [__Lab #9, Part 2__ - Canvas](labs/09/lab-09-part-02-canvas.html)
 </td>
@@ -230,25 +229,92 @@ JavaScript #3
 <td><h2>10</h2></td>
 <td><h2>04/09</h2></td>
 <td markdown="block">
-<!--
-* html
-* css
-* text editor
-* sftp client (hi late 90's!)
-* server
--->
+Javascript #4
+
+* functions review
+* drawing revisited
+* event handling
 </td>
 <td markdown="block">
-{% comment %}
+
+<!--
 * [About Lab #10](labs/10/meta.html)
-* HTML - [definitions](http://learn.shayhowe.com/html-css/terminology-syntax-intro) and [basic tags](http://www.htmldog.com/guides/html/beginner/)
-	* [__Lab__ (Follow Along) HTML](labs/10/lab_10_part_1_html.html)
-* CSS - [definitions](http://learn.shayhowe.com/html-css/terminology-syntax-intro), [introduction](http://www.htmldog.com/guides/css/beginner/), and [some intermediate topics](http://www.htmldog.com/guides/css/intermediate/)
-	* [__Lab__ (Follow Along) CSS](labs/10/lab_10_part_2_css.html)
-* [Working on a Remote Server](labs/10/remote.html)
-	* [__Lab__ (Follow Along) Remote Server](labs/10/lab_10_part_3_remote.html)
-* [__Lab__ (On Your Own) Create a Web Page](labs/10/lab_10_part_4_page.html)
-{% endcomment %}
+* [Prep](labs/10/prep.html)
+	* [__Lab #10, Prep__ - Warm Up Program](labs/10/lab-10-prep.html) 
+* [Functions](labs/10/functions.html)
+	* [__Lab #10, Part 1__ - Review Functions](labs/10/lab-10-part-01-functions.html) 
+* [Events, Drawing Revisited](labs/10/events.html) 
+	* [__Lab #10, Part 2__ - Events](labs/10/lab-10-part-02-events.html)
+* [Click Events](labs/10/click.html) 
+	* [__Lab #10, Part 3__ - Events](labs/10/lab-10-part-03-click.html)
+-->
+
+<!--
+
+* cheat sheet
+* functions revisited
+	* can be defined anywhere
+	* scope
+	* with or without return values
+	* as types
+	* demo
+		* demo for loop
+		* demo conditional / if statement
+		* create function - area of a triangle
+		* create function - sum of numbers
+	* labs
+		* add-five function ... returns value
+		* min function
+			* step by step
+		* what's the output of this code?
+		* \* add heart function
+* drawing revisited, events, new template
+	* js events... you can add event listeners that call a function
+		* addeventlistener
+			* DOMContentLoaded
+	* demo 
+		* new template
+		* show with loops
+		* moon function
+	* labs
+		* single loop, 4 squares vertical
+			* change to horizontal
+			* make squares blue
+			* gradually increasing size squares,
+			* EC change color of squares in loop
+		* nested loops grid of squares 
+			* EC with diagonal diff color
+		* face
+			* plain
+			* write a function called face
+			* write a function called face parameterize
+* click event
+	* demo
+		* click
+		* circle function
+		* click - show click circles
+	* lab
+		* click-rect
+		* 
+		* keep track of global, increment it
+		* face
+		
+	
+* demo... gh pages
+* git branch
+* html 
+	* definitions
+		* document
+		* tag
+		* attribute
+		* tree
+	* html
+	* title
+	* list
+	* paragraph	
+	* link
+
+-->
 </td>
 </tr>
 <tr>

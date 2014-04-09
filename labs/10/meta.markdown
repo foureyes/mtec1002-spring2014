@@ -1,89 +1,47 @@
 ---
 layout: slides
-title: MTEC1002 - About Lab #10
+title: MTEC1002 - About Lab #9
 ---
 
 <section markdown="block" class="title-slide">
 
-# About Lab #10
+# About Lab #9
 
 {% include title-slide-footer.html %}
 </section>
 
 <section markdown="block">
-### Quick Review
-
-* we sort of went through 3 major topics
-* what were they?
-
+## Even More JavaScript 
 </section>
 
 <section markdown="block">
-### Previous Modules
+### Where We've Been and Where We're Going
 
-* commandline
-* git
-* processing
-
-(the last two were a bit jumbled up together)
+1. Command line (1 - 3)
+2. Version control, with JavaScript (4 - 6)
+3. __JavaScript part 1 (7 - 9)__
+4. JavaScript part 2 (10 - 12)
+5. Publishing, remote servers (13 - 15)
 </section>
 
 <section markdown="block">
-### A Quick Recap of Our Last Class
+### Review Topics
+
+* if statements
+* for loops
+</section>
+
+<section markdown="block">
+### New Topics
 
 * functions
-* interaction
-	* mouse
-	* keyboard
-
+* drawing with canvas
 </section>
 
 <section markdown="block">
-### Aaaaand Git Worflow 
+### Midterm Grades
 
-* creating a local repo
-* duplicating a remote repo locally
-* general workflow
-* sending back to remote
-
-</section>
-
-<section markdown="block">
-### NEW MODULE!!!
-
-* finished with our hybrid Processing/git modules
-* up next... publishing to the web
-	* html/css
-	* remote servers
-	* sftp (hello late 90's)
-	* github as a publishing platform
-	* heroku
-	* wordpress?
-</section>
-
-<section markdown="block">
-### Topics for This Class
-
-* whirlwind tour of HTML and CSS
-* connecting to a remote server
-* transferring files with SFTP
-</section>
-
-<section markdown="block">
-### HTML and CSS
-
-Most of the materials will be sourced from:
-
-* [A Beginner's Guide to HTML and CSS](http://learn.shayhowe.com/html-css/)
-* [HTML Dog](http://www.htmldog.com/guides/html/beginner/)
-</section>
-
-<section markdown="block">
-### Definitions
-
-Let's take a look, at some definitions from:  [A Beginner's Guide to HTML and CSS](http://learn.shayhowe.com/html-css/)
-
-* HTML - markup language... gives text structure and meaning
-* CSS - presentation language... applies layout, visual design elements, and styles to content
-
+* posted by April 10th
+* check blackboard
+* each assignment is worth 7% of your grade
 </section>
