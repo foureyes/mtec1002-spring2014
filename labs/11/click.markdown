@@ -11,11 +11,35 @@ title: MTEC1002 - JavaScript For Loop
 </section>
 
 <section markdown="block">
-### What Will This Code Output?
+### What Will This Code Output in the JavaScript Console?
+{% highlight js %}
+function greet() {
+	return "hello";
+}
+print(typeof greet);
+// gives us a function without a name
+{% endhighlight %}
+
+<div class="incremental" markdown="block">
+* function
+* remember ... functions are types
+</div>
 </section>
+
 
 <section markdown="block">
 ### Anonymous Functions
+
+We can create functions without names!
+
+{% highlight js %}
+function(event) {
+		draw_exclamation(event.x, event.y);
+}
+// gives us a function without a name
+{% endhighlight %}
+
+...and we can pass these as arguments to another function.
 
 </section>
 
@@ -36,6 +60,10 @@ sketch.addEventListener("click", function(event) {
 
 <section markdown="block">
 ### Event Objects
+
+Note that we can access the event created from clicking!
+
+This contains the x and y coordinates of where the click occurred.
 </section>
 
 <section markdown="block">
@@ -80,10 +108,35 @@ function draw_circle(x, y, r) {
 
 <section markdown="block">
 ### Clearing the Screen
-		context.clearRect(0, 0, sketch.offsetWidth, sketch.offsetHeight);
+
+{% highlight js %}
+context.clearRect(0, 0, sketch.offsetWidth, sketch.offsetHeight);
+{% endhighlight %}
 </section>
 
 <section markdown="block">
 ### Two Items Relative to One Another
-		context.clearRect(0, 0, sketch.offsetWidth, sketch.offsetHeight);
+
+{% highlight js %}
+document.addEventListener('DOMContentLoaded', main);
+var sketch;
+var context;
+function main() {
+	sketch = document.getElementById('sketch');
+	context = sketch.getContext("2d");
+	sketch.addEventListener("click", function(event) {
+		draw_exclamation(event.x, event.y);
+	});
+}
+function draw_exclamation(x, y) {
+	context.fillRect(x, y, 50, 100);
+	draw_circle(x + 25, y + 150, 25);
+}
+function draw_circle(x, y, r) {
+	context.beginPath();
+	context.arc(x, y, r, 0, 2 * Math.PI, true);
+	context.closePath();
+	context.fill();
+}
+{% endhighlight %}
 </section>

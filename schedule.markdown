@@ -255,7 +255,6 @@ Javascript #4
 <td markdown="block">
 </td>
 <td markdown="block">
-{% comment %}
 * [About Lab #11](labs/11/meta.html)
 * [Prep / Reference](labs/11/prep.html)
 	* [__Lab #11, Prep__ - Warm Up Program](labs/11/lab-11-prep.html) 
@@ -263,11 +262,12 @@ Javascript #4
 	* [__Lab #11, Part 1__ - Click](labs/11/lab-11-part-01-click.html)
 * [Animation](labs/11/animation.html) 
 	* [__Lab #11, Part 2__ - Click](labs/11/lab-11-part-02-animation.html)
+
 <!--
 * [Keyboard Events](labs/11/keyboard.html) 
 	* [__Lab #11, Part 3__ - Click](labs/11/lab-11-part-03-keyboard.html)
 -->
-{% endcomment %}
+
 </td>
 </tr>
 <tr>

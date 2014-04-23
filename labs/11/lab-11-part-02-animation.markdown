@@ -1,152 +1,137 @@
 ---
 layout: lab
-title: Events and Drawing Revisited
+title: Animation
 prefix: ../../
 ---
-# Lab 10 - Part 2 - Events and Drawing Revisited
+# Lab 11 - Part 2 - Animation
 
-1. squares (vertical and horizontal)
-2. \* size
-3. grid 
-4. \* diagonal 
-5. face
-6. \* multiface
-
+1. circle-animate
+2. circle-bounce
+3. circle-y-bounce
+4. \*circle-xy
+5. \*car-animate
 
 
 ## Instructions
 
 Note that __ALL OF THESE FILES MUST BE SAVED IN THE LOCAL REPOSITORY THAT YOU CREATED FOR THIS LAB__.
 
-### squares
+### circle-animate
 
-Write a program that draws multiple squares using a for loop.
+Write a program that draws a black circle that moves across the canvas horizontally
 
-* using SublimeText, create a new file called __vertical.html__ in your repository directory: __~/Desktop/jversoza/lab-10-events/__
+* using SublimeText, create a new file called __circle-animate.html__ in your repository directory: __~/Desktop/jversoza/lab-11-interaction/__
 * setup an html file
 * create a canvas element of at least 800 by 600
 * add script tags
 * add a listener to your document to handle onload events... set it to run your main function: document.addEventListener('DOMContentLoaded', main);
-* create a main function within your script tags
-* start writing your program in your main function
-* get your sketch element: var sketch = document.getElementById('sketch');	
-* create your context: var context = sketch.getContext("2d"); 
-* create three variables, x and y (both equal to 0) and size (equal to 20)
-* use a for loop to loop from 0 through (up-to and including) 4
-* use your for loop variable to modify the variables you created, x, y and size
-	*  size should be equal to the loop variable * 20
-	*  y should be equal to size + size
-	*  x should always be equal to 100
-	* in the for loop, draw a rectangle using the variables you created: context.fillRect(x, y, size, size);
-* example image below
-
-![vertical](../../resources/img/lab-10-squares-1-vertical.png)
-
+* create 5 variables:
+	* sketch (don't set it to anything yet)
+	* context (don't set it to anything yet)
+	* circle ... an object that's equal to {'x':0, 'y':100, 'r':25 }
+	* dx ... the velocity, which can be set to any value between 1 and 5
+	* fps ... how often the screen redraws; 10 is a good value
+* create a main function... and within this funciton:
+	* assign values to sketch and context:
+		* sketch = document.getElementById('sketch');
+		* context = sketch.getContext("2d");
+	* use setInterval to constantly call a function called animate (you'll create this later) 
+		* pass in animate as the function to be called, and fps and the time interval
+		* setInterval(animate, fps);
+* create an animate function... and within this function:
+	* clear the screen
+		* use context.clearRect
+		* use the arguments 0, 0 ... and the width and height of your canvas element
+		* context.clearRect(0, 0, sketch.offsetWidth, sketch.offsetHeight);
+		* use draw_circle to draw a shape, and use the circle object's x, y and radius values
+		* draw_circle(circle.x, circle.y, circle.r);
+		* increment the circle's x value
+		* circle.x = circle.x + dx;
+* bring in your draw_circle function from previous exercises
 * use git status, add, commit, and push to save your file in version control and submit it
 * send it to github by using git push
-* modify your program so that the squares are horizontal instead of vertical!
-* example image below
+* example movie: [circle-animate](../../resources/mov/circle-animate.mov)
 
 
-![horizontal](../../resources/img/lab-10-squares-2-horizontal.png)
+### circle-bounce
 
-<hr>
+Make your circle bounce back and forth when it reaches the far left or far right side of the screen
 
-### \* size
-
-Draw a series of squares that increase in size and change in color.
-
-* using SublimeText, create a new file called __size.html__ in your repository directory: __~/Desktop/jversoza/lab-10-events/__
+* using SublimeText, create a new file called __circle-bounce.html__ in your repository directory: __~/Desktop/jversoza/lab-11-interaction/__
 * setup an html file
 * create a canvas element of at least 800 by 600
 * add script tags
 * add a listener to your document to handle onload events... set it to run your main function: document.addEventListener('DOMContentLoaded', main);
-* create a main function within your script tags
-* start writing your program in your main function
-* get your sketch element: var sketch = document.getElementById('sketch');	
-* create your context: var context = sketch.getContext("2d"); 
-* again, use a for loop to create 5 squares, each an increasing size, and optionally, a lighter shade of green
-* hint: you'll have to vary the size based on the loop variable (perhaps multiply the loop variable by 20)
-* hint: you can use the loop variable to create a two digit number... that you can insert into the hex string
-* hint: you can set x equal to whatever value x was previously, and add the size of the square plus some constant offset
+* this will be similar to the previous lab, circle-animate...
+* create 5 variables:
+	* sketch (don't set it to anything yet)
+	* context (don't set it to anything yet)
+	* circle ... an object that's equal to {'x':0, 'y':100, 'r':25 }
+	* dx ... the velocity, which can be set to any value between 1 and 5
+	* fps ... how often the screen redraws; 10 is a good value
+* create a main function... and within this funciton:
+	* assign values to sketch and context:
+		* sketch = document.getElementById('sketch');
+		* context = sketch.getContext("2d");
+	* use setInterval to constantly call a function called animate (you'll create this later) 
+		* pass in animate as the function to be called, and fps and the time interval
+		* setInterval(animate, fps);
+* create an animate function... and within this function:
+	* clear the screen
+		* use context.clearRect
+		* use the arguments 0, 0 ... and the width and height of your canvas element
+		* context.clearRect(0, 0, sketch.offsetWidth, sketch.offsetHeight);
+		* use draw_circle to draw a shape, and use the circle object's x, y and radius values
+		* draw_circle(circle.x, circle.y, circle.r);
+		* increment the circle's x value
+		* circle.x = circle.x + dx;
+		* create a conditional that checks if your circle has reached the far left or far right of the canvase:
+			* circle.x > sketch.offsetWidth - dx
+			* circle.x < 0 + dx
+		* use an if / else if to handle these conditions
+		* the body of the condition should change the direction (by multiplying dx by -1)
+		* ...as well as set the circle's x value to either 0 or sketch.offsetWidth:
+			* circle.x = offsetWidth;
+			* circle.x = 0;
+* bring in your draw_circle function from previous exercises
 * use git status, add, commit, and push to save your file in version control and submit it
-* example image below
+* send it to github by using git push
+* example movie: [circle-bounce](../../resources/mov/circle-bounce.mov)
 
-![size](../../resources/img/lab-10-squares-3-gradient.png)
+<!--_ -->
 
+### circle-y-bounce
 
-<hr>
+Copy your program above, and modify it so that your circle travels vertically, instead of horizontally.  It should bounce in the opposite direction if it hits the top or bottom of the canvas.
 
-### grid
-
-Draw a grid of squares.
-
-* using SublimeText, create a new file called __grid.html__ in your repository directory: __~/Desktop/jversoza/lab-10-events/__
-* setup an html file
-* create a canvas element of at least 800 by 600
-* add script tags
-* add a listener to your document to handle onload events... set it to run your main function: document.addEventListener('DOMContentLoaded', main);
-* create a main function within your script tags
-* start writing your program in your main function
-* get your sketch element: var sketch = document.getElementById('sketch');	
-* create your context: var context = sketch.getContext("2d"); 
-* create two variables, x and y - both set to 0
-* use two for loops!
-	* the outside for loop should have a loop variable called i
-	* the inside for loop should have a loop variable called j
-	* within the innermost for loop change x based on the loop variable i (maybe something like x = i * ...)
-	* within the innermost for loop change y based on the loop variable j 
-	* set your fill color to blue...
-	* call context.fillRect with your new x and y values to create blue squares
+* using SublimeText, create a new file called __circle-y-bounce.html__ in your repository directory: __~/Desktop/jversoza/lab-11-interaction/__
+* copy your program above... and change it so that: 
+	* the circle travels up and down
+	* ...and bounces off of the top or bottom of the canvas.
+	* use 0 for the top
+	* use sketch.offsetHeight for the bottom
 * use git status, add, commit, and push to save your file in version control and submit it
-* example image below
+* send it to github by using git push
+* example movie: [circle-y-bounce](../../resources/mov/circle-y-bounce.mov)
 
-![grid](../../resources/img/lab-10-grid-1.png)
+### \*circle-xy
 
-<hr>
+Animate your circle so that it is travelling both horizontally and vertically (along the x and y axis).  Make sure it bounces off of the top, bottom, left and right of the canvas.
 
-### diagonal
-
-Create a diagonal line in your grid of squares.
-
-* modify the above program (grid.html) so that a diagonal line of squares from the upper left corner down to the lower right corner is yellow
-* hint: use a conditional to do this ... base this conditional on the values of your loop variables (i and j)
-
-![diagonal](../../resources/img/lab-10-grid-2-diagonal.png)
-
-
-<hr>
-
-### face
-
-Draw a face!
-
-* using SublimeText, create a new file called __face.html__ in your repository directory: __~/Desktop/jversoza/lab-10-events/__
-* setup an html file
-* create a canvas element of at least 800 by 600
-* add script tags
-* add a listener to your document to handle onload events... set it to run your main function: document.addEventListener('DOMContentLoaded', main);
-* create a main function within your script tags
-* start writing your program in your main function
-* get your sketch element: var sketch = document.getElementById('sketch');	
-* create your context: var context = sketch.getContext("2d"); 
-* create a function that draws a circle - it should take a context, x, y, and r value...
-* use that function to the draw circles that compose the face
+* using SublimeText, create a new file called __circle-xy.html__ in your repository directory: __~/Desktop/jversoza/lab-11-interaction/__
+* using the programs above as a base
+	* add both a dx and dy
+	* make the circle move in both directions by adding the dx or dy to the circle object's x and y
+	* add another if / else if ... so that top, bottom, left and right are handled appropriately
+* send it to github by using git push
 * use git status, add, commit, and push to save your file in version control and submit it
-* example image below
+* example movie: [circle-xy](../../resources/mov/circle-xy.mov)
 
-![face](../../resources/img/lab-10-face-1.png)
+### \*car-animate
 
-<hr>
+Animate your car! Make it move from left to right...
 
-### multiface
-
-* modify your program above so that face can be drawn using a function call
-* draw three faces
-* hint: pass context in as a parameter... along with x and y coordinates
-* use that function to draw a face
+* using SublimeText, create a new file called __car-animate.html__ in your repository directory: __~/Desktop/jversoza/lab-11-interaction/__
+* mimic the example movie: [car-animate](../../resources/mov/car-animate.mov)
+* send it to github by using git push
 * use git status, add, commit, and push to save your file in version control and submit it
-* example image below
-
-![multiface](../../resources/img/lab-10-face-2-function.png)
-

@@ -111,234 +111,9 @@ git remote add origin https://jversoza@github.com/jversoza/lab-08-new.git
 </section>
 
 <section markdown="block">
-### Functions
-
-__What's a function?  What's a function call?  What are arguments?__ &rarr;
-
-<div class="incremental" markdown="block">
-* a __function__ is a named sequence of statements that perform some useful action
-* it can __optionally__ take __inputs__ and __return values__
-* to __call__ a function is just to _run_ or _execute_ it
-* the values passed to a function are called __arguments__
-</div>
-</section>
-
-<section markdown="block">
-###  Calling Functions
-
-__How do you call _or execute_ a function?__ &rarr;
-
-<div class="incremental" markdown="block">
-* to call a function, use its name followed by parentheses... with an optional list of comma separated arguments between the parentheses
-* an example of a function call is:
+### Another Template
 
 {% highlight html %}
-prompt("hello") is a function call
-{% endhighlight %}
-</div>
-</section>
-
-<section markdown="block">
-## When you see parentheses - ( )'s - after a function name, that function is being _called_ or _executed_
-</section>
-
-<section markdown="block">
-### Built-in Functions
-
-JavaScript comes with many built-in functions.  __We know three; what are they and what do they do?__ &rarr;
-
-<div class="incremental" markdown="block">
-* __prompt("some message")__ - asks the user for input and __returns__ that value to your program! ... takes a single argument, the message to display to a user (this usually requires the use of _variables_)
-* __console.log("some message")__ - prints the argument that you pass to it... out to Chrome's JavaScript console 
-* __parseInt("5")__ - converts a string to a number
-</div>
-</section>
-
-<section markdown="block">
-### Some Functions Return Values
-
-__What type of value does prompt always return?  What type of value does parseInt always return?__  &rarr;
-
-<div class="incremental" markdown="block">
-* __prompt__ always gives back a __string__
-* __parseInt__ always gives back a __number__
-</div>
-</section>
-
-
-<section markdown="block">
-### Using Prompt With Variables
-
-Remember that the function prompt gives back a value.  To retain that value, you have to hold it in a variable:
-
-{% highlight html %}
-var answer = prompt("Yes or no!?");
-{% endhighlight  %}
-
-</section>
-
-
-
-<section markdown="block">
-## Conditionals
-</section>
-
-<section markdown="block">
-### Blocks of Code
-
-Curly braces denote statements of code that are grouped together.  Everything within the curly braces below is considered part of the if statement.  Blocks of code must __start and end__ with curly braces...
-
-{% highlight js %}
-... {
-	// code wrapped by curly braces
-} 
-{% endhighlight %}
-
-</section>
-
-<section markdown="block">
-### Conditionals...
-
-__What kind of statement would we use to execute code if a condition is true?__ &rarr;
-
-<div class="incremental" markdown="block">
-
-An if statement...
-
-{% highlight js %}
-if (some_boolean_expression) {
-	// do stuff here if expression is true
-}
-{% endhighlight %}
-
-* [Diagram for if statements](../../resources/img/if.png)
-* [Diagram for consecutive if statements](../../resources/img/if-consecutive.png)
-</div>
-
-</section>
-
-<section markdown="block">
-### Conditionals Continued
-
-__What kind of statement would we use to execute code one branch of code if a condition is true and another branch of code otherwise?__ &rarr;
-
-<div class="incremental" markdown="block">
-
-* an if / else statement  
-* an else must always have a preceding if!
-
-{% highlight js %}
-if (some_boolean_expression) {
-	// do stuff here if expression is true
-} else {
-	// do stuff here if expression is false
-}
-{% endhighlight %}
-
-* [Diagram for if / else statements](../../resources/img/if-else.png)
-* else statements are always attached to an if!
-</div>
-
-</section>
-
-<section markdown="block">
-### If / Else If
-
-__What kind of statement would we use to execute multiple branches of code based on multiple chained conditions?__ &rarr;
-
-
-<div class="incremental" markdown="block">
-Use if / else if statements
-
-{% highlight js %}
-if (boolean_expression_1) {
-	// do stuff here if expression 1 is true
-} else if (boolean_expression_2) {
-	// do stuff here if expression 2 is true
-} else if (boolean_expression_3) {
-	// do stuff here if expression 3 is true
-}
-{% endhighlight %}
-
-* [Diagram for if / else if statements](../../resources/img/if-else-if.png)
-</div>
-</section>
-
-<section markdown="block">
-### If / Else If
-
-* once a condition is true, the if / else if executes the code in that block and the if / else if ends immediately (even if other later conditions are true)
-* can end with else to handle all _other_ conditions
-</section>
-
-
-<section markdown="block">
-### Usage
-
-* use if statements if there's a single alternative path of execution
-* use if/else  statements if there's a two possible alternative paths of execution
-* use if/else if statements if there's more than two possible alternative paths of execution
-</section>
-
-<section markdown="block">
-### Repeat That Again?
-
-__What construct do we use if we want to execute a block of code multiple times without writing it multiple times?__ &rarr;
-
-<div class="incremental" markdown="block">
-* we use a for loop!
-* __what does a for loop look like... what are its parts?__ &rarr;
-</div>
-</section>
-
-<section markdown="block">
-### For Loop Dissected
-
-A for loop consists of the keyword, __for__, and three parts, separated by a semicolon,  contained within parentheses:
-
-* initialization - declares a variable and value to start with
-* condition - a condition for the loop to stop 
-* _afterthought_ - a way to increment/decrement or change the variable on each iteration so that the condition is eventually met
-
-You can use the variable that you declare in the initialization within your for loop!
-</section>
-
-<section markdown="block">
-### For Loop Parts
-
-{% highlight js %}
-//    initialization
-//    |        condition
-//    |        |       afterthought/increment
-//    |        |       |
-for(var i = 0; i <= 5; i = i + 1) {
-	console.log(i);
-}
-{% endhighlight %}
-</section>
-
-<section markdown="block">
-### Square 1 Through 10
-
-__Create a for loop that prints out the square of every number from 1 through 10__ &rarr;
-
-<div class="incremental" markdown="block">
-{% highlight js %}
-for(var i = 1; i <= 10; i = i + 1) {
-	console.log(i * i);
-}
-
-{% endhighlight %}
-</div>
-</section>
-<section markdown="block">
-### Global Variables
-</section>
-
-<section markdown="block">
-### An Updated Template
-
-{% highlight js %}
 <html>
 <head>
     <title></title>
@@ -359,6 +134,17 @@ function main() {
 	// draw_circle(100, 200, 25);
 	// context.fillRect(20, 30, 70, 50);
 }
+</script>
+</body>
+</html>
+{% endhighlight %}
+
+</section>
+
+<section markdown="block">
+### Drawing a Circle
+
+{% highlight html %}
 
 function draw_circle(x, y, r) {
 	context.beginPath();
@@ -366,8 +152,6 @@ function draw_circle(x, y, r) {
 	context.closePath();
 	context.fill();
 }
-</script>
-</body>
-</html>
 {% endhighlight %}
+
 </section>
