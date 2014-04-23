@@ -245,8 +245,6 @@ Javascript #4
 	* [__Lab #10, Part 1__ - Review Functions](labs/10/lab-10-part-01-functions.html) 
 * [Events, Drawing Revisited](labs/10/events.html) 
 	* [__Lab #10, Part 2__ - Events](labs/10/lab-10-part-02-events.html)
-* [Click Events](labs/10/click.html) 
-	* [__Lab #10, Part 3__ - Click](labs/10/lab-10-part-03-click.html)
 
 
 </td>
@@ -259,15 +257,14 @@ Javascript #4
 <td markdown="block">
 {% comment %}
 * [About Lab #11](labs/11/meta.html)
-* Create a (Temporary) Server on Linode
-	* [__Lab__ (Follow Along) Create Your Own (Temporary) Server on Linode](labs/11/lab_11_part_0_server.html)
-* Connecting to a Remote Server
-	* [__Lab__ (Follow Along) Connecting to Remote Servers](labs/11/lab_11_part_1_remote.html)
-* Review HTML and CSS
-	* [__Lab__ (On Your Own) Review HTML and CSS](labs/11/lab_11_part_2_review.html)
-* Using github Pages to Publish Content About Your Code
-	* [__Lab__ (Follow Along) Create GitHub Pages (gh-pages)](labs/11/lab_11_part_3_gh_pages.html)
-* CSS Frameworks
+* [Prep / Reference](labs/11/prep.html)
+	* [__Lab #11, Prep__ - Warm Up Program](labs/11/lab-11-prep.html) 
+* [Click Events](labs/11/click.html) 
+	* [__Lab #11, Part 1__ - Click](labs/11/lab-11-part-01-click.html)
+* [Animation](labs/11/animation.html) 
+	* [__Lab #11, Part 2__ - Click](labs/11/lab-11-part-02-animation.html)
+* [Keyboard Events](labs/11/keyboard.html) 
+	* [__Lab #11, Part 3__ - Click](labs/11/lab-11-part-03-keyboard.html)
 {% endcomment %}
 </td>
 </tr>

@@ -8,34 +8,37 @@
 <script>
 document.addEventListener('DOMContentLoaded', main);
 
+var sketch;
+var context;
+
 function main() {
-	var sketch = document.getElementById('sketch');
-	var context = sketch.getContext("2d");
+	sketch = document.getElementById('sketch');
+	context = sketch.getContext("2d");
 	sketch.addEventListener("click", function(event) {
-		draw_face(context, event.x, event.y)
+		draw_face(event.x, event.y)
 	});
 }
-function draw_circle(context, x, y, r) {
+function draw_circle(x, y, r) {
 	context.beginPath();
 	context.arc(x, y, r, 0, 2 * Math.PI, true);
 	context.closePath();
 	context.fill();
 }
 
-function draw_face(context, x, y) {
+function draw_face(x, y) {
 	// face
 	context.fillStyle = "#118833";	
-	draw_circle(context, x, y, 140);
+	draw_circle(x, y, 140);
 
 	// eyes white
 	context.fillStyle = "#ffffff";
-	draw_circle(context, x - 80, y - 20, 35);
-	draw_circle(context, x + 10, y - 20, 35)
+	draw_circle(x - 80, y - 20, 35);
+	draw_circle(x + 10, y - 20, 35)
 
 	// eyes black
 	context.fillStyle = "#000000";
-	draw_circle(context, x - 90, y - 20, 25)
-	draw_circle(context, x, y - 20, 25);
+	draw_circle(x - 90, y - 20, 25)
+	draw_circle(x, y - 20, 25);
 
 	// mouth
 	context.fillStyle = "#000000";

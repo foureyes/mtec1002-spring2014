@@ -8,20 +8,24 @@
 <script>
 document.addEventListener('DOMContentLoaded', main);
 
+var sketch;
+var context;
+
 function main() {
-	var sketch = document.getElementById('sketch');
-	var context = sketch.getContext("2d");
-	draw_circle(context, 300, 300, 100);
+	sketch = document.getElementById('sketch');
+	context = sketch.getContext("2d");
+	context.fillStyle = "#992255";
+	sketch.addEventListener("click", function(event) {
+		draw_circle(event.x, event.y, 75);
+	});
 }
 
-function draw_circle(context, x, y, r) {
+function draw_circle(x, y, r) {
 	context.beginPath();
 	context.arc(x, y, r, 0, 2 * Math.PI, true);
 	context.closePath();
 	context.fill();
 }
-
-
 </script>
 </body>
 </html>

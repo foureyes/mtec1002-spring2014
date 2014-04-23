@@ -8,14 +8,21 @@
 <script>
 document.addEventListener('DOMContentLoaded', main);
 
+var sketch;
+var context;
+
 function main() {
-	var sketch = document.getElementById('sketch');
-	var context = sketch.getContext("2d");
+	sketch = document.getElementById('sketch');
+	context = sketch.getContext("2d");
 	context.fillStyle = "#772233";
 	sketch.addEventListener("click", function(event) {
-		context.fillRect(event.x, event.y, 70, 50)
+		draw_rectangle(event.x, event.y, 70, 50);
 	});
-	}
+}
+
+function draw_rectangle(x, y, w, h) {
+	context.fillRect(x, y, 70, 50);
+}
 </script>
 </body>
 </html>
