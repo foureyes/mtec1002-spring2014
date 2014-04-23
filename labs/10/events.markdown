@@ -122,6 +122,16 @@ function main() {
 </section>
 
 <section markdown="block">
+### Get the Canvas Element and Context
+
+{% highlight js %}
+// within your main function
+var sketch = document.getElementById('sketch');
+var context = sketch.getContext("2d");
+{% endhighlight %}
+</section>
+
+<section markdown="block">
 ### A Template (Somewhat Updated)
 
 {% highlight html %}
@@ -136,6 +146,8 @@ function main() {
 document.addEventListener('DOMContentLoaded', main);
 
 function main() {
+	var sketch = document.getElementById('sketch');
+	var context = sketch.getContext("2d");
 	// your code goes here
 }
 </script>
