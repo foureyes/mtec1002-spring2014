@@ -281,30 +281,32 @@ Javascript #5
 Javascript #6
 
 * animation review
-	* circle that goes across
-	* circle that goes back and forth
+	* animate - circle that goes across
+	* boundary - circle that goes back and forth
+	* boundary all 
 	* bounce (vertical)
+	* bounce 2
+	* bounce 3
 * keyboard input
-	* demo - move circle around
-	* move square around
-	* move square only left and right
-	* bound to corners
-* objects revisted
+	* demo - move circle around * 2
+	* rectangle key
+	* rectangle key 2
+	* rectangle key 2 boundary
 * all together
+	* collision with paddle
+	* game with end condition
 </td>
 <td markdown="block">
 {% comment %}
 * [About Lab #12](labs/12/meta.html)
-* Using [GitHub Pages](http://pages.github.com/) to Publish Content
-	* branch, checkout -b, gh-pages branch, [CSS Frameworks](http://twitter.github.io/bootstrap/), 
-[ski free!](http://basicallydan.github.io/skifree.js/), 
-	* [__Lab__ (Follow Along) Create GitHub Pages (gh-pages)](labs/12/lab_12_part_1_gh_pages.html)
-* Markdown, Jekyll
-	* [markdown](http://daringfireball.net/projects/markdown/basics), [jekyll](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter) with [markdown](https://github.com/mojombo/jekyll/wiki/usage)
-	* [__Lab__ (Follow Along) Create Another Page Using Markdown and Jekyll](labs/12/lab_12_part_2_markdown.html)
-	* [__Lab__ (On Your Own) Create Yet Another Page Using Markdown and Jekyll](labs/12/lab_12_part_3_more_markdown.html)
-* [CSS Frameworks](http://twitter.github.io/bootstrap/)
-	* [__Lab__ (Follow Along) Use Bootstrap to Style Things Up! ](labs/12/lab_12_part_4_bootstrap.html)
+* [Prep / Reference](labs/12/prep.html)
+	* [__Lab #12, Prep__ - Warm Up Program](labs/12/lab-12-prep.html) 
+* [Animation](labs/12/animation.html) 
+	* [__Lab #12, Part 1__ - Click](labs/12/lab-12-part-01-animation.html)
+* [Keyboard](labs/12/keyboard.html) 
+	* [__Lab #12, Part 2__ - Click](labs/12/lab-12-part-02-keyboard.html)
+* [Game](labs/12/game.html) 
+	* [__Lab #12, Part 3__ - Click](labs/12/lab-12-part-03-game.html)
 {% endcomment %}
 </td>
 </tr>

@@ -20,7 +20,6 @@ var dy = 0;
 var dx = 2;
 var acc_y = 0.1; 
 var dampen_y = 0.85;
-var dampen_x = 0.95;
 var fps = 10;
 
 function main() {
@@ -44,8 +43,7 @@ function animate() {
 	circle.y = circle.y + dy;
 	circle.x = circle.x + dx;
 
-	dy = dy + acc_y;
-	dx = dx * dampen_x;
+	dy = dy + acc_y
 
 	// check vertical bounds
 	if (circle.y > sketch.offsetHeight - dy - circle.r || circle.y < (dy * -1) + circle.r) {
