@@ -1,34 +1,40 @@
 ---
 layout: slides
-title: MTEC1002 - About Lab #12
+title: MTEC1002 - About Lab #11
 ---
 
 <section markdown="block" class="title-slide">
 
-# About Lab #12
+# About Lab #11
 
 {% include title-slide-footer.html %}
 </section>
 
 <section markdown="block">
-### Topics
-
-* github pages
-* markdown
-* using css frameworks (bootstrap)
-</section>
-
-
-<section markdown="block">
-### Resources
-
-* [GitHub Pages](http://pages.github.com/)
-* [markdown](http://daringfireball.net/projects/markdown/basics)
-* [jekyll](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter) 
-* [Bootstrap](http://twitter.github.io/bootstrap/)
-* [Sublime Text 2](http://www.sublimetext.com/)
+## Click, Keyboard, and Animation
 </section>
 
 <section markdown="block">
-## Aaaand.  Perhaps Some Python.
+### Where We've Been and Where We're Going
+
+1. Command line (1 - 3)
+2. Version control, with JavaScript (4 - 6)
+3. JavaScript part 1 (7 - 9)
+4. __JavaScript part 2 (10 - 12)__
+5. Publishing, remote servers (13 - 15)
 </section>
+
+<section markdown="block">
+### Review Topics
+
+* functions and events
+</section>
+
+<section markdown="block">
+### New Topics
+
+* click
+* animation
+* keyboard events
+</section>
+

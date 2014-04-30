@@ -253,6 +253,10 @@ Javascript #4
 <td><h2>11</h2></td>
 <td><h2>04/23</h2></td>
 <td markdown="block">
+Javascript #5
+
+* click events
+* animation
 </td>
 <td markdown="block">
 * [About Lab #11](labs/11/meta.html)
@@ -274,11 +278,19 @@ Javascript #4
 <td><h2>12</h2></td>
 <td><h2>04/30</h2></td>
 <td markdown="block">
-<!--
-* github pages
-* css frameworks
-* markdown
--->
+Javascript #6
+
+* animation review
+	* circle that goes across
+	* circle that goes back and forth
+	* bounce (vertical)
+* keyboard input
+	* demo - move circle around
+	* move square around
+	* move square only left and right
+	* bound to corners
+* objects revisted
+* all together
 </td>
 <td markdown="block">
 {% comment %}
