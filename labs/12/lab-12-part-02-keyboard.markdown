@@ -3,7 +3,7 @@ layout: lab
 title: Animation
 prefix: ../../
 ---
-# Lab 11 - Part 2 - Animation
+# Lab 12 - Part 2 - Keyboard
 
 1. circle-animate
 2. circle-bounce
