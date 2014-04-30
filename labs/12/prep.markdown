@@ -113,17 +113,35 @@ git remote add origin https://jversoza@github.com/jversoza/lab-08-new.git
 <section markdown="block">
 ### Another Template
 
+(Added a border)
+
 {% highlight html %}
 <html>
 <head>
     <title></title>
+<style>
+#sketch {
+	border:1px solid #000;
+}
+</style>
 </head>
 <body>
-<canvas id="sketch" width="800" height="600">
+<canvas id="sketch" width="480" height="720">
 </canvas>
 <script>
-document.addEventListener('DOMContentLoaded', main);
 
+// javascript goes here...
+</script>
+</body>
+</html>
+{% endhighlight %}
+
+</section>
+
+<section markdown="block">
+### JavaScript Template
+
+{% highlight js %}
 var sketch;
 var context;
 
@@ -134,11 +152,7 @@ function main() {
 	// draw_circle(100, 200, 25);
 	// context.fillRect(20, 30, 70, 50);
 }
-</script>
-</body>
-</html>
 {% endhighlight %}
-
 </section>
 
 <section markdown="block">

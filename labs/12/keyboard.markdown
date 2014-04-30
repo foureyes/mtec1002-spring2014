@@ -1,61 +1,94 @@
 ---
 layout: slides
-title: MTEC1002 - JavaScript For Loop
+title: MTEC1002 - Keyboard
 ---
 
 <section markdown="block" class="title-slide">
 
-# Click Events
+# Keyboard
 
 {% include title-slide-footer.html %}
 </section>
 
 <section markdown="block">
-### A Click
+### General Overview
 
-In addition to detecting when a page loads, you can __listen for when an element is clicked__:
-
-{% highlight js %}
-sketch.addEventListener("click", function(event) {
-	// your code here... event.x, event.y
-});
-{% endhighlight %}
-
-* note that we pass in an _anonymous_ function as the second argument rather than a named argument
-* it takes a single parameter, which contains the x and y values of where the click occurred
+1. use boolean variables to determine if position should change
+2. use keyboard events to set these variables
 </section>
-
 
 <section markdown="block">
-### Clicking Circles
+### Keyboard and Circle Example Part 1
 
-<div class="incremental" markdown="block">
-{% highlight html %}
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-<canvas id="sketch" width="800" height="600">
-</canvas>
-<script>
+Variables and document loaded.
+
+{% highlight js %}
 document.addEventListener('DOMContentLoaded', main);
+var sketch;
+var context;
+var circle;
+var fps = 10;
+var go_up = false;
+var go_down = false;
 
-function main() {
-	var sketch = document.getElementById('sketch');
-	var context = sketch.getContext("2d");
-	context.fillStyle = "#992255";
-	sketch.addEventListener("click", function(event) {
-		context.beginPath();
-		context.arc(event.x, event.y, 75, 0, 2 * Math.PI, true);
-		context.closePath();
-		context.fill();
-	});
-}
-</script>
-</body>
-</html>
 {% endhighlight %}
-</div>
 </section>
 
+<section markdown="block">
+### Part 2 - main
+
+{% highlight js %}
+function main() {
+	sketch = document.getElementById('sketch');
+	context = sketch.getContext("2d");
+
+	// start circle at left edge, centered vertically
+	circle = {'x':sketch.offsetWidth / 2, 'y':sketch.offsetHeight / 2, 'r':25};
+	animation = setInterval(animate, fps);
+
+	// keyboard events
+	document.addEventListener('keydown', function(event) {
+		if(event.keyCode === 38) {
+			go_up = true;
+		}
+
+		if(event.keyCode === 40) {
+			go_down = true;
+		}
+	});
+	document.addEventListener('keyup', function(event) {
+		if(event.keyCode === 38) {
+			go_up = false;
+		}
+
+		if(event.keyCode === 40) {
+			go_down = false;
+		}
+	});
+}
+{% endhighlight %}
+</section>
+
+<section markdown="block">
+### Part 3 - animate
+
+{% highlight js %}
+function animate() {
+	
+	// clear the screen
+	context.clearRect(0, 0, sketch.offsetWidth, sketch.offsetHeight);
+
+	if(go_up) {
+		circle.y = circle.y - 5;
+	}
+
+	if(go_down) {
+		circle.y = circle.y + 5;
+	}
+
+	// draw circle at current position of circle object
+	draw_circle(circle.x, circle.y, circle.r);
+}
+// draw circle function below
+{% endhighlight %}
+</section>

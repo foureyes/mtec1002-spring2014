@@ -297,7 +297,6 @@ Javascript #6
 	* game with end condition
 </td>
 <td markdown="block">
-{% comment %}
 * [About Lab #12](labs/12/meta.html)
 * [Prep / Reference](labs/12/prep.html)
 	* [__Lab #12, Prep__ - Warm Up Program](labs/12/lab-12-prep.html) 
@@ -305,9 +304,8 @@ Javascript #6
 	* [__Lab #12, Part 1__ - Click](labs/12/lab-12-part-01-animation.html)
 * [Keyboard](labs/12/keyboard.html) 
 	* [__Lab #12, Part 2__ - Click](labs/12/lab-12-part-02-keyboard.html)
-* [Game](labs/12/game.html) 
+* Game
 	* [__Lab #12, Part 3__ - Click](labs/12/lab-12-part-03-game.html)
-{% endcomment %}
 </td>
 </tr>
 <tr>
