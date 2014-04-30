@@ -142,6 +142,7 @@ git remote add origin https://jversoza@github.com/jversoza/lab-08-new.git
 ### JavaScript Template
 
 {% highlight js %}
+document.addEventListener('DOMContentLoaded', main);
 var sketch;
 var context;
 
