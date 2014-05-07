@@ -307,7 +307,6 @@ Javascript #6
 * server
 </td>
 <td markdown="block">
-<!--
 * [About Lab #13](labs/13/meta.html)
 * HTML - [definitions](http://learn.shayhowe.com/html-css/terminology-syntax-intro) and [basic tags](http://www.htmldog.com/guides/html/beginner/)
 	* [__Lab__ (Follow Along) HTML](labs/13/lab_13_part_1_html.html)
@@ -316,7 +315,6 @@ Javascript #6
 * [Working on a Remote Server](labs/13/remote.html)
 	* [__Lab__ (Follow Along) Remote Server](labs/13/lab_13_part_3_remote.html)
 * [__Lab__ (On Your Own) Create a Web Page](labs/13/lab_13_part_4_page.html)
--->
 </td>
 </tr>
 <tr>

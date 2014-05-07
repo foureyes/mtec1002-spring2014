@@ -1,6 +1,6 @@
 ---
 layout: slides
-title: MTEC1002 - About Lab #10
+title: MTEC1002 - About Lab #13
 ---
 
 <section markdown="block" class="title-slide">
