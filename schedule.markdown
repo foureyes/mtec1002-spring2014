@@ -281,20 +281,8 @@ Javascript #5
 Javascript #6
 
 * animation review
-	* animate - circle that goes across
-	* boundary - circle that goes back and forth
-	* boundary all 
-	* bounce (vertical)
-	* bounce 2
-	* bounce 3
 * keyboard input
-	* demo - move circle around * 2
-	* rectangle key
-	* rectangle key 2
-	* rectangle key 2 boundary
 * all together
-	* collision with paddle
-	* game with end condition
 </td>
 <td markdown="block">
 * [About Lab #12](labs/12/meta.html)
@@ -312,22 +300,23 @@ Javascript #6
 <td><h2>13</h2></td>
 <td><h2>05/07</h2></td>
 <td markdown="block">
-<!--
-* intro to Python
-* types, variables, operations
--->
+* html
+* css
+* text editor
+* sftp client (hi late 90's!)
+* server
 </td>
 <td markdown="block">
-{% comment %}
+<!--
 * [About Lab #13](labs/13/meta.html)
-* clone https://github.com/MTEC1002/lab_13_all_parts
-* (download and drop into desktop your text editor, [sublime text](http://www.sublimetext.com/2), if you haven't already)
-* [Values, Types, Operations, Variables](labs/13/variables_types_operations_input.html)
-	* [lyrics.py](labs/13/lyrics.py)
-	* [mad_lib_lyrics.py](labs/13/mad_libs_lyrics.py)
-	* [tree.py](labs/13/tree.py)
-	* [temperature.py](labs/13/temperature.py)
-{% endcomment %}
+* HTML - [definitions](http://learn.shayhowe.com/html-css/terminology-syntax-intro) and [basic tags](http://www.htmldog.com/guides/html/beginner/)
+	* [__Lab__ (Follow Along) HTML](labs/13/lab_13_part_1_html.html)
+* CSS - [definitions](http://learn.shayhowe.com/html-css/terminology-syntax-intro), [introduction](http://www.htmldog.com/guides/css/beginner/), and [some intermediate topics](http://www.htmldog.com/guides/css/intermediate/)
+	* [__Lab__ (Follow Along) CSS](labs/13/lab_13_part_2_css.html)
+* [Working on a Remote Server](labs/13/remote.html)
+	* [__Lab__ (Follow Along) Remote Server](labs/13/lab_13_part_3_remote.html)
+* [__Lab__ (On Your Own) Create a Web Page](labs/13/lab_13_part_4_page.html)
+-->
 </td>
 </tr>
 <tr>

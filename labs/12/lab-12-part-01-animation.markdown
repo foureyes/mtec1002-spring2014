@@ -1,6 +1,6 @@
 ---
 layout: lab
-title: Click
+title: Animation
 prefix: ../../
 ---
 # Lab 12 - Part 1 - Animation
