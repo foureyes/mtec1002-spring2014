@@ -16,7 +16,7 @@ title: MTEC1002 - Animation
 ### General Overview
 
 1. use setInterval to continually call animate
-2. 
+2. create an animate function to draw!
 </section>
 
 <section markdown="block">

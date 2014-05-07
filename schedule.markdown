@@ -289,11 +289,11 @@ Javascript #6
 * [Prep / Reference](labs/12/prep.html)
 	* [__Lab #12, Prep__ - Warm Up Program](labs/12/lab-12-prep.html) 
 * [Animation](labs/12/animation.html) 
-	* [__Lab #12, Part 1__ - Click](labs/12/lab-12-part-01-animation.html)
+	* [__Lab #12, Part 1__ - Animation](labs/12/lab-12-part-01-animation.html)
 * [Keyboard](labs/12/keyboard.html) 
-	* [__Lab #12, Part 2__ - Click](labs/12/lab-12-part-02-keyboard.html)
+	* [__Lab #12, Part 2__ - Keyboard](labs/12/lab-12-part-02-keyboard.html)
 * Game
-	* [__Lab #12, Part 3__ - Click](labs/12/lab-12-part-03-game.html)
+	* [__Lab #12, Part 3__ - Game](labs/12/lab-12-part-03-game.html)
 </td>
 </tr>
 <tr>
