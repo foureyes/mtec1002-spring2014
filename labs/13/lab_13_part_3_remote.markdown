@@ -27,6 +27,7 @@ ssh yourusername@foureyes.in
 * you'll be asked for a password... and once you're authenticated, you will have a prompt on the remote server
 * use ls to list all of the files (there should be none!)
 * use mkdir to create a directory called public\_html
+* chmod 755 public_html
 * try running the following commands on the remote server:
 	* whoami
 	* who
