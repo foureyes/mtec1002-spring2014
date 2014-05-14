@@ -327,7 +327,6 @@ Javascript #6
 
 <!-- * [__Lab__ (On Your Own) Create a Web Page](labs/13/lab_13_part_4_page.html)-->
 
-<!--
 * Review HTML and CSS
 	* HTML - [definitions](http://learn.shayhowe.com/html-css/terminology-syntax-intro) and [basic tags](http://www.htmldog.com/guides/html/beginner/)
 	* CSS - [definitions](http://learn.shayhowe.com/html-css/terminology-syntax-intro), [introduction](http://www.htmldog.com/guides/css/beginner/), and [some intermediate topics](http://www.htmldog.com/guides/css/intermediate/)
@@ -342,7 +341,6 @@ Javascript #6
     * [markdown](http://daringfireball.net/projects/markdown/basics), [jekyll](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter) with [markdown](https://github.com/mojombo/jekyll/wiki/usage)
     * [__Lab__ (Follow Along) Create Another Page Using Markdown and Jekyll](labs/14/lab_14_part_4_markdown.html)
     * [__Lab__ (On Your Own) Create Yet Another Page Using Markdown and Jekyll](labs/14/lab_14_part_5_more_markdown.html)
--->
 
 </td>
 </tr>
