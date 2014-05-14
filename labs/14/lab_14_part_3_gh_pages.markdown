@@ -113,6 +113,6 @@ git push origin gh-pages
 * check out your page again... 
 
 #### Resources and Possibilities
-* follow [this guide](https://help.github.com/articles/creating-project-pages-manually) to create a project page that shows up under:
+* follow [this guide](https://help.github.com/articles/creating-project-pages-manually) to create a project page...
 * start making [javascript games](http://basicallydan.github.io/skifree.js/)
 

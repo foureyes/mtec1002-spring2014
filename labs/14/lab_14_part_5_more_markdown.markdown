@@ -9,27 +9,27 @@ prefix: ../../
 ## Overview
 
 * use [markdown](http://daringfireball.net/projects/markdown/basics) on your [github pages](http://pages.github.com/)
-* __we won't be forking and cloning another lab__; we'll be using the same repository as we did in part 1
 
 ## Instructions
 
 ### Prep Work
 
 * in terminal 
-* use pwd to make sure you're in your __~/Desktop/username/lab_12_part_1__ folder
-* (we're using the same repository as we did in parts 1 and 2)
+* use pwd to make sure you're in your __~/Desktop/username/lab-14-remote__ folder
 * if you're not in that folder, cd into it
 
 ### Creating One More Markdown Page
 
-* in the same folder that index.html page is in... (your lab\_12\_part\_1 folder)
+* in the same folder that index.html page is in... (your lab-14-remote folder)
 * using sublime text, create a new file called __practice.markdown__
 * in the beginning of the file write the following code:
+
 {% highlight html %}
 ---
 title: Practice
 ---
 {% endhighlight %}
+
 * this has to be at the very top of the page (including the 3 dashes)
 * this will cause the html page to be generated with the title "Practice"
 * create a heading called "This is a Header!"
@@ -46,9 +46,10 @@ title: Practice
 * use git __status__, __add__, and __commit__ to save your work
 * ...then __push__ to __origin__ __gh-pages__
 * check your __practice__ page: 
-	* open http://yourusername.github.io/lab\_12\_part\_1/__practice.html__ in your browser (replace yourusername with your actual username)
+	* open http://yourusername.github.io/lab-14-remote/__practice.html__ in your browser (replace yourusername with your actual username)
 	* or follow the link to practice from your homepage
 * view source to see the HTML that was generated!
+	* you already know how to do this in Chrome!
 	* in Firefox: View &rarr; Page Source
 	* in Safari
 		* Safari &rarr; Preferences, Advanced Tab - Check Show Develop Menu  

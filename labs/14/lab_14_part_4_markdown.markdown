@@ -76,6 +76,7 @@ title: About
 {% endhighlight %}
 * use git __status__, __add__, and __commit__ to save your work
 * ...then __push__ to __origin__ __gh-pages__
+* -------- when you do git push, __git push origin gh-pages__ -------- 
 * check your __about__ page: 
 	* open http://yourusername.github.io/lab-14-remote/__about.html__ in your browser (replace yourusername with your actual username)
 	* or follow the link to about from your homepage
@@ -106,6 +107,7 @@ __bold!__
 {% endhighlight %}
 * use git __status__, __add__, and __commit__ to save your work
 * ...then __push__ to __origin__ __gh-pages__
+* -------- when you do git push, __git push origin gh-pages__ -------- 
 * check your __about__ page: 
 	* open http://yourusername.github.io/lab-14-remote/__about.html__ in your browser (replace yourusername with your actual username)
 	* or follow the link to about from your homepage
