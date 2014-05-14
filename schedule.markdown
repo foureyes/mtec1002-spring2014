@@ -312,30 +312,38 @@ Javascript #6
 	* [__Lab__ (Follow Along) HTML](labs/13/lab_13_part_1_html.html)
 * CSS - [definitions](http://learn.shayhowe.com/html-css/terminology-syntax-intro), [introduction](http://www.htmldog.com/guides/css/beginner/), and [some intermediate topics](http://www.htmldog.com/guides/css/intermediate/)
 	* [__Lab__ (Follow Along) CSS](labs/13/lab_13_part_2_css.html)
-* [Working on a Remote Server](labs/13/remote.html)
-	* [__Lab__ (Follow Along) Remote Server](labs/13/lab_13_part_3_remote.html)
-* [__Lab__ (On Your Own) Create a Web Page](labs/13/lab_13_part_4_page.html)
 </td>
 </tr>
 <tr>
 <td><h2>14</h2></td>
 <td><h2>05/14</h2></td>
 <td markdown="block">
-<!--
-* conditionals
--->
+* review
+* remote servers
+* github pages
+* markdown
 </td>
 <td markdown="block">
-{% comment %}
-* clone [lab\_14\_all\_parts](https://github.com/MTEC1002/lab_14_all_parts)
-* [Conditionals](labs/14/conditionals.html)
-	* (together) [cake.py](labs/14/cake.py)
-	* (together) [go_for_gold.py](labs/14/go_for_gold.py)
-	* (together) [name_that_roll.py](labs/14/name_that_roll.py)
-	* [grade.py](labs/14/grade.py)
-	* [tip.py](labs/14/tip.py)
-	* [fortune.py](labs/14/fortune.py)
-{% endcomment %}
+
+<!-- * [__Lab__ (On Your Own) Create a Web Page](labs/13/lab_13_part_4_page.html)-->
+
+<!--
+* Review HTML and CSS
+	* HTML - [definitions](http://learn.shayhowe.com/html-css/terminology-syntax-intro) and [basic tags](http://www.htmldog.com/guides/html/beginner/)
+	* CSS - [definitions](http://learn.shayhowe.com/html-css/terminology-syntax-intro), [introduction](http://www.htmldog.com/guides/css/beginner/), and [some intermediate topics](http://www.htmldog.com/guides/css/intermediate/)
+    * [__Lab__ (On Your Own) Review HTML and CSS](labs/14/lab_14_part_1_review.html)
+* [Working on a Remote Server](labs/14/remote.html)
+    * [__Lab__ (Follow Along) Remote Server](labs/14/lab_14_part_2_remote.html)
+* Using [GitHub Pages](http://pages.github.com/) to Publish Content
+    * branch, checkout -b, gh-pages branch, and [some (bootstrap)](http://twitter.github.io/bootstrap/),
+[examples (ski free!)](http://basicallydan.github.io/skifree.js/),
+    * [__Lab__ (Follow Along) Create GitHub Pages (gh-pages)](labs/14/lab_14_part_3_gh_pages.html)
+* Markdown, Jekyll
+    * [markdown](http://daringfireball.net/projects/markdown/basics), [jekyll](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter) with [markdown](https://github.com/mojombo/jekyll/wiki/usage)
+    * [__Lab__ (Follow Along) Create Another Page Using Markdown and Jekyll](labs/14/lab_14_part_4_markdown.html)
+    * [__Lab__ (On Your Own) Create Yet Another Page Using Markdown and Jekyll](labs/14/lab_14_part_5_more_markdown.html)
+-->
+
 </td>
 </tr>
 <tr>
