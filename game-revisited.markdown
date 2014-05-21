@@ -13,8 +13,12 @@ Use this last class as an opportunity to publish a game!  Some options include:
 ## Possible Projects
 
 1. Finishing Pong 
-	* two players or computer controlled opponent
-	* keep track of score
+	* you can use this as a base: [http://foureyes.github.io/canvas-pong/game.html](http://foureyes.github.io/canvas-pong/game.html)
+		* two players or computer controlled opponent
+		* keep track of score
+		* try creating a computer controlled opponent
+		* change up the colors
+	* check out Dive into HTML5 for more info on [canvas](http://diveintohtml5.info/canvas.html)
 2. Flappy Bird Clone
 	* use acceleration
 	* use keyboard events
