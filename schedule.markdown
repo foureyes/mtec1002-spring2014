@@ -348,25 +348,12 @@ Javascript #6
 <td><h2>15</h2></td>
 <td><h2>05/21</h2></td>
 <td markdown="block">
-<!--
-* iteration
--->
+* game v2
+* grades / make-up work
 </td>
 <td markdown="block">
-{% comment %}
-* assignment grades
-	* posted on blackboard (dropped lowest)
-	* multiply by 10: grade scale by 10's (for example, 90-100 is an A)
-	* allow some make up work at the end of this class
-* clone [lab\_15\_all\_parts](https://github.com/MTEC1002/lab_15_all_parts)
-* [Iteration](labs/15/iteration.html)
-	* (together) [basic_counting.py](labs/15/basic_counting.py)
-	* (together) [cakefinity.py](labs/15/cakefinity.py)
-	* (together) [for.py](labs/15/for.py)
-	* [backwards.py](labs/15/backwards.py)
-	* [counting.py](labs/15/counting.py)
-	* [dice.py](labs/15/dice.py)
-{% endcomment %}
+* [grades / make-up](grades.html)
+* [game revisited](game-revisited.html)
 </td>
 </tr>
 </tbody>
